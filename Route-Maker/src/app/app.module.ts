@@ -4,14 +4,20 @@ import { RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FooterComponentComponent } from './footer-component/footer-component.component';
+import { FooterComponentComponent } from './footer/footer-component.component';
 import { HomeComponent } from './home/home.component';
+import { HeaderComponent } from './header/header.component';
+import { CarruselComponent } from './carrusel/carrusel.component';
+import { SearchbarComponent } from './searchbar/searchbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponentComponent,
-    HomeComponent
+    HomeComponent,
+    HeaderComponent,
+    CarruselComponent,
+    SearchbarComponent
   ],
   imports: [
     BrowserModule,
