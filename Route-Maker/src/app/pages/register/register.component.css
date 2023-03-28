@@ -1,0 +1,128 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 6rem auto;
+}
+
+.field{
+    padding: 1rem ;
+    width: 100%;
+}
+
+label{
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.aviso{
+    font-size: smaller;
+}
+.text{
+    border: 0.1rem black solid;
+    border-radius: 0.6rem;
+    width:100%;
+    height: 2.8rem;
+    margin-top: 0.2rem;
+    padding: 0.5rem;
+}
+
+#first_row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+}
+
+#first_row .field{
+    display: flex;
+    flex-direction: column;
+}
+
+#surname {
+    padding-right: 0;
+}
+
+#surname #user_surname{
+    margin: 0px 0px;
+}
+
+#name .text,
+#surname .text {
+    width: 9.5rem;
+    margin: auto;
+}
+
+.register{
+    border: none;
+    background-color: #558A78;
+    width: 19rem;
+    height: 2.8rem;
+    color: white;
+    font-size: 1rem;
+}
+
+.register:hover{
+    background-color: #86CFB5;
+    cursor: pointer;
+}
+
+#register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#password-error{
+    font-size: 14px;
+    color: red;
+    padding-left: 0.5rem;
+    margin: 0.5rem auto;
+    font-weight: bolder;
+}
+
+.sign_up:hover{
+    border-bottom: 0.1rem solid #A0B1AC;
+    background-color: white;
+    font-size: 0.85rem;
+    color: #558A78;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: #87A49B;
+}
+
+.text:hover, .text:focus{
+    outline: none;
+    border: solid 0.1rem #f3f3f4;
+    box-shadow: 0 0 0.4rem #A0B1AC;
+}
+
+@media (max-width: 400px){  
+    #registration-form{
+        width: 19rem;
+    }
+    #first_row{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    #surname {
+        padding-right: 1rem;
+    }
+    
+    #name .text,
+    #surname .text {
+        width: 100%;
+        margin: auto;
+    }
+    
+}
+
+@media (max-width: 320px){  
+    #registration-form{
+        width: 16rem;
+    }
+}

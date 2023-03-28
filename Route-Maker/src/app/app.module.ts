@@ -12,6 +12,8 @@ import { SearchbarComponent } from './components/searchbar/searchbar.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { AboutUsContentComponent } from './components/about-us-content/about-us-content.component';
 import { DestiniesComponent } from './pages/destinies/destinies.component';
+import { LoginComponent } from './pages/login/login.component';
+import { RegisterComponent } from './pages/register/register.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,8 @@ import { DestiniesComponent } from './pages/destinies/destinies.component';
     AboutUsComponent,
     AboutUsContentComponent,
     DestiniesComponent
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
@@ -32,6 +36,8 @@ import { DestiniesComponent } from './pages/destinies/destinies.component';
       { path: '', component: HomeComponent },
       { path: 'aboutUs', component: AboutUsComponent },
       { path: 'destinies', component: DestiniesComponent }
+      { path: 'login', component: LoginComponent },
+      { path: 'register', component: RegisterComponent }
     ])
   ],
   providers: [],
