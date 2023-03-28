@@ -1,0 +1,43 @@
+<head>
+    <title>Registrarse</title>
+</head>
+
+<body>
+    <app-header></app-header>
+    <div class="container">
+        <h2>Crear cuenta</h2>
+        <form id="registration-form">
+            <div class="first_row" id="first_row">
+                <div class="field" id="name">
+                    <label for="user_name">Nombre<br></label>
+                    <input required id="user_name" class="text" type="text" name="nombre" placeholder="Introduzca un nombre">
+                </div>
+                <div class="field" id="surname">
+                    <label for="user_surname">Apellido<br></label>
+                    <input id="user_surname" class="text" type="text" name="apellido"
+                        placeholder="Introduzca un apellido">
+                </div>
+            </div>
+            <div class="field" id="email">
+                <label for="user_email">E-mail<br></label>
+                <input required id="user_email" class="text" type="email" name="email" placeholder="Introduzca su email">
+            </div>
+            <div class="field" id="password">
+                <label for="user_password">Contraseña<br></label>
+                <input required class="text" id="user_password" type="password" name="contraseña"
+                    placeholder="Introduzca una contraseña" minlength="8">
+                <p class="aviso">La contraseña debe contener como minimo 8 caracteres</p>
+            </div>
+            <div class="field" id="repeat_password">
+                <label for="user_password2">Repetir contraseña<br></label>
+                <input required id="user_password2" class="text" type="password" placeholder="Repita su contraseña"
+                    oninput="checkPasswords()">
+                <p id="password-error" class="error" style="display:none;">Las contraseñas no coinciden.</p>
+            </div>
+            <div class="field" id="register">
+                <button id="button_submit" class="register" type="submit">Registrarse</button>
+            </div>
+        </form>
+    </div>
+    <app-footer-component></app-footer-component>
+</body>

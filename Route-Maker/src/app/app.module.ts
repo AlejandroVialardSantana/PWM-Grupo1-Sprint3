@@ -9,6 +9,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { CarruselComponent } from './components/carrusel/carrusel.component';
 import { SearchbarComponent } from './components/searchbar/searchbar.component';
+import { LoginComponent } from './pages/login/login.component';
+import { RegisterComponent } from './pages/register/register.component';
 
 @NgModule({
   declarations: [
@@ -17,13 +19,17 @@ import { SearchbarComponent } from './components/searchbar/searchbar.component';
     HomeComponent,
     HeaderComponent,
     CarruselComponent,
-    SearchbarComponent
+    SearchbarComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot([
-      { path: '', component: HomeComponent }
+      { path: '', component: HomeComponent },
+      { path: 'login', component: LoginComponent },
+      { path: 'register', component: RegisterComponent }
     ])
   ],
   providers: [],
