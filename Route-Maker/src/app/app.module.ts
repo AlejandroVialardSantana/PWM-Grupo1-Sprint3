@@ -9,6 +9,9 @@ import { HomeComponent } from './pages/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { CarruselComponent } from './components/carrusel/carrusel.component';
 import { SearchbarComponent } from './components/searchbar/searchbar.component';
+import { AboutUsComponent } from './pages/about-us/about-us.component';
+import { AboutUsContentComponent } from './components/about-us-content/about-us-content.component';
+import { DestiniesComponent } from './pages/destinies/destinies.component';
 
 @NgModule({
   declarations: [
@@ -17,13 +20,18 @@ import { SearchbarComponent } from './components/searchbar/searchbar.component';
     HomeComponent,
     HeaderComponent,
     CarruselComponent,
-    SearchbarComponent
+    SearchbarComponent,
+    AboutUsComponent,
+    AboutUsContentComponent,
+    DestiniesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot([
-      { path: '', component: HomeComponent }
+      { path: '', component: HomeComponent },
+      { path: 'aboutUs', component: AboutUsComponent },
+      { path: 'destinies', component: DestiniesComponent }
     ])
   ],
   providers: [],
