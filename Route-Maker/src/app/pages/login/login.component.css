@@ -1,0 +1,132 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    margin: 8rem auto;
+}
+.field{
+    padding: 1rem;
+}
+
+.field span {
+    display: flex;
+    text-align: left;
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+}
+.field span i {
+    margin-right: 0.5rem;
+}
+
+label{
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.text{
+    border: 1px black solid;
+    border-radius: 0.6rem;
+    width: 100%;
+    height: 2.8rem;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.button{
+    border: none;
+    background-color: #558A78;
+    width: 19rem;
+    height: 2.8rem;
+    color: white;
+    font-size: 1rem;
+    transition: 0.2s;
+}
+
+.button:hover{
+    background-color: #86CFB5;
+    cursor: pointer;
+}
+
+.sign_up{
+    border: none;
+    background-color: white;
+    font-size: 0.85rem;
+    color: black;
+    text-decoration: none;
+}
+
+.sign_up:hover{
+    border-bottom: 0.1rem solid #A0B1AC;
+    background-color: white;
+    font-size: 0.85rem;
+    color: #558A78;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: #87A49B;
+}
+
+.text:hover, .text:focus{
+    outline: none;
+    border: solid 0.1rem #f3f3f4;
+    box-shadow: 0 0 0.4rem #A0B1AC;
+}
+
+form p {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 1rem;;
+}
+
+.googleBtn {
+    background-color: #558A78;
+    width: 19rem;
+    height: 2.8rem;
+    margin: 0 auto;
+    color: white;
+    font-size: 1rem;
+    transition: 0.2s;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.googleBtn i {
+    margin-right: .5rem;
+}
+
+.googleBtn:hover {
+    background-color: #86CFB5;
+    cursor: pointer;
+}
+
+@media (max-width: 500px){
+    .button{
+    width: 15rem;
+    }
+
+    .googleBtn{
+        width: 15rem;
+    }
+    
+}
+
+@media (max-width: 350px) {
+    #title_log{
+        font-size: 18px;
+    }
+    
+    .sign_up_field{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sign_up_field label{
+        width: 8rem;
+    }
+}
