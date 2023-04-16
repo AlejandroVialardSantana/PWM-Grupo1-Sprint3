@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
+import { SwiperModule } from 'swiper/angular';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -25,17 +26,18 @@ import { RegisterComponent } from './pages/register/register.component';
     SearchbarComponent,
     AboutUsComponent,
     AboutUsContentComponent,
-    DestiniesComponent
+    DestiniesComponent,
     LoginComponent,
     RegisterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    SwiperModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
       { path: 'aboutUs', component: AboutUsComponent },
-      { path: 'destinies', component: DestiniesComponent }
+      { path: 'destinies', component: DestiniesComponent },
       { path: 'login', component: LoginComponent },
       { path: 'register', component: RegisterComponent }
     ])
