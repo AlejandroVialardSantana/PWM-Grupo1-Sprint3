@@ -14,6 +14,7 @@ import { AboutUsContentComponent } from './components/about-us-content/about-us-
 import { DestiniesComponent } from './pages/destinies/destinies.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
+import { AccountManagmentComponent } from './pages/account-managment/account-managment.component';
 
 @NgModule({
   declarations: [
@@ -25,9 +26,10 @@ import { RegisterComponent } from './pages/register/register.component';
     SearchbarComponent,
     AboutUsComponent,
     AboutUsContentComponent,
-    DestiniesComponent
+    DestiniesComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    AccountManagmentComponent
   ],
   imports: [
     BrowserModule,
@@ -35,9 +37,10 @@ import { RegisterComponent } from './pages/register/register.component';
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
       { path: 'aboutUs', component: AboutUsComponent },
-      { path: 'destinies', component: DestiniesComponent }
+      { path: 'destinies', component: DestiniesComponent },
       { path: 'login', component: LoginComponent },
-      { path: 'register', component: RegisterComponent }
+      { path: 'register', component: RegisterComponent },
+      { path: 'AccountManagement', component: AccountManagmentComponent }
     ])
   ],
   providers: [],

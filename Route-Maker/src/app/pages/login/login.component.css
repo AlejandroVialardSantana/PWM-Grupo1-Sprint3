@@ -1,4 +1,4 @@
-.container {
+.login_container {
     display: flex;
     flex-direction: column;
     justify-content: center; 
@@ -6,7 +6,7 @@
     margin: 8rem auto;
 }
 .field{
-    padding: 1rem;
+    padding: 1rem 0;
 }
 
 .field span {
@@ -106,10 +106,9 @@ form p {
 }
 
 @media (max-width: 500px){
-    .button{
-    width: 15rem;
+    .field, .button{
+        width: 15rem;
     }
-
     .googleBtn{
         width: 15rem;
     }
