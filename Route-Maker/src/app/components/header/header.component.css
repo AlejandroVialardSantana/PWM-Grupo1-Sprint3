@@ -70,6 +70,7 @@ nav {
     justify-content: center;
     margin-right: 13.5rem; /* 5rem + 6.75rem + 1.75rem, es decir los dos circulos y la separacion + el right (5rem) + otra separacion*/
     right: 0;
+    left: default;
     /* alienar a la derecha */
 }
 
@@ -193,7 +194,7 @@ Diseños para el menu desplegable de la barra de navegación cuando se aplique e
 }
 /* Medium devices */
 
-@media (max-width: 890px) and (orientation: portrait) { /* poner min-width para probar como se va viendo sin tener que redimensionar la pantalla */
+@media (max-width: 910px) { /* poner min-width para probar como se va viendo sin tener que redimensionar la pantalla */
 
     .side-nav ul {
         flex-direction: column; /* Cambia la orientación a vertical */
@@ -252,7 +253,7 @@ Diseños para el menu desplegable de la barra de navegación cuando se aplique e
 }
 
 /* 440 o menos de esto quitar el icono de idioma y situarlo en el desplegable */
-@media (max-width: 480px) and (orientation: portrait) {
+@media (max-width: 480px) {
 
     #idiom_menu_responsive {
         display: flex;
@@ -278,7 +279,7 @@ Diseños para el menu desplegable de la barra de navegación cuando se aplique e
 }
 
 /* 440 o menos de esto quitar el icono de idioma y situarlo en el desplegable */
-@media (max-width: 330px) and (orientation: portrait){
+@media (max-width: 330px) {
 
     :root{
         --scale_value: 0.85;

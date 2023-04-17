@@ -2,7 +2,7 @@
     <div id="header_components">
 
         <div id="menu_deplegable">
-          <input type="checkbox" id="menu_toggle" onchange="display_menu()">
+          <input type="checkbox" id="menu_toggle" (change)="menuBtnClicked($event)">
           <label for="menu_toggle" id="menu_toggle_label" class="bi bi-list"></label>
         </div>
       
@@ -10,8 +10,8 @@
           <a href=" "><img src="../../assets/logo.png" alt="Logo"></a>
         </div>
       
-        <nav>
-          <input type="checkbox" id="close_menu_toggle" onchange="close_menu()">
+        <nav [style.left]="navLeft" [style.right]="navRight"> <!-- según el valor de menuVisible se mostrara o ocultara la navegación [ngStyle]="{'left': menuVisible ? '0' : '-100%'}"-->
+          <input type="checkbox" id="close_menu_toggle" (change)="menuBtnClicked($event)">
           <label for="close_menu_toggle" id="close_menu_toggle_label" class="bi bi-x-lg"></label>
           <i id="idiom_menu_responsive" class="bi bi-globe2"></i>
           <ul>
