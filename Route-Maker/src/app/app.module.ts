@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
+import { SwiperModule } from 'swiper/angular';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -34,6 +35,7 @@ import { AccountManagmentComponent } from './pages/account-managment/account-man
   imports: [
     BrowserModule,
     AppRoutingModule,
+    SwiperModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
       { path: 'aboutUs', component: AboutUsComponent },

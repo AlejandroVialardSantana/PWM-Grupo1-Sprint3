@@ -1,12 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit, Input } from '@angular/core';
+import Swiper from 'swiper';
 
 @Component({
   selector: 'app-carrusel',
   templateUrl: './carrusel.component.html',
   styleUrls: ['./carrusel.component.css']
 })
-export class CarruselComponent {
-  title = 'Destinos destacados';
+export class CarruselComponent implements AfterViewInit {
+  @Input() title: string = '';
+  
+  starsArray = [1, 2, 3, 4, 5];
   destinies: any[] = [
     {
       name: 'Paris',
@@ -25,8 +28,24 @@ export class CarruselComponent {
     },
     {
       name: 'Tokio',
-      image: '',
+      image: 'https://imagenes.elpais.com/resizer/2tMKJy4AlWTBx5Kw67ENP-J4la8=/1960x1470/cloudfront-eu-central-1.images.arcpublishing.com/prisa/MPEDLDCHGBQ5QHIS7AHNLKSTQI.jpg',
       stars: 5,
     }
   ]
+
+  constructor() { }
+
+  ngAfterViewInit(): void {
+    const swiper = new Swiper('.swiper-container', {
+      slidesPerView: 3,
+      navigation: {
+        nextEl: '.slick_next',
+        prevEl: '.slick_prev',
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  }
 }
