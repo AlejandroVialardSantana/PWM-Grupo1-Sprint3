@@ -3,7 +3,8 @@
 <app-searchbar></app-searchbar>
 
 <div class="body_container">
-    <app-carrusel> </app-carrusel>
+    <app-carrusel *ngFor="let carrusel of carruselTitles" [title]="carrusel.title"></app-carrusel>
+
 </div>
 
 <app-footer-component></app-footer-component>
