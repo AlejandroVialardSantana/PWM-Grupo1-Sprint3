@@ -1,4 +1,4 @@
-import { Component, AfterViewInit } from '@angular/core';
+import { Component, AfterViewInit, Input } from '@angular/core';
 import Swiper from 'swiper';
 
 @Component({
@@ -7,7 +7,9 @@ import Swiper from 'swiper';
   styleUrls: ['./carrusel.component.css']
 })
 export class CarruselComponent implements AfterViewInit {
-  title = 'Destinos destacados';
+  @Input() title: string = '';
+  
+  starsArray = [1, 2, 3, 4, 5];
   destinies: any[] = [
     {
       name: 'Paris',
@@ -36,15 +38,14 @@ export class CarruselComponent implements AfterViewInit {
   ngAfterViewInit(): void {
     const swiper = new Swiper('.swiper-container', {
       slidesPerView: 3,
-      spaceBetween: 30,
       navigation: {
-        nextEl: '.slick-next',
-        prevEl: '.slick-prev',
+        nextEl: '.slick_next',
+        prevEl: '.slick_prev',
       },
-    });
-    
-    swiper.on('slideChange', () => {
-      console.log('slide change');
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
     });
   }
 }

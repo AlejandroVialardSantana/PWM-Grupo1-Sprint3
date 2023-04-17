@@ -36,7 +36,7 @@
     margin-top: 2.75rem;
 }
 
-.swiper-wrapper {
+.swiper-container {
     position: relative;
     display: flex;
     align-items: center;
@@ -47,7 +47,7 @@
     margin-bottom: 2rem;
 }
 
-.slick_track{
+.swiper-wrapper{
     position: relative;
     top: 0;
     left: 0;
@@ -59,7 +59,7 @@
 #slick {
     position: relative;
     margin: 0 2.5rem;
-    width: 20rem;
+    width: 20rem !important;
     box-sizing: border-box;
     display: flex;
     height: 20rem;
@@ -99,7 +99,6 @@
 }
 
 /* buttons */
-
 .slick_arrow{
     border-radius: 30px;
     background-color: #558A78;
@@ -127,6 +126,7 @@
     left: 0;
     top: 50%;
     transform: translateY(-50%);
+    z-index: 2;
 }
 
 .slick_next{
