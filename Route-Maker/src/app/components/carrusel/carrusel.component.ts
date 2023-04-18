@@ -9,7 +9,6 @@ import Swiper from 'swiper';
 export class CarruselComponent implements AfterViewInit {
   @Input() title: string = '';
   
-  starsArray = [1, 2, 3, 4, 5];
   destinies: any[] = [
     {
       name: 'Paris',
@@ -42,10 +41,17 @@ export class CarruselComponent implements AfterViewInit {
         nextEl: '.slick_next',
         prevEl: '.slick_prev',
       },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
+      breakpoints: {
+        960: {
+          slidesPerView: 3
+        },
+        601: {
+          slidesPerView: 2
+        },
+        0: {
+          slidesPerView: 1
+        }
+      }
     });
   }
 }
