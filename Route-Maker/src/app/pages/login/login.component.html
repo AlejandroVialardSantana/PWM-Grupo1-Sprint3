@@ -1,23 +1,36 @@
 <head>
     <title>Iniciar sesión</title>
 </head>
+
 <body>
     <app-header></app-header>
     <div class="login_container">
         <h2 id="title_log">Iniciar sesión</h2>
-        <form id="formularioLogIn">
+        <form id="formularioLogIn" [formGroup]="loginForm">
             <div class="field">
-                <label>E-mail:<br></label>
-                <input class="text" id="email" name="email" type="email" placeholder="Correo electrónico" required oninput="this.setCustomValidity('')">
-                <span id="email_error"></span>
+                    <label>E-mail:<br></label>
+                    <input matInput class="text" id="email" name="email" type="email" placeholder="Correo electrónico"
+                    formControlName="email">
+                    <mat-error  id="error-message" *ngIf="email?.errors?.['required'] && loginForm.get('email')?.touched">
+                        <i class="bi bi-exclamation-circle-fill"></i>
+                        Introduzca el correo
+                    </mat-error>
+                    <mat-error id="error-message" *ngIf="email?.errors?.['email'] && loginForm.get('email')?.touched">
+                        <i class="bi bi-exclamation-circle-fill"></i>
+                        Introduzca un correo válido
+                    </mat-error>
             </div>
             <div class="field">
                 <label>Contraseña:<br></label>
-                <input class="text" id="password" name="password" type="password" placeholder="Contraseña" required>
-                <span id="password_error"></span>
+                <input class="text" id="password" name="password" type="password" placeholder="Contraseña"
+                    formControlName="password">
+                <mat-error id="error-message" *ngIf="password?.errors?.['required'] && loginForm.get('password')?.touched">
+                    <i class="bi bi-exclamation-circle-fill"></i>
+                    Introduzca la contraseña
+                </mat-error>
             </div>
             <div class="field">
-                <input class="button" type="submit" value="Iniciar sesión">
+                <input mat-raised-button class="button" type="submit" value="Iniciar sesión">
             </div>
             <p>O</p>
             <div class="googleBtn">
