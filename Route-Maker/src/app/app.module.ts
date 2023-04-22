@@ -16,6 +16,10 @@ import { DestiniesComponent } from './pages/destinies/destinies.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { AccountManagmentComponent } from './pages/account-managment/account-managment.component';
+//Firestore
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -34,6 +38,9 @@ import { AccountManagmentComponent } from './pages/account-managment/account-man
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    FormsModule,
     AppRoutingModule,
     SwiperModule,
     RouterModule.forRoot([
@@ -45,7 +52,6 @@ import { AccountManagmentComponent } from './pages/account-managment/account-man
       { path: 'AccountManagement', component: AccountManagmentComponent }
     ])
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
