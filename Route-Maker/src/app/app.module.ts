@@ -16,10 +16,14 @@ import { DestiniesComponent } from './pages/destinies/destinies.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { AccountManagmentComponent } from './pages/account-managment/account-managment.component';
-//Firestore
+
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideAuth,getAuth } from '@angular/fire/auth';
+
 
 @NgModule({
   declarations: [
@@ -50,7 +54,9 @@ import { FormsModule } from '@angular/forms';
       { path: 'login', component: LoginComponent },
       { path: 'register', component: RegisterComponent },
       { path: 'AccountManagement', component: AccountManagmentComponent }
-    ])
+    ]),
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideAuth(() => getAuth())
   ],
   bootstrap: [AppComponent]
 })
