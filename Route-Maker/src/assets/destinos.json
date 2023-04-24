@@ -1,0 +1,68 @@
+{
+    "peninsula": [
+        {
+            "name": "Barcelona",
+            "stars": 5,
+            "image": "https://interrailero.com/wp-content/uploads/2022/01/que-ver-en-barcelona-mapa.jpg"
+        },
+        {
+            "name": "Madrid",
+            "stars": 5,
+            "image": "https://a.cdn-hotels.com/gdcs/production133/d1207/7ad2d7f0-68ce-11e8-8a0f-0242ac11000c.jpg"
+        },
+        {
+            "name": "Málaga",
+            "stars": 4,
+            "image": "https://brainsre.news/wp-content/uploads/2022/10/Malaga.jpg"
+        },
+        {
+            "name": "Sevilla",
+            "stars": 4,
+            "image": "https://images.squarespace-cdn.com/content/v1/5a86b05bcf81e0af04936cc7/1657901179340-KUOF0AHLFCZYB9TCMXZL/setas-sevilla.jpg?format=1500w"
+        }
+    ],
+    "baleares": [
+        {
+            "name": "Mallorca",
+            "stars": 5,
+            "image": "https://essentiallymallorca.com/wp-content/uploads/2019/02/brr_slideshow1.jpg"
+        },
+        {
+            "name": "Ibiza",
+            "stars": 5,
+            "image": "https://imagenes.elpais.com/resizer/qW8PlOmML26Z7eHbAuXGtK6go3w=/1960x1103/cloudfront-eu-central-1.images.arcpublishing.com/prisa/RRCYS7ETNJAGHC4FGOF7W6ICHA.jpg"
+        },
+        {
+            "name": "Menorca",
+            "stars": 4,
+            "image": "https://www.barcelo.com/guia-turismo/wp-content/uploads/2020/10/que-ver-en-menorca_pal.jpg"
+        },
+        {
+            "name": "Formentera",
+            "stars": 3,
+            "image": "https://www.formenteravuela.com/magazine/public/uploads/2021/04/Itinerario-3-dias-990x556.jpg"
+        }
+    ],
+    "canarias": [
+        {
+            "name": "Tenerife",
+            "stars": 5,
+            "image": "https://s1.eestatic.com/2021/08/11/ocio/603452207_200344208_1706x960.jpg"
+        },
+        {
+            "name": "Gran Canaria",
+            "stars": 5,
+            "image": "https://tourscanner.com/blog/wp-content/uploads/2021/02/que-ver-en-Gran-Canaria.jpg"
+        },
+        {
+            "name": "La Palma",
+            "stars": 5,
+            "image": "https://top-car-hire.com/uploads/images/15524099995.png"
+        },
+        {
+            "name": "Lanzarote",
+            "stars": 4,
+            "image": "https://i0.wp.com/lanzaroteinformation.co.uk/wp-content/uploads/2010/07/El-Golfo-AdobeStock_297251371.jpeg?fit=1000%2C600&ssl=1"
+        }
+    ]
+}

@@ -5,6 +5,7 @@ import { SwiperModule } from 'swiper/angular';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { environment } from '../../environments/environment';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -38,6 +39,7 @@ import { AccountManagmentComponent } from './pages/account-managment/account-man
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     SwiperModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
