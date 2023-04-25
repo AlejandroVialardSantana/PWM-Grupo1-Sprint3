@@ -2,6 +2,10 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { SwiperModule } from 'swiper/angular';
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import { environment } from '../../environments/environment';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -42,7 +46,10 @@ import { FormsModule } from '@angular/forms';
     MatFormFieldModule,
     FormsModule,
     AppRoutingModule,
+    HttpClientModule,
     SwiperModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
       { path: 'aboutUs', component: AboutUsComponent },

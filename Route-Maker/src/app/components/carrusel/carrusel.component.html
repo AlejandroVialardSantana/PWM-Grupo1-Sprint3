@@ -8,12 +8,15 @@
                     <img src="{{destiny.image}}" alt="{{destiny.name}}" id="image">
                     <div class="destinies_caroussel_item_info">
                         <h3 id="name">{{destiny.name}}</h3>
-                        <div id="stars" class="stars-container">{{destiny.stars}}</div>
+                        <div id="stars" class="stars-container">
+                            <span class="star" *ngFor="let star of [1, 2, 3, 4, 5]; let i = index">
+                                <i class="bi bi-star" [ngClass]="{'filled': i < destiny.stars}"></i>
+                              </span>
+                        </div>
                     </div>
                 </div>
             </div>
             <button class="slick_arrow slick_next" id="button_next"><i class="bi bi-chevron-right"></i></button>
-            <div class="swiper-pagination"></div>
         </div>
     </div>
 </section>
