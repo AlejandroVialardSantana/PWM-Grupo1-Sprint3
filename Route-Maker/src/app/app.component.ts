@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import SwiperCore, {Navigation, Pagination, Scrollbar, A11y, SwiperOptions, Swiper} from 'swiper';
 import { HttpClient } from '@angular/common/http';
 import { AngularFirestore } from '@angular/fire/compat/firestore';
+import { FirestoreService } from 'src/app/services/firestore.service';
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
@@ -9,6 +10,7 @@ interface Destino {
   name: string;
   stars: number;
   image: string;
+  region: string;
 }
 
 @Component({
@@ -19,22 +21,29 @@ interface Destino {
 export class AppComponent {
   destinos: any;
 
-  constructor(private http: HttpClient, private firestore: AngularFirestore) { }
+  constructor(private http: HttpClient, private firestore: AngularFirestore, private firestoreService: FirestoreService) { }
 
-  ngOnInit() {
-    //this.http.get<any>('../assets/destinos.json').subscribe(data => {
-    //  this.destinos = data;
-    //  this.exportDataToFirestore();
-    // });
+  async getDestinies() {
+    this.destinos = await this.firestoreService.getDestinies();
+    return this.destinos;
+  }
+
+  async ngOnInit() {
+    this.http.get<any>('../assets/destinos.json').subscribe(data => {
+      this.destinos = data;
+      this.exportDataToFirestore();
+     });
+
+     console.log(this.getDestinies());
   }
 
   exportDataToFirestore() {
     const destinosCollectionRef = this.firestore.collection('destinos');
     Object.keys(this.destinos).forEach((key) => {
       const docData = { [key]: this.destinos[key] };
-      destinosCollectionRef.add(docData);
+      destinosCollectionRef.doc(key).set(docData);
     });
-  }
+}
   
   config: SwiperOptions = {
     loop: true,

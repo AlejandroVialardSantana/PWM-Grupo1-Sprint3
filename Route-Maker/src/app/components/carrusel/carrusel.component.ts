@@ -12,7 +12,7 @@ export class CarruselComponent implements AfterViewInit {
 
   destinies: any[] = [];
 
-  constructor(private firestore: AngularFirestore) { }
+  constructor() { }
 
   ngAfterViewInit(): void {
     const swiper = new Swiper('.swiper-container', {
@@ -32,10 +32,6 @@ export class CarruselComponent implements AfterViewInit {
           slidesPerView: 1
         }
       }
-    });
-
-    this.firestore.collection('destinos').doc('canarias').valueChanges().subscribe((data: any) => {
-      this.destinies = data;
     });
   }
 }
