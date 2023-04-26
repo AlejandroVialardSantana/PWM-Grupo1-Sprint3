@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import SwiperCore, {Navigation, Pagination, Scrollbar, A11y, SwiperOptions, Swiper} from 'swiper';
+import SwiperCore, { Navigation, Pagination, Scrollbar, A11y, SwiperOptions, Swiper } from 'swiper';
 import { HttpClient } from '@angular/common/http';
 import { AngularFirestore } from '@angular/fire/compat/firestore';
 import { FirestoreService } from 'src/app/services/firestore/firestore.service';
@@ -17,20 +17,21 @@ export class AppComponent {
   constructor(private http: HttpClient, private firestore: AngularFirestore, private firestoreService: FirestoreService) { }
 
   async ngOnInit() {
-    this.http.get<any>('../assets/destinos.json').subscribe(data => {
-      this.destinos = data;
-      this.exportDataToFirestore();
-     });
+    this.exportJsonToFirestore('destinos');
+    this.exportJsonToFirestore('actividades');
+  }  
+
+  exportJsonToFirestore(name: string) {
+    this.http.get(`../assets/${name}.json`).subscribe((data: any) => {
+      const json = data;
+      const collectionRef = this.firestore.collection(name);
+      Object.keys(json).forEach((key) => {
+        const docData = { [key]: json[key] };
+        collectionRef.doc(key).set(docData);
+      });
+    });
   }
 
-  exportDataToFirestore() {
-    const destinosCollectionRef = this.firestore.collection('destinos');
-    Object.keys(this.destinos).forEach((key) => {
-      const docData = { [key]: this.destinos[key] };
-      destinosCollectionRef.doc(key).set(docData);
-    });
-}
-  
   config: SwiperOptions = {
     loop: true,
     slidesPerView: 4,
@@ -38,7 +39,6 @@ export class AppComponent {
     navigation: true,
     pagination: { clickable: true },
     scrollbar: { draggable: true },
-    };
+  };
   title = 'Route-Maker';
 }
- 

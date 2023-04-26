@@ -18,4 +18,12 @@ export class FirestoreService {
       })
     );
   }
+
+  getActivities(): Observable<any[]> {
+    return this.firestore.collection('actividades').valueChanges().pipe(
+      map((actividades: any[]) => {
+        return actividades[0].actividades;
+      })
+    );
+  }
 }

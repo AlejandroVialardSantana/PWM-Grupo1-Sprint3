@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./destinies.component.css']
 })
 export class DestiniesComponent {
-  region: string = "peninsula"; // establece la región por defecto
+  region: string = ""; 
   carruselTitles = [
     {title: "Destinos en la Península", region: "peninsula"},
     {title: "Destinos en las Islas Canarias", region: "canarias"},
