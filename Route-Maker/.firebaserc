@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "routemaker-4d0d6": {
+      "hosting": {
+        "Route-Maker": [
+          "routemaker-4d0d6"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "routemaker-4d0d6"
+  }
+}

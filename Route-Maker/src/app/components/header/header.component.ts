@@ -1,4 +1,6 @@
 import { Component, HostListener, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { AuthenticationService } from 'src/app/services/authentication.service';
 
 const First_Mediaquery_Breakpoint = 910;
 
@@ -13,6 +15,16 @@ export class HeaderComponent implements OnInit {
   navLeft: any; //Lo iniciamos en default
   navRight: any;
 
+  //Para controlar cuando un usuario se ha registrado y cambiar menu de usuario del header
+  constructor(public authService: AuthenticationService, private router: Router){
+
+  }
+
+  logout(){
+    this.authService.logout().subscribe(() => {
+      this.router.navigate([""]);
+    });
+  }
   /*
   Comprobamos si cuando comienza la ejecución la pantalla, el menu desplegable se esta mostrando o no para evitar problemas estéticos con el nav
   */
