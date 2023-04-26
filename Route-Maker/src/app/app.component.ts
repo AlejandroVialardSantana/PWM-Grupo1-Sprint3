@@ -19,7 +19,7 @@ interface Destino {
 export class AppComponent {
   destinos: any;
 
-  constructor(private http: HttpClient, private firestore: AngularFirestore) { }
+  constructor(private http: HttpClient, private firestore: AngularFirestore) {  }
 
   ngOnInit() {
     //this.http.get<any>('../assets/destinos.json').subscribe(data => {
