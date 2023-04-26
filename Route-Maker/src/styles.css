@@ -27,7 +27,7 @@ header{
     position: relative;
     display: flex;
     align-items: center;
-    z-index: 2; /* Establecemos un z-index mayor para evitar que el dropdown se quede solapado por la searchBar */
+    z-index: 3; /* Establecemos un z-index mayor para evitar que el dropdown se quede solapado por la searchBar */
     position: fixed;
     top: 0;
 }
