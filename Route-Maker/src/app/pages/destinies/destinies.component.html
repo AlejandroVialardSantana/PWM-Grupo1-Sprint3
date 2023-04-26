@@ -3,7 +3,9 @@
 <app-searchbar></app-searchbar>
 
 <div class="body_container">
-    <app-carrusel *ngFor="let carrusel of carruselTitles" [title]="carrusel.title" [region]="carrusel.region"></app-carrusel>
-</div>
+    <app-carrusel *ngFor="let carrusel of carruselTitles; let i = index" [title]="carrusel.title"
+      [region]="carrusel.region" [id]="'swiper-container-' + i"></app-carrusel>
+  </div>
+  
 
 <app-footer-component></app-footer-component>
