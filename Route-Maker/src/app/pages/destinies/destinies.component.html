@@ -4,7 +4,7 @@
 
 <div class="body_container">
     <app-carrusel *ngFor="let carrusel of carruselTitles; let i = index" [title]="carrusel.title"
-      [region]="carrusel.region" [id]="'swiper-container-' + i"></app-carrusel>
+      [region]="carrusel.region" [showActivities]="false" [id]="'swiper-container-' + i"></app-carrusel>
   </div>
   
 

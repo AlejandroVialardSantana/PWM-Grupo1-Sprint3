@@ -1,11 +1,11 @@
 export interface Actividad {
-    id: string,
-    nombre: string,
-    descripcion: string,
-    imagen: string,
+    id?: string,
+    name: string,
+    description: string,
+    image: string,
     location: string,
     city: string,
     location_map: string,
-    category: [],
-    user_reviews: [],
+    category: string[],
+    user_reviews: string[],
 }
