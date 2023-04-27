@@ -14,11 +14,12 @@ export class CarruselComponent implements OnInit, OnDestroy {
   @Input() title: string = '';
   @Input() id: string = '';
   @Input() region: string = ''; 
-  @Input() filterByRegion: boolean = true;
+  @Input() category: string = '';
+  @Input() filterByRegion: boolean = false;
+  @Input() filterByCategory: boolean = false;
   @Input() showActivities: boolean = false;
   destinies: Destino[] = [];
   activities: Actividad[] = [];
-  lista: any[] = [];
   Array = Array;
   private subscription: Subscription = new Subscription();
 
@@ -27,7 +28,11 @@ export class CarruselComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     if (this.showActivities) {
       this.subscription = this.firestoreService.getActivities().subscribe(actividades => {
-        this.activities = actividades;
+        if (this.filterByRegion) {
+          this.activities = actividades.filter(actividad => actividad.category && actividad.category.includes(this.category));
+        } else {
+          this.activities = actividades;
+        }
         setTimeout(() => {
           this.createSwiper(`#${this.id}`);
         }, 0);  
@@ -74,7 +79,7 @@ export class CarruselComponent implements OnInit, OnDestroy {
         0: {
           slidesPerView: 1
         }
-      }
+      },
     });
   }
 }

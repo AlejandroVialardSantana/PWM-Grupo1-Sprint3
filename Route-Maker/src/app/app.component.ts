@@ -16,8 +16,8 @@ export class AppComponent {
   constructor(private http: HttpClient, private firestore: AngularFirestore) { }
 
   ngOnInit() {
-    this.exportJsonToFirestore('destinos');
-    this.exportJsonToFirestore('actividades');
+    // this.exportJsonToFirestore('destinos');
+    // this.exportJsonToFirestore('actividades');
   }
 
   exportJsonToFirestore(name: string) {

@@ -6,6 +6,6 @@ export interface Actividad {
     location: string,
     city: string,
     location_map: string,
-    category: [],
-    user_reviews: [],
+    category: string[],
+    user_reviews: string[],
 }

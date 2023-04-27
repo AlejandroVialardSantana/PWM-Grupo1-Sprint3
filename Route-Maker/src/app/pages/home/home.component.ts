@@ -6,9 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
+  category: string = "";
   carruselTitles = [
-    {title: "Actividades destacadas"},
-    {title: "Actividades al aire libre"},
-    {title: "Destinos de playa"},
+    {title: "Actividades destacadas", category: "destacado"},
+    {title: "Actividades al aire libre", category: "aire libre"},
+    {title: "Destinos de playa", category: "playa"},
   ];
 }
