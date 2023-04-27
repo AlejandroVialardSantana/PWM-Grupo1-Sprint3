@@ -1,817 +1,815 @@
-{
-    "actividades": [
-        {
-            "id": "1",
-            "name": "Basílica de la Sagrada Familia",
-            "description": "La Sagrada Familia es un templo excepcional, fruto de la obra del genial arquitecto Antoni Gaudí. Actualmente, con más de 135 años desde la colocación de la primera piedra, la Basílica sigue en construcción.",
-            "image": "https://cdn.culturagenial.com/es/imagenes/basilica-la-sagrada-familia-og.jpg",
-            "location": "Carrer de Mallorca, 401, 08013 Barcelona",
-            "city": "Barcelona",
-            "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11970.555985173985!2d2.1656010357279984!3d41.40364566299803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2dcd83dfb93%3A0x9bd8aac21bc3c950!2sBas%C3%ADlica%20de%20la%20Sagrada%20Fam%C3%ADlia!5e0!3m2!1ses!2ses!4v1679767699230!5m2!1ses!2ses",
-            "category": [
-                "cultura",
-                "arquitectura",
-                "destacado"
-            ],
-            "user_reviews": [
-                {
-                    "username": "Paco Perez",
-                    "opinion": "Muy buena visita, la guía muy amable y simpática"
-                },
-                {
-                    "username": "Maria Lopez",
-                    "opinion": "Muy buena visita, la guía muy amable y simpática"
-                },
-                {
-                    "username": "Juan Garcia",
-                    "opinion": "Muy buena visita, la guía muy amable y simpática"
-                }
-            ]
-        },
-        {
-            "id": "2",
-            "name": "Parque Güell",
-            "description": "Más que un parque, es un símbolo de Barcelona. El Park Güell, una de las obras más emblemáticas de Antoni Gaudí, es único en el mundo porque fue concebido como un recinto monumental donde el entorno natural es inseparable de los elementos arquitectónicos.",
-            "image": "https://cdn.getyourguide.com/img/tour/55bfb034705fe.jpeg/99.jpg",
-            "location": "Carrer de Mallorca, 401, 08013 Barcelona",
-            "city": "Barcelona",
-            "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.1392955841243!2d2.152694499999999!3d41.414494800000014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2ae52d441ab%3A0x899a0ba01aaace58!2sPark%20G%C3%BCell!5e0!3m2!1ses!2ses!4v1679767840129!5m2!1ses!2ses",
-            "category": [
-                "cultura",
-                "arquitectura",
-                "aire libre"
-            ],
-            "user_reviews": [
-                {
-                    "username": "Paco Perez",
-                    "opinion": "Muy buena visita, la guía muy amable y simpática"
-                },
-                {
-                    "username": "Maria Lopez",
-                    "opinion": "Genial"
-                },
-                {
-                    "username": "Juan Garcia",
-                    "opinion": "Recomendable 100%"
-                }
-            ]
-        },
-        {
-            "id": "3",
-            "name": "Parque de El Retiro",
-            "description": "El Parque del Retiro es un gran parque público situado en el centro de Madrid, España. Es un oasis de tranquilidad y belleza en medio del bullicio de la ciudad.",
-            "image": "https://pequeviajes.com/wp-content/uploads/2018/12/parque-del-retiro.jpg",
-            "location": "Plaza de la Independencia, 7, 28001 Madrid, España",
-            "city": "Madrid",
-            "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6075.538173832227!2d-3.6867884233037795!3d40.413965967461635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42289ff511827b%3A0x9e6c2716b524a3ae!2sParque%20de%20El%20Retiro!5e0!3m2!1ses!2ses!4v1677576348767!5m2!1ses!2ses",
-            "category": [
-                "aire libre",
-                "ocio",
-                "destacado"
-            ],
-            "user_reviews": [
-                {
-                    "username": "Maria Cardenes",
-                    "opinion": "Me encanta el Parque del Retiro, es un lugar hermoso para relajarse y disfrutar del aire libre. Los jardines son espectaculares y hay muchas actividades para hacer."
-                },
-                {
-                    "username": "Juan Pablo",
-                    "opinion": "El Parque del Retiro es uno de mis lugares favoritos en Madrid. Es ideal para ir a correr, hacer picnics, pasear en bote, y muchas cosas más. Definitivamente lo recomiendo."
-                },
-                {
-                    "username": "Ana Garcia",
-                    "opinion": "Si visitas Madrid, no puedes perderte el Parque del Retiro. Es un oasis de paz en medio de la ciudad, con lagos, fuentes, y muchos rincones hermosos para explorar."
-                }
-            ]
-        },
-        {
-            "id": "4",
-            "name": "Museo de El Prado",
-            "description": "El Museo del Prado es el museo nacional de arte de España. Es uno de los museos más importantes del mundo y alberga una de las colecciones de arte más importantes del mundo.",
-            "image": "https://cdn-imgix.headout.com/tour/33875/TOUR-IMAGE/60a88161-1bee-4e24-931a-55e66ddd11fa-17737-madrid-madrid-s-prado-museum-guided-tour---tapas-experience-02.jpeg",
-            "location": "Paseo del Prado, s/n, 28014 Madrid, España",
-            "city": "Madrid",
-            "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12151.106713994022!2d-3.700881864711925!3d40.413797807399604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42289d66d8a2ed%3A0x1094f07d93ad885a!2sMuseo%20Nacional%20del%20Prado!5e0!3m2!1ses!2ses!4v1679766879345!5m2!1ses!2ses",
-            "category": [
-                "cultura",
-                "ocio",
-                "arte"
-            ],
-            "user_reviews": [
-                {
-                    "username": "Maria Cardenes",
-                    "opinion": "El Museo del Prado es uno de los mejores museos del mundo. Tiene una colección increíble de arte español e internacional. Definitivamente lo recomiendo."
-                },
-                {
-                    "username": "Juan Pablo",
-                    "opinion": "El Museo del Prado es uno de los mejores museos del mundo. Tiene una colección increíble de arte español e internacional. Definitivamente lo recomiendo."
-                }
-            ]
-        },
-        {
-            "id": "5",
-            "name": "Museo Nacional Centro de Arte Reina Sofía",
-            "description": "El Museo Nacional Centro de Arte Reina Sofía es un museo de arte contemporáneo situado en Madrid, España. Es uno de los museos más importantes del mundo.",
-            "image": "https://static2.museoreinasofia.es/sites/default/files/snippet_museo_sede_principal_5.png",
-            "location": "Calle de Santa Isabel, 52, 28012 Madrid, España",
-            "city": "Madrid",
-            "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12152.166561953229!2d-3.703311664714567!3d40.40792830883556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422628db3a07bd%3A0x309814d159babf71!2sMuseo%20Nacional%20Centro%20de%20Arte%20Reina%20Sof%C3%ADa!5e0!3m2!1ses!2ses!4v1679767002686!5m2!1ses!2ses",
-            "category": [
-                "cultura",
-                "ocio",
-                "arte",
-                "aire libre"
-            ],
-            "user_reviews": [
-                {
-                    "username": "JuanPablo",
-                    "opinion": "El Museo Nacional Centro de Arte Reina Sofía es uno de los mejores museos del mundo. Tiene una colección increíble de arte español e internacional. Definitivamente lo recomiendo."
-                },
-                {
-                    "username": "AnaGarcia",
-                    "opinion": "El Museo Nacional Centro de Arte Reina Sofía es uno de los mejores museos del mundo. Tiene una colección increíble de arte español e internacional. Definitivamente lo recomiendo."
-                }
-            ]
-        },
-        {
-            "id": "6",
-            "name": "Museo Thyssen-Bornemisza",
-            "description": "Ubicado en el Paseo del Arte, su colección permanente traza la historia de la pintura europea desde la Edad Media hasta finales del siglo XX. Los primitivos italianos, el Renacimiento alemán, la pintura americana del XIX, el impresionismo, el expresionismo alemán y el constructivismo ruso son las escuelas y los movimientos más ampliamente representados en el museo.",
-            "image": "https://www.revistadearte.com/wp-content/uploads/2022/10/El-Museo-Nacional-Thyssen-Bornemisza-cumple-30-anos-con-un-fin-de-semana-de-actividades-y-puertas-abiertas.jpg",
-            "location": "Paseo del Prado, 8, 28014 Madrid, España",
-            "city": "Madrid",
-            "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6075.538173832227!2d-3.6867884233037795!3d40.413965967461635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42289ff511827b%3A0x9e6c2716b524a3ae!2sParque%20de%20El%20Retiro!5e0!3m2!1ses!2ses!4v1677576348767!5m2!1ses!2ses",
-            "category": [
-                "cultura",
-                "aire libre",
-                "ocio",
-                "arte"
-            ],
-            "user_reviews": [
-                {
-                    "username": "Pepe Santana",
-                    "opinion": "El Museo Thyssen-Bornemisza es uno de los mejores museos del mundo. Tiene una colección increíble de arte español e internacional. Definitivamente lo recomiendo."
-                },
-                {
-                    "username": "Ana Garcia",
-                    "opinion": "El Museo Thyssen-Bornemisza es uno de los mejores museos del mundo. Tiene una colección increíble de arte español e internacional. Definitivamente lo recomiendo."
-                }
-            ]
-        },
-        {
-            "id": "7",
-            "name": "Estadio Santiago Bernabéu",
-            "description": "El Estadio Santiago Bernabéu es un recinto deportivo propiedad del Real Madrid Club de Fútbol, situado en pleno paseo de la Castellana, en el distrito de Chamartín de Madrid, España. Se inauguró el 14 de diciembre de 1947 y su aforo actualmente es de 81044 espectadores. ​El estadio está catalogado por la UEFA con la máxima distinción, «estadio de élite».",
-            "image": "https://tierradelsur.net/wp-content/uploads/2022/01/mad-santiagobernabeu-01.jpg",
-            "location": "Avenida de Concha Espina, 1, 28036 Madrid, España",
-            "city": "Madrid",
-            "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.0044399792423!2d-3.6883337!3d40.45303869999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228e23705d39f%3A0xa8fff6d26e2b1988!2sEstadio%20Santiago%20Bernab%C3%A9u!5e0!3m2!1ses!2ses!4v1679767249007!5m2!1ses!2ses",
-            "category": [
-                "deporte",
-                "aire libre",
-                "destacado"
-            ],
-            "user_reviews": [
-                {
-                    "username": "Juan Pablo",
-                    "opinion": "El Estadio Santiago Bernabéu es uno de los mejores estadios del mundo. Tiene una capacidad increíble de 81.044 espectadores. Definitivamente lo recomiendo."
-                },
-                {
-                    "username": "Ana Garcia",
-                    "opinion": "Impresionante."
-                }
-            ]
-        },
-        {
-            "id": "8",
-            "name": "Monumento natural del Roque Nublo",
-            "description": "Roque Nublo es una formación rocosa en la cumbre de la isla de Gran Canaria, en las Islas Canarias, España. Es uno de los puntos turísticos más populares de la isla debido a su belleza natural y su importancia cultural para los habitantes de la isla.",
-            "image": "https://www.grancanaria.com/blog/fileadmin/user_upload/Gran-Canaria-Roque-Nublo_05.jpg",
-            "location": "Cumbre de Gran Canaria, Islas Canarias, España",
-            "city": "Gran Canaria",
-            "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.890564223336!2d-15.630078784951202!3d27.97379958266906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc40dd209d51a805%3A0x9cb58d28fd3a1a57!2sRoque%20Nublo!5e0!3m2!1sen!2ses!4v1678624746216!5m2!1sen!2ses",
-            "category": [
-              "naturaleza",
-              "aventura",
-              "aire libre",
-              "destacado"	
-            ],
-            "user_reviews": [
-              {
+[
+    {
+        "id": "1",
+        "name": "Basílica de la Sagrada Familia",
+        "description": "La Sagrada Familia es un templo excepcional, fruto de la obra del genial arquitecto Antoni Gaudí. Actualmente, con más de 135 años desde la colocación de la primera piedra, la Basílica sigue en construcción.",
+        "image": "https://cdn.culturagenial.com/es/imagenes/basilica-la-sagrada-familia-og.jpg",
+        "location": "Carrer de Mallorca, 401, 08013 Barcelona",
+        "city": "Barcelona",
+        "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11970.555985173985!2d2.1656010357279984!3d41.40364566299803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2dcd83dfb93%3A0x9bd8aac21bc3c950!2sBas%C3%ADlica%20de%20la%20Sagrada%20Fam%C3%ADlia!5e0!3m2!1ses!2ses!4v1679767699230!5m2!1ses!2ses",
+        "category": [
+            "cultura",
+            "arquitectura",
+            "destacado"
+        ],
+        "user_reviews": [
+            {
+                "username": "Paco Perez",
+                "opinion": "Muy buena visita, la guía muy amable y simpática"
+            },
+            {
+                "username": "Maria Lopez",
+                "opinion": "Muy buena visita, la guía muy amable y simpática"
+            },
+            {
+                "username": "Juan Garcia",
+                "opinion": "Muy buena visita, la guía muy amable y simpática"
+            }
+        ]
+    },
+    {
+        "id": "2",
+        "name": "Parque Güell",
+        "description": "Más que un parque, es un símbolo de Barcelona. El Park Güell, una de las obras más emblemáticas de Antoni Gaudí, es único en el mundo porque fue concebido como un recinto monumental donde el entorno natural es inseparable de los elementos arquitectónicos.",
+        "image": "https://cdn.getyourguide.com/img/tour/55bfb034705fe.jpeg/99.jpg",
+        "location": "Carrer de Mallorca, 401, 08013 Barcelona",
+        "city": "Barcelona",
+        "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.1392955841243!2d2.152694499999999!3d41.414494800000014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2ae52d441ab%3A0x899a0ba01aaace58!2sPark%20G%C3%BCell!5e0!3m2!1ses!2ses!4v1679767840129!5m2!1ses!2ses",
+        "category": [
+            "cultura",
+            "arquitectura",
+            "aire libre"
+        ],
+        "user_reviews": [
+            {
+                "username": "Paco Perez",
+                "opinion": "Muy buena visita, la guía muy amable y simpática"
+            },
+            {
+                "username": "Maria Lopez",
+                "opinion": "Genial"
+            },
+            {
+                "username": "Juan Garcia",
+                "opinion": "Recomendable 100%"
+            }
+        ]
+    },
+    {
+        "id": "3",
+        "name": "Parque de El Retiro",
+        "description": "El Parque del Retiro es un gran parque público situado en el centro de Madrid, España. Es un oasis de tranquilidad y belleza en medio del bullicio de la ciudad.",
+        "image": "https://pequeviajes.com/wp-content/uploads/2018/12/parque-del-retiro.jpg",
+        "location": "Plaza de la Independencia, 7, 28001 Madrid, España",
+        "city": "Madrid",
+        "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6075.538173832227!2d-3.6867884233037795!3d40.413965967461635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42289ff511827b%3A0x9e6c2716b524a3ae!2sParque%20de%20El%20Retiro!5e0!3m2!1ses!2ses!4v1677576348767!5m2!1ses!2ses",
+        "category": [
+            "aire libre",
+            "ocio",
+            "destacado"
+        ],
+        "user_reviews": [
+            {
+                "username": "Maria Cardenes",
+                "opinion": "Me encanta el Parque del Retiro, es un lugar hermoso para relajarse y disfrutar del aire libre. Los jardines son espectaculares y hay muchas actividades para hacer."
+            },
+            {
+                "username": "Juan Pablo",
+                "opinion": "El Parque del Retiro es uno de mis lugares favoritos en Madrid. Es ideal para ir a correr, hacer picnics, pasear en bote, y muchas cosas más. Definitivamente lo recomiendo."
+            },
+            {
+                "username": "Ana Garcia",
+                "opinion": "Si visitas Madrid, no puedes perderte el Parque del Retiro. Es un oasis de paz en medio de la ciudad, con lagos, fuentes, y muchos rincones hermosos para explorar."
+            }
+        ]
+    },
+    {
+        "id": "4",
+        "name": "Museo de El Prado",
+        "description": "El Museo del Prado es el museo nacional de arte de España. Es uno de los museos más importantes del mundo y alberga una de las colecciones de arte más importantes del mundo.",
+        "image": "https://cdn-imgix.headout.com/tour/33875/TOUR-IMAGE/60a88161-1bee-4e24-931a-55e66ddd11fa-17737-madrid-madrid-s-prado-museum-guided-tour---tapas-experience-02.jpeg",
+        "location": "Paseo del Prado, s/n, 28014 Madrid, España",
+        "city": "Madrid",
+        "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12151.106713994022!2d-3.700881864711925!3d40.413797807399604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42289d66d8a2ed%3A0x1094f07d93ad885a!2sMuseo%20Nacional%20del%20Prado!5e0!3m2!1ses!2ses!4v1679766879345!5m2!1ses!2ses",
+        "category": [
+            "cultura",
+            "ocio",
+            "arte"
+        ],
+        "user_reviews": [
+            {
+                "username": "Maria Cardenes",
+                "opinion": "El Museo del Prado es uno de los mejores museos del mundo. Tiene una colección increíble de arte español e internacional. Definitivamente lo recomiendo."
+            },
+            {
+                "username": "Juan Pablo",
+                "opinion": "El Museo del Prado es uno de los mejores museos del mundo. Tiene una colección increíble de arte español e internacional. Definitivamente lo recomiendo."
+            }
+        ]
+    },
+    {
+        "id": "5",
+        "name": "Museo Nacional Centro de Arte Reina Sofía",
+        "description": "El Museo Nacional Centro de Arte Reina Sofía es un museo de arte contemporáneo situado en Madrid, España. Es uno de los museos más importantes del mundo.",
+        "image": "https://static2.museoreinasofia.es/sites/default/files/snippet_museo_sede_principal_5.png",
+        "location": "Calle de Santa Isabel, 52, 28012 Madrid, España",
+        "city": "Madrid",
+        "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12152.166561953229!2d-3.703311664714567!3d40.40792830883556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422628db3a07bd%3A0x309814d159babf71!2sMuseo%20Nacional%20Centro%20de%20Arte%20Reina%20Sof%C3%ADa!5e0!3m2!1ses!2ses!4v1679767002686!5m2!1ses!2ses",
+        "category": [
+            "cultura",
+            "ocio",
+            "arte",
+            "aire libre"
+        ],
+        "user_reviews": [
+            {
+                "username": "JuanPablo",
+                "opinion": "El Museo Nacional Centro de Arte Reina Sofía es uno de los mejores museos del mundo. Tiene una colección increíble de arte español e internacional. Definitivamente lo recomiendo."
+            },
+            {
+                "username": "AnaGarcia",
+                "opinion": "El Museo Nacional Centro de Arte Reina Sofía es uno de los mejores museos del mundo. Tiene una colección increíble de arte español e internacional. Definitivamente lo recomiendo."
+            }
+        ]
+    },
+    {
+        "id": "6",
+        "name": "Museo Thyssen-Bornemisza",
+        "description": "Ubicado en el Paseo del Arte, su colección permanente traza la historia de la pintura europea desde la Edad Media hasta finales del siglo XX. Los primitivos italianos, el Renacimiento alemán, la pintura americana del XIX, el impresionismo, el expresionismo alemán y el constructivismo ruso son las escuelas y los movimientos más ampliamente representados en el museo.",
+        "image": "https://www.revistadearte.com/wp-content/uploads/2022/10/El-Museo-Nacional-Thyssen-Bornemisza-cumple-30-anos-con-un-fin-de-semana-de-actividades-y-puertas-abiertas.jpg",
+        "location": "Paseo del Prado, 8, 28014 Madrid, España",
+        "city": "Madrid",
+        "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6075.538173832227!2d-3.6867884233037795!3d40.413965967461635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42289ff511827b%3A0x9e6c2716b524a3ae!2sParque%20de%20El%20Retiro!5e0!3m2!1ses!2ses!4v1677576348767!5m2!1ses!2ses",
+        "category": [
+            "cultura",
+            "aire libre",
+            "ocio",
+            "arte"
+        ],
+        "user_reviews": [
+            {
+                "username": "Pepe Santana",
+                "opinion": "El Museo Thyssen-Bornemisza es uno de los mejores museos del mundo. Tiene una colección increíble de arte español e internacional. Definitivamente lo recomiendo."
+            },
+            {
+                "username": "Ana Garcia",
+                "opinion": "El Museo Thyssen-Bornemisza es uno de los mejores museos del mundo. Tiene una colección increíble de arte español e internacional. Definitivamente lo recomiendo."
+            }
+        ]
+    },
+    {
+        "id": "7",
+        "name": "Estadio Santiago Bernabéu",
+        "description": "El Estadio Santiago Bernabéu es un recinto deportivo propiedad del Real Madrid Club de Fútbol, situado en pleno paseo de la Castellana, en el distrito de Chamartín de Madrid, España. Se inauguró el 14 de diciembre de 1947 y su aforo actualmente es de 81044 espectadores. ​El estadio está catalogado por la UEFA con la máxima distinción, «estadio de élite».",
+        "image": "https://tierradelsur.net/wp-content/uploads/2022/01/mad-santiagobernabeu-01.jpg",
+        "location": "Avenida de Concha Espina, 1, 28036 Madrid, España",
+        "city": "Madrid",
+        "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.0044399792423!2d-3.6883337!3d40.45303869999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228e23705d39f%3A0xa8fff6d26e2b1988!2sEstadio%20Santiago%20Bernab%C3%A9u!5e0!3m2!1ses!2ses!4v1679767249007!5m2!1ses!2ses",
+        "category": [
+            "deporte",
+            "aire libre",
+            "destacado"
+        ],
+        "user_reviews": [
+            {
+                "username": "Juan Pablo",
+                "opinion": "El Estadio Santiago Bernabéu es uno de los mejores estadios del mundo. Tiene una capacidad increíble de 81.044 espectadores. Definitivamente lo recomiendo."
+            },
+            {
+                "username": "Ana Garcia",
+                "opinion": "Impresionante."
+            }
+        ]
+    },
+    {
+        "id": "8",
+        "name": "Monumento natural del Roque Nublo",
+        "description": "Roque Nublo es una formación rocosa en la cumbre de la isla de Gran Canaria, en las Islas Canarias, España. Es uno de los puntos turísticos más populares de la isla debido a su belleza natural y su importancia cultural para los habitantes de la isla.",
+        "image": "https://www.grancanaria.com/blog/fileadmin/user_upload/Gran-Canaria-Roque-Nublo_05.jpg",
+        "location": "Cumbre de Gran Canaria, Islas Canarias, España",
+        "city": "Gran Canaria",
+        "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.890564223336!2d-15.630078784951202!3d27.97379958266906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc40dd209d51a805%3A0x9cb58d28fd3a1a57!2sRoque%20Nublo!5e0!3m2!1sen!2ses!4v1678624746216!5m2!1sen!2ses",
+        "category": [
+            "naturaleza",
+            "aventura",
+            "aire libre",
+            "destacado"
+        ],
+        "user_reviews": [
+            {
                 "username": "Marta Garcia",
                 "opinion": "Roque Nublo es una de las vistas más impresionantes que he visto en mi vida. La caminata hasta la cumbre es exigente, pero las vistas desde arriba hacen que todo valga la pena. Sin duda, uno de los mejores lugares de Gran Canaria."
-              },
-              {
+            },
+            {
                 "username": "Juan Martinez",
                 "opinion": "Roque Nublo es un lugar mágico que te hace sentir como si estuvieras en otro mundo. La vista desde la cumbre es impresionante y la caminata hasta allí es una aventura en sí misma. ¡Muy recomendable!"
-              },
-              {
+            },
+            {
                 "username": "Luisa Fernandez",
                 "opinion": "Roque Nublo es uno de los lugares más espectaculares de Gran Canaria. La caminata hasta la cumbre es desafiante, pero las vistas desde allí son simplemente impresionantes. Definitivamente vale la pena visitarlo."
-              }
-            ]
-          },
-          {
-            "id": "9",
-            "name": "Playa de Maspalomas",
-            "description": "La Playa de Maspalomas es una playa de arena blanca con dunas situada en el sur de la isla de Gran Canaria, en las Islas Canarias, España. Es una de las playas más populares de la isla debido a su belleza natural y su importancia cultural para los habitantes de la isla.",
-            "image": "https://canaryislandsinfo.co.uk/wp-content/uploads/2017/03/Playa-de-Maspalomas.jpg",
-            "location": "San Bartolomé de Tirajana, Islas Canarias, España",
-            "city": "Gran Canaria",
-            "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56502.15654646265!2d-15.619046448181845!3d27.736275411553393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc3f62d63f61e66f%3A0x274721dbf09e4820!2sPlaya%20de%20Maspalomas%20(Maspalomas)!5e0!3m2!1ses!2ses!4v1679763619498!5m2!1ses!2ses",
-            "category": [
-              "naturaleza",
-              "playa",
-              "aire libre"
-            ],
-            "user_reviews": [
-              {
+            }
+        ]
+    },
+    {
+        "id": "9",
+        "name": "Playa de Maspalomas",
+        "description": "La Playa de Maspalomas es una playa de arena blanca con dunas situada en el sur de la isla de Gran Canaria, en las Islas Canarias, España. Es una de las playas más populares de la isla debido a su belleza natural y su importancia cultural para los habitantes de la isla.",
+        "image": "https://canaryislandsinfo.co.uk/wp-content/uploads/2017/03/Playa-de-Maspalomas.jpg",
+        "location": "San Bartolomé de Tirajana, Islas Canarias, España",
+        "city": "Gran Canaria",
+        "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56502.15654646265!2d-15.619046448181845!3d27.736275411553393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc3f62d63f61e66f%3A0x274721dbf09e4820!2sPlaya%20de%20Maspalomas%20(Maspalomas)!5e0!3m2!1ses!2ses!4v1679763619498!5m2!1ses!2ses",
+        "category": [
+            "naturaleza",
+            "playa",
+            "aire libre"
+        ],
+        "user_reviews": [
+            {
                 "username": "Marta Garcia",
                 "opinion": "La Playa de Maspalomas es una de las playas más bonitas que he visto en mi vida. La arena blanca y las dunas hacen que el lugar sea mágico. Sin duda, uno de los mejores lugares de Gran Canaria"
-              },
-              {
+            },
+            {
                 "username": "Juan Martinez",
                 "opinion": "La Playa de Maspalomas es un lugar hermoso que te hace sentir como si estuvieras en otro mundo. ¡Muy recomendable!"
-              },
-              {
+            },
+            {
                 "username": "Luisa Fernandez",
                 "opinion": "La Playa de Maspalomas es uno de los lugares más espectaculares de Gran Canaria. Definitivamente vale la pena visitarlo."
-              }
-            ]
-          },
-          {
-            "id": "10",
-            "name": "Playa de Las Canteras",
-            "description": "La playa de Las Canteras es la playa favorita de los vecinos de la ciudad. Considerada una de las mejores playas urbanas de Europa. Las Canteras fue seleccionada en 2019 entre las diez mejores playas de España por la comunidad de viajeros de Tripadvisor. Con buenas condiciones climáticas prácticamente durante todo el año, la playa de Las Canteras cuenta con un paseo marítimo lleno de lugares de ocio que llenan de vida la ciudad. Sus aguas reúnen las condiciones perfectas para realizar cualquier deporte náutico, especialmente el surf, donde sus olas de gran calidad son reconocidas por surfistas de todo el mundo.",
-            "image": "https://www.tegustaviajar.com/wp-content/uploads/2019/02/playa-de-las-canteras.jpg",
-            "location": "Las Palmas de Gran Canaria, Islas Canarias, España",
-            "city": "Gran Canaria",
-            "category": [
-              "naturaleza",
-              "playa",
-              "aire libre",
-              "destacado"
-            ],
-            "location_map": "//www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14072.909278428073!2d-15.44807551818952!3d28.13956727183625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc409517c01f9539%3A0x3c117022b0a58f31!2sPlaya%20de%20Las%20Canteras%20(Las%20Palmas%20de%20Gran%20Canaria)!5e0!3m2!1ses!2ses!4v1679763909783!5m2!1ses!2ses",
-            "user_reviews": [
-              {
+            }
+        ]
+    },
+    {
+        "id": "10",
+        "name": "Playa de Las Canteras",
+        "description": "La playa de Las Canteras es la playa favorita de los vecinos de la ciudad. Considerada una de las mejores playas urbanas de Europa. Las Canteras fue seleccionada en 2019 entre las diez mejores playas de España por la comunidad de viajeros de Tripadvisor. Con buenas condiciones climáticas prácticamente durante todo el año, la playa de Las Canteras cuenta con un paseo marítimo lleno de lugares de ocio que llenan de vida la ciudad. Sus aguas reúnen las condiciones perfectas para realizar cualquier deporte náutico, especialmente el surf, donde sus olas de gran calidad son reconocidas por surfistas de todo el mundo.",
+        "image": "https://www.tegustaviajar.com/wp-content/uploads/2019/02/playa-de-las-canteras.jpg",
+        "location": "Las Palmas de Gran Canaria, Islas Canarias, España",
+        "city": "Gran Canaria",
+        "category": [
+            "naturaleza",
+            "playa",
+            "aire libre",
+            "destacado"
+        ],
+        "location_map": "//www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14072.909278428073!2d-15.44807551818952!3d28.13956727183625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc409517c01f9539%3A0x3c117022b0a58f31!2sPlaya%20de%20Las%20Canteras%20(Las%20Palmas%20de%20Gran%20Canaria)!5e0!3m2!1ses!2ses!4v1679763909783!5m2!1ses!2ses",
+        "user_reviews": [
+            {
                 "username": "Marta Garcia",
                 "opinion": "Espectacular playa, el paseo estupendo y cerca del centro comercial. Muy recomendable"
-              },
-              {
+            },
+            {
                 "username": "Juan Martinez",
                 "opinion": "Espectacular playa, el paseo estupendo y cerca del centro comercial. Muy recomendable"
-              },
-              {
+            },
+            {
                 "username": "Luisa Fernandez",
                 "opinion": "Espectacular playa, el paseo estupendo y cerca del centro comercial. Muy recomendable"
-              }
-            ]
-          },
-          {
-            "id": "11",
-            "name": "Playa de Amadores",
-            "description": "En el suroeste de la isla de Gran Canaria hay una playa tranquila creada para descansar bajo el sol. Es la playa de Amadores, de aguas en calma y sin oleaje al estar protegida por dos diques. Sus suaves arenas blancas y doradas invitan a tomar el sol todo el día tumbados en una hamaca o flotar durante horas en una orilla de aguas cristalinas, ya que aquí no están permitidos ni la música ni los juegos de pelota. Y con la llegada de la tarde, nada como ver desde la misma hamaca al sol ocultarse lentamente tras la isla vecina de Tenerife.",
-            "image": "https://fotos.hoteles.net/articulos/playa-amadores-gran-canaria-4229-1.jpg",
-            "location": "Mogán, Gran Canaria, Islas Canarias, España",
-            "city": "Gran Canaria",
-            "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3529.6460638057156!2d-15.727102634936156!3d27.789877832757828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc4081b41e4f27b9%3A0xa73fcf80b6a80e71!2sPlaya%20de%20Amadores!5e0!3m2!1ses!2ses!4v1679764826613!5m2!1ses!2ses",
-            "category": [
-              "naturaleza",
-              "playa",
-              "aire libre"
-            ],
-            "user_reviews": [
-              {
+            }
+        ]
+    },
+    {
+        "id": "11",
+        "name": "Playa de Amadores",
+        "description": "En el suroeste de la isla de Gran Canaria hay una playa tranquila creada para descansar bajo el sol. Es la playa de Amadores, de aguas en calma y sin oleaje al estar protegida por dos diques. Sus suaves arenas blancas y doradas invitan a tomar el sol todo el día tumbados en una hamaca o flotar durante horas en una orilla de aguas cristalinas, ya que aquí no están permitidos ni la música ni los juegos de pelota. Y con la llegada de la tarde, nada como ver desde la misma hamaca al sol ocultarse lentamente tras la isla vecina de Tenerife.",
+        "image": "https://fotos.hoteles.net/articulos/playa-amadores-gran-canaria-4229-1.jpg",
+        "location": "Mogán, Gran Canaria, Islas Canarias, España",
+        "city": "Gran Canaria",
+        "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3529.6460638057156!2d-15.727102634936156!3d27.789877832757828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc4081b41e4f27b9%3A0xa73fcf80b6a80e71!2sPlaya%20de%20Amadores!5e0!3m2!1ses!2ses!4v1679764826613!5m2!1ses!2ses",
+        "category": [
+            "naturaleza",
+            "playa",
+            "aire libre"
+        ],
+        "user_reviews": [
+            {
                 "username": "Marta Garcia",
                 "opinion": "Frecuento está playa desde hace 5 años. Agua azul turquesa cristalina.En mi opinión una de las playas más bonitas de la isla. Muy justa,su bandera azul."
-              },
-              {
+            },
+            {
                 "username": "Juan Martinez",
                 "opinion": "Es muy buena playa. Cuando el agua está verde, no es otra cosa que debido a las altas temperaturas y unas algas especiales que tiene sus fondos pues el agua toma ese color. Por lo demás es espectacular. Bien llevada su bandera azul."
-              }
-            ]
-          },
-          {
-            "id": "12",
-            "name": "Caldera de Bandama",
-            "description": "La caldera de Bandama es un Espacio Natural Protegido, el ejemplo más espectacular de vulcanismo reciente en Gran Canaria. Una estructura que se formó hace 5000 años, junto al antiguo volcán del Pico de Bandama. Originada por una enorme explosión de carácter freatomagmático (cuando la lava entra en contacto con aguas subterráneas), sus valores geológicos son incalculables, ya que sus paredes muestran claramente diversas etapas del vulcanismo insular.",
-            "image": "https://fotos.hoteles.net/articulos/caldera-bandama-gran-canaria-6117-1.jpg",
-            "location": "Noroeste de Gran Canaria, Islas Canarias, España",
-            "city": "Gran Canaria",
-            "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14086.981466014051!2d-15.464757218227625!3d28.032257472533637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc4096f815da0baf%3A0x5c97ea1ddc5c4f03!2sCaldera%20de%20Bandama!5e0!3m2!1ses!2ses!4v1679765057227!5m2!1ses!2ses",
-            "category": [
-              "naturaleza",
-              "sendero",
-              "aire libre",
-              "destacado"
-            ],
-            "user_reviews": [
-              {
+            }
+        ]
+    },
+    {
+        "id": "12",
+        "name": "Caldera de Bandama",
+        "description": "La caldera de Bandama es un Espacio Natural Protegido, el ejemplo más espectacular de vulcanismo reciente en Gran Canaria. Una estructura que se formó hace 5000 años, junto al antiguo volcán del Pico de Bandama. Originada por una enorme explosión de carácter freatomagmático (cuando la lava entra en contacto con aguas subterráneas), sus valores geológicos son incalculables, ya que sus paredes muestran claramente diversas etapas del vulcanismo insular.",
+        "image": "https://fotos.hoteles.net/articulos/caldera-bandama-gran-canaria-6117-1.jpg",
+        "location": "Noroeste de Gran Canaria, Islas Canarias, España",
+        "city": "Gran Canaria",
+        "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14086.981466014051!2d-15.464757218227625!3d28.032257472533637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc4096f815da0baf%3A0x5c97ea1ddc5c4f03!2sCaldera%20de%20Bandama!5e0!3m2!1ses!2ses!4v1679765057227!5m2!1ses!2ses",
+        "category": [
+            "naturaleza",
+            "sendero",
+            "aire libre",
+            "destacado"
+        ],
+        "user_reviews": [
+            {
                 "username": "Marta Garcia",
                 "opinion": "Espectacular espacio, el sendero es muy bonito y la vista es impresionante. Muy recomendable."
-              },
-              {
+            },
+            {
                 "username": "Juan Martinez",
                 "opinion": "Visita muy recomendable."
-              }
-            ]
-          },
-          {
-            "id": "13",
-            "name": "Cala Tarida",
-            "description": "La Cala Tarida, cala de 260 metros está situada en una zona residencial de Sant Josep de Sa Talaia por lo que cuenta con chiringuitos, restaurantes, hoteles, y todo lo que el turista pueda desear. Sus aguas tranquilas la hacen idónea para el baño y para practicar algunos deportes acuáticos como el esnórquel. Es, también, adecuada para familias con niños.",
-            "image": "https://www.barcelo.com/guia-turismo/wp-content/uploads/2020/10/cala-tarida_ibiza_888.jpg",
-            "location": "Cala Tarida, Sant Josep de Sa Talaia, Ibiza, Islas Baleares, España",
-            "city": "Ibiza",
-            "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2194.334470512563!2d1.2338264037950921!3d38.94094378766224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12994ae30e13617b%3A0x204a9b431fff0ce!2sC%2F%20de%20Cala%20Tarida%2C%2007829%2C%20Illes%20Balears!5e0!3m2!1ses!2ses!4v1679818600721!5m2!1ses!2ses",
-            "category": [
-                "naturaleza",
-                "aire libre",
-                "playa"
-            ],
-            "user_reviews": [
-                {
-                    "username": "Marta Garcia",
-                    "opinion": "Muy bonita, algo que tienes que ver."
-                },
-                {
-                    "username": "Juan Perez",
-                    "opinion": "Muy bonita, algo que tienes que ver."
-                }
-            ]
-        },
-        {
-            "id": "14",
-            "name": "Cala Salada",
-            "description": "Cala Salada y su hermana Saladeta se encuentran separadas solo por un pequeño accidente rocoso y están integradas en el Área Natural de Especial Interés de Es Amunts. A la estampa playera compuesta de arena dorada y mar turquesa la acompaña un bosque de pinos y unas casetas varadero de pescadores. Además, está a solo 4 kilómetros de Sant Antoni de Portmany y cuenta con algunos servicios imprescindibles de playa.",
-            "image": "https://www.barcelo.com/guia-turismo/wp-content/uploads/2020/10/cala-saladeta_ibiza_888.jpg",
-            "location": "Cala Salada, Sant Antonio de Portmany, Ibiza, Islas Baleares, España",
-            "city": "Ibiza",
-            "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7812.105301088053!2d1.288704978140775!3d39.009929168397534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12993670e482b863%3A0x4de052eb3d2a5e0b!2sCala%20Salada!5e0!3m2!1ses!2ses!4v1679818872102!5m2!1ses!2ses",
-            "category": [
-                "naturaleza",
-                "aire libre",
-                "playa",
-                "destacado"
-            ],
-            "user_reviews": [
-                {
-                    "username": "Marta Garcia",
-                    "opinion": "Cala preciosa, pero muy llena de gente. Recomendable ir pronto, el parking es gratis, aunque hay aforo y a partir de las once es complicado que haya sitio. Hay tumbonas y hamacas de pago y un chiringuito."
-                },
-                {
-                    "username": "Juan Perez",
-                    "opinion": "Muy bonita, algo que tienes que ver."
-                }
-            ]
-        },
-        {
-            "id": "15",
-            "name": "Observatorio Astrofísico",
-            "description": "Roque Nublo es una formación rocosa en la cumbre de la isla de Gran Canaria, en las Islas Canarias, España. Es uno de los puntos turísticos más populares de la isla debido a su belleza natural y su importancia cultural para los habitantes de la isla.",
-            "image": "https://www.telemadrid.es/2021/09/27/noticias/sociedad/Instalaciones-Telescopio-Canarias-Roque-Muchachos_2381771872_29816106_1300x731.jpg",
-            "location": "Observatorio Roque de los Muchachos, s/n, 38728 Villa de, Santa Cruz de Tenerife",
-            "city": "La Palma",
-            "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3497.736575284521!2d-17.887173984914632!3d28.75728098236874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc6bf074f599aaab%3A0x8938042021c61cf!2sObservatorio%20Astrof%C3%ADsico%20Roque%20de%20Los%20Muchachos!5e0!3m2!1ses!2ses!4v1679819358191!5m2!1ses!2ses",
-            "category": [
-                "ciencias",
-                "cultura",
-                "destacado"
-            ],
-            "user_reviews": [
-                {
-                    "username": "Marta Garcia",
-                    "opinion": "Uno de los aires más limpios del planeta, de ahí la instalación de numerosos telescopios. Se accede en coche aunque el acceso es restringido. Pasando de largo se llega al Roque de los Muchachos."
-                },
-                {
-                    "username": "Juan Perez",
-                    "opinion": "Perfecto para amantes de las estrellas a simple vista, con visita al interior del observatorio mejor, una inmensidad de estrellas, fugaces, constelaciones,... Las horas ahí vuelan y si te gusta la fotografía nocturna, lleva cafetera o tetera que ayudará bastante"
-                }
-            ]
-        },
-        {
-            "id": "16",
-            "name": "Parque Nacional de Timanfaya",
-            "description": "El parque nacional de Timanfaya es un espacio natural protegido español situado en los municipios de Yaiza y Tinajo, en la isla de Lanzarote, comunidad autónoma de Canarias. En 2020 recibió 1 655 772 visitantes siendo el segundo parque nacional en número de visitas de Canarias, tras el parque nacional del Teide en Tenerife, así como también es el cuarto de España, tras el del Teide, el de la Sierra de Guadarrama y el de los Picos de Europa.",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Timanfaya_colors_-_25411490706.jpg/1200px-Timanfaya_colors_-_25411490706.jpg",
-            "location": "Lanzarote, Las Palmas, España",
-            "city": "Lanzarote",
-            "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d78922.43730033854!2d-13.599499813151887!3d29.04918647265955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc463e97f5c75451%3A0xdf4ceaeee98a623e!2sParque%20Nacional%20de%20Timanfaya!5e0!3m2!1ses!2ses!4v1679819959447!5m2!1ses!2ses",
-            "category": [
-                "naturaleza",
-                "cultura",
-                "aire libre",
-                "destacado"
-            ],
-            "user_reviews": [
-                {
-                    "username": "Marta Garcia",
-                    "opinion": "Excelente servicio, cuidada calidad a precios razonables"
-                },
-                {
-                    "username": "Juan Perez",
-                    "opinion": "Escelso, una belleza propia de la naturaleza. Magnifico recorrido por el espacio natural con imágenes alucinantes. Recomendable e que imprescindible visitar."
-                },
-                {
-                    "username": "Ana Lopez",
-                    "opinion": "Un lugar espectacular, con unas vistas increíbles. El personal muy amable y atento. Muy recomendable."
-                }
-            ]
-        },
-        {
-            "id": "17",
-            "name": "Jameos del Agua",
-            "description": "Los Jameos del Agua es el primer Centro de Arte, Cultura y Turismo creado por César Manrique, en un espacio natural originado en el interior de un túnel volcánico. Inaugurado en 1968, el artista, pintor y escultor transformó el espacio dando lugar a una obra única en el mundo que representa la máxima expresión de su ideario: la creación artística en armonía con el medio y la naturaleza.",
-            "image": "https://cactlanzarote.com/wp-content/uploads/2022/03/JameosdelAguaCabecera.jpg",
-            "location": "LZ 204, Parcela 109, Carretera Arrieta - Órzola S/N Lanzarote, 35542 Punta Mujeres, Las Palmas",
-            "city": "Lanzarote",
-            "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3484.2465637094188!2d-13.433916534905505!3d29.157405632213724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc48a3cae1795a81%3A0x30e1e3972e3751ca!2sJameos%20del%20Agua%20%7C%20CACT!5e0!3m2!1ses!2ses!4v1679820627929!5m2!1ses!2ses",
-            "category": [
-                "naturaleza",
-                "cultura",
-                "aire libre",
-                "destacado"
-            ],
-            "user_reviews": [
-                {
-                    "username": "Marta Garcia",
-                    "opinion": "Excelente servicio, cuidada calidad a precios razonables"
-                },
-                {
-                    "username": "Juan Perez",
-                    "opinion": "Escelso, una belleza propia de la naturaleza. Magnifico recorrido por el espacio natural con imágenes alucinantes. Recomendable e que imprescindible visitar."
-                },
-                {
-                    "username": "Ana Lopez",
-                    "opinion": "Un lugar espectacular, con unas vistas increíbles. El personal muy amable y atento. Muy recomendable."
-                }
-            ]
-        },
-        {
-            "id": "18",
-            "name": "Porta Vells",
-            "description": "La playa de arena fina de Portals Vells goza de gran popularidad entre los residentes de Mallorca y grupos familiares. En las bahías arenosas con agua cristalina, hay numerosas cuevas por explorar. Hay un quiosco que ofrece bocadillos, un pequeño restaurante e instalaciones sanitarias. Muchos yates grandes visitan esta playa durante el verano. Sólo hay plazas limitadas de parking disponibles.",
-            "image": "https://abcmallorcastorage.blob.core.windows.net/images/2021/02/portals-vells-mallorca.jpg",
-            "location": "Calviá, Mallorca, Islas Baleares, España",
-            "city": "Mallorca",
-            "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3079.842645014567!2d2.5163563153674344!3d39.47288342948593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1297889647f9b467%3A0xe12fd339048063ed!2sPortals%20Vells%2C%20Islas%20Baleares!5e0!3m2!1ses!2ses!4v1679821749408!5m2!1ses!2ses",
-            "category": [
-                "naturaleza",
-                "playa",
-                "aire libre",
-                "destacado"
-            ],
-            "user_reviews": [
-                {
-                    "username": "Marta Garcia",
-                    "opinion": "Una preciosidad."
-                },
-                {
-                    "username": "Juan Perez",
-                    "opinion": "Hermoso lugar para pasar el día."
-                }
-            ]
-        },
-        {
-            "id": "19",
-            "name": "Pollensa",
-            "description": "Pollença es un pueblo antiguo ubicado en el norte de la isla, con atractivas calles estrechas y una impresionante plaza principal rodeada de cafés, restaurantes y bares, todo a pocos kilómetros del Puerto de Pollença. Su puente romano, señalizado ‘Pont Roma’ sigue en uso.",
-            "image": "https://static.seetheworld.com/image_uploader/photos/d8/original/pollenca-pollensa-pollensa-pollenca-982.jpg",
-            "location": "Pollença, Mallorca, Islas Baleares, España",
-            "city": "Mallorca",
-            "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12247.623295283278!2d3.006869786752458!3d39.87634737090374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1297d6a0db5e5103%3A0x2aec5ed1cb734537!2s07460%20Pollensa%2C%20Islas%20Baleares!5e0!3m2!1ses!2ses!4v1679822230563!5m2!1ses!2ses",
-            "category": [
-                "paseo",
-                "aire libre",
-                "destacado"
-            ],
-            "user_reviews": [
-                {
-                    "username": "Marta Garcia",
-                    "opinion": "Precioso pueblo para pasear y disfrutar de la gastronomía local."
-                },
-                {
-                    "username": "Juan Perez",
-                    "opinion": "Un lugar muy bonito para visitar."
-                },
-                {
-                    "username": "Ana Lopez",
-                    "opinion": "Un pueblo muy bonito y tranquilo."
-                }
-            ]
-        },
-        {
-            "id": "20",
-            "name": "Cala Macarella",
-            "description": "Situadas en la costa sur, Cala Maracarella y Cala Macarelleta son, gracias a sus aguas cristalinas de color turquesa y su ubicación entre imponentes acantilados, nuestras playas favoritas que ver en Menorca.",
-            "image": "https://www.artiemhotels.com/uploads/74cc7d56-ea32-4e85-8dd7-3bfff1d6f1e9/e32e7681a52dd1e4df2bd746cfecb3c5/74cc7d56-ea32-4e85-8dd7-3bfff1d6f1e9.png",
-            "location": "Cala Macarella, 07769, Menorca, Islas Baleares, España",
-            "city": "Menorca",
-            "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3059.233733243826!2d3.9325761153813508!3d39.93616117942389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12be1d12dc9c7a9b%3A0xad8e2dfbe699eb55!2sCala%20Macarelleta!5e0!3m2!1ses!2ses!4v1679823685116!5m2!1ses!2ses",
-            "category": [
-                "naturaleza",
-                "playa",
-                "aire libre",
-                "destacado"
-            ],
-            "user_reviews": [
-                {
-                    "username": "Marta Garcia",
-                    "opinion": "Una preciosidad."
-                },
-                {
-                    "username": "Juan Perez",
-                    "opinion": "Hermoso lugar para pasar el día."
-                }
-            ]
-        },
-        {
-            "id": "21",
-            "name": "Fornells",
-            "description": "Fornells, un antiguo pueblo de pescadores situado en el norte de la isla, es uno de los pueblos que visitar en Menorca más bonitos. Después de dejar el coche en alguno de sus parkings públicos, puedes dar un paseo por su coqueto puerto y recorrer el Carrer de ses Escoles, con varias tiendas de souvenirs y restaurantes donde probar la famosa caldereta de langosta, el plato estrella de la isla, como Es Cranc, que es uno de nuestros restaurantes preferidos donde comer en Menorca.",
-            "image": "https://www.isoladiminorca.com/wp-content/uploads/2021/01/fornells.jpg",
-            "location": "Fornells, Menorca, Islas Baleares, España",
-            "city": "Menorca",
-            "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12215.67115178486!2d4.120210586838936!3d40.05493557053925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12be233fa72ae2fd%3A0xa02af717f576020!2s07748%20Fornells%2C%20Islas%20Baleares!5e0!3m2!1ses!2ses!4v1679824230866!5m2!1ses!2ses",
-            "category": [
-                "paseo",
-                "aire libre",
-                "destacado"
-            ],
-            "user_reviews": [
-                {
-                    "username": "Marta Garcia",
-                    "opinion": "Precioso pueblo para pasear y disfrutar de la gastronomía local."
-                },
-                {
-                    "username": "Juan Perez",
-                    "opinion": "Un lugar muy bonito para visitar."
-                },
-                {
-                    "username": "Ana Lopez",
-                    "opinion": "Un pueblo muy bonito y tranquilo."
-                }
-            ]
-        },
-        {
-            "id": "22",
-            "name": "Caminito del Rey",
-            "description": "El Caminito del Rey es un sendero situado en el Desfiladero de los Gaitanes, en la provincia de Málaga, España. Es conocido por su impresionante paisaje y su peligrosidad, que lo convierten en una experiencia única para los amantes de la aventura.",
-            "image": "https://i.promecal.es/IMG/2022/B8C0CD2F-B6C6-B0D4-A00F79992601CD2C.JPEG",
-            "location": "29550 Ardales, Málaga, España",
-            "city": "Málaga",
-            "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3189.266029311481!2d-4.792142484706416!3d36.931809679921614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72be9311fa8f01%3A0x599abbe8aafbd4b8!2sCaminito%20del%20Rey%20-%20Acceso%20Norte!5e0!3m2!1ses!2ses!4v1679765311562!5m2!1ses!2ses",
-            "category": [
-              "paseo",
-              "aire libre",
-              "destacado"
-            ],
-            "user_reviews": [
-              {
+            }
+        ]
+    },
+    {
+        "id": "13",
+        "name": "Cala Tarida",
+        "description": "La Cala Tarida, cala de 260 metros está situada en una zona residencial de Sant Josep de Sa Talaia por lo que cuenta con chiringuitos, restaurantes, hoteles, y todo lo que el turista pueda desear. Sus aguas tranquilas la hacen idónea para el baño y para practicar algunos deportes acuáticos como el esnórquel. Es, también, adecuada para familias con niños.",
+        "image": "https://www.barcelo.com/guia-turismo/wp-content/uploads/2020/10/cala-tarida_ibiza_888.jpg",
+        "location": "Cala Tarida, Sant Josep de Sa Talaia, Ibiza, Islas Baleares, España",
+        "city": "Ibiza",
+        "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2194.334470512563!2d1.2338264037950921!3d38.94094378766224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12994ae30e13617b%3A0x204a9b431fff0ce!2sC%2F%20de%20Cala%20Tarida%2C%2007829%2C%20Illes%20Balears!5e0!3m2!1ses!2ses!4v1679818600721!5m2!1ses!2ses",
+        "category": [
+            "naturaleza",
+            "aire libre",
+            "playa"
+        ],
+        "user_reviews": [
+            {
+                "username": "Marta Garcia",
+                "opinion": "Muy bonita, algo que tienes que ver."
+            },
+            {
+                "username": "Juan Perez",
+                "opinion": "Muy bonita, algo que tienes que ver."
+            }
+        ]
+    },
+    {
+        "id": "14",
+        "name": "Cala Salada",
+        "description": "Cala Salada y su hermana Saladeta se encuentran separadas solo por un pequeño accidente rocoso y están integradas en el Área Natural de Especial Interés de Es Amunts. A la estampa playera compuesta de arena dorada y mar turquesa la acompaña un bosque de pinos y unas casetas varadero de pescadores. Además, está a solo 4 kilómetros de Sant Antoni de Portmany y cuenta con algunos servicios imprescindibles de playa.",
+        "image": "https://www.barcelo.com/guia-turismo/wp-content/uploads/2020/10/cala-saladeta_ibiza_888.jpg",
+        "location": "Cala Salada, Sant Antonio de Portmany, Ibiza, Islas Baleares, España",
+        "city": "Ibiza",
+        "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7812.105301088053!2d1.288704978140775!3d39.009929168397534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12993670e482b863%3A0x4de052eb3d2a5e0b!2sCala%20Salada!5e0!3m2!1ses!2ses!4v1679818872102!5m2!1ses!2ses",
+        "category": [
+            "naturaleza",
+            "aire libre",
+            "playa",
+            "destacado"
+        ],
+        "user_reviews": [
+            {
+                "username": "Marta Garcia",
+                "opinion": "Cala preciosa, pero muy llena de gente. Recomendable ir pronto, el parking es gratis, aunque hay aforo y a partir de las once es complicado que haya sitio. Hay tumbonas y hamacas de pago y un chiringuito."
+            },
+            {
+                "username": "Juan Perez",
+                "opinion": "Muy bonita, algo que tienes que ver."
+            }
+        ]
+    },
+    {
+        "id": "15",
+        "name": "Observatorio Astrofísico",
+        "description": "Roque Nublo es una formación rocosa en la cumbre de la isla de Gran Canaria, en las Islas Canarias, España. Es uno de los puntos turísticos más populares de la isla debido a su belleza natural y su importancia cultural para los habitantes de la isla.",
+        "image": "https://www.telemadrid.es/2021/09/27/noticias/sociedad/Instalaciones-Telescopio-Canarias-Roque-Muchachos_2381771872_29816106_1300x731.jpg",
+        "location": "Observatorio Roque de los Muchachos, s/n, 38728 Villa de, Santa Cruz de Tenerife",
+        "city": "La Palma",
+        "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3497.736575284521!2d-17.887173984914632!3d28.75728098236874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc6bf074f599aaab%3A0x8938042021c61cf!2sObservatorio%20Astrof%C3%ADsico%20Roque%20de%20Los%20Muchachos!5e0!3m2!1ses!2ses!4v1679819358191!5m2!1ses!2ses",
+        "category": [
+            "ciencias",
+            "cultura",
+            "destacado"
+        ],
+        "user_reviews": [
+            {
+                "username": "Marta Garcia",
+                "opinion": "Uno de los aires más limpios del planeta, de ahí la instalación de numerosos telescopios. Se accede en coche aunque el acceso es restringido. Pasando de largo se llega al Roque de los Muchachos."
+            },
+            {
+                "username": "Juan Perez",
+                "opinion": "Perfecto para amantes de las estrellas a simple vista, con visita al interior del observatorio mejor, una inmensidad de estrellas, fugaces, constelaciones,... Las horas ahí vuelan y si te gusta la fotografía nocturna, lleva cafetera o tetera que ayudará bastante"
+            }
+        ]
+    },
+    {
+        "id": "16",
+        "name": "Parque Nacional de Timanfaya",
+        "description": "El parque nacional de Timanfaya es un espacio natural protegido español situado en los municipios de Yaiza y Tinajo, en la isla de Lanzarote, comunidad autónoma de Canarias. En 2020 recibió 1 655 772 visitantes siendo el segundo parque nacional en número de visitas de Canarias, tras el parque nacional del Teide en Tenerife, así como también es el cuarto de España, tras el del Teide, el de la Sierra de Guadarrama y el de los Picos de Europa.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Timanfaya_colors_-_25411490706.jpg/1200px-Timanfaya_colors_-_25411490706.jpg",
+        "location": "Lanzarote, Las Palmas, España",
+        "city": "Lanzarote",
+        "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d78922.43730033854!2d-13.599499813151887!3d29.04918647265955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc463e97f5c75451%3A0xdf4ceaeee98a623e!2sParque%20Nacional%20de%20Timanfaya!5e0!3m2!1ses!2ses!4v1679819959447!5m2!1ses!2ses",
+        "category": [
+            "naturaleza",
+            "cultura",
+            "aire libre",
+            "destacado"
+        ],
+        "user_reviews": [
+            {
+                "username": "Marta Garcia",
+                "opinion": "Excelente servicio, cuidada calidad a precios razonables"
+            },
+            {
+                "username": "Juan Perez",
+                "opinion": "Escelso, una belleza propia de la naturaleza. Magnifico recorrido por el espacio natural con imágenes alucinantes. Recomendable e que imprescindible visitar."
+            },
+            {
+                "username": "Ana Lopez",
+                "opinion": "Un lugar espectacular, con unas vistas increíbles. El personal muy amable y atento. Muy recomendable."
+            }
+        ]
+    },
+    {
+        "id": "17",
+        "name": "Jameos del Agua",
+        "description": "Los Jameos del Agua es el primer Centro de Arte, Cultura y Turismo creado por César Manrique, en un espacio natural originado en el interior de un túnel volcánico. Inaugurado en 1968, el artista, pintor y escultor transformó el espacio dando lugar a una obra única en el mundo que representa la máxima expresión de su ideario: la creación artística en armonía con el medio y la naturaleza.",
+        "image": "https://cactlanzarote.com/wp-content/uploads/2022/03/JameosdelAguaCabecera.jpg",
+        "location": "LZ 204, Parcela 109, Carretera Arrieta - Órzola S/N Lanzarote, 35542 Punta Mujeres, Las Palmas",
+        "city": "Lanzarote",
+        "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3484.2465637094188!2d-13.433916534905505!3d29.157405632213724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc48a3cae1795a81%3A0x30e1e3972e3751ca!2sJameos%20del%20Agua%20%7C%20CACT!5e0!3m2!1ses!2ses!4v1679820627929!5m2!1ses!2ses",
+        "category": [
+            "naturaleza",
+            "cultura",
+            "aire libre",
+            "destacado"
+        ],
+        "user_reviews": [
+            {
+                "username": "Marta Garcia",
+                "opinion": "Excelente servicio, cuidada calidad a precios razonables"
+            },
+            {
+                "username": "Juan Perez",
+                "opinion": "Escelso, una belleza propia de la naturaleza. Magnifico recorrido por el espacio natural con imágenes alucinantes. Recomendable e que imprescindible visitar."
+            },
+            {
+                "username": "Ana Lopez",
+                "opinion": "Un lugar espectacular, con unas vistas increíbles. El personal muy amable y atento. Muy recomendable."
+            }
+        ]
+    },
+    {
+        "id": "18",
+        "name": "Porta Vells",
+        "description": "La playa de arena fina de Portals Vells goza de gran popularidad entre los residentes de Mallorca y grupos familiares. En las bahías arenosas con agua cristalina, hay numerosas cuevas por explorar. Hay un quiosco que ofrece bocadillos, un pequeño restaurante e instalaciones sanitarias. Muchos yates grandes visitan esta playa durante el verano. Sólo hay plazas limitadas de parking disponibles.",
+        "image": "https://abcmallorcastorage.blob.core.windows.net/images/2021/02/portals-vells-mallorca.jpg",
+        "location": "Calviá, Mallorca, Islas Baleares, España",
+        "city": "Mallorca",
+        "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3079.842645014567!2d2.5163563153674344!3d39.47288342948593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1297889647f9b467%3A0xe12fd339048063ed!2sPortals%20Vells%2C%20Islas%20Baleares!5e0!3m2!1ses!2ses!4v1679821749408!5m2!1ses!2ses",
+        "category": [
+            "naturaleza",
+            "playa",
+            "aire libre",
+            "destacado"
+        ],
+        "user_reviews": [
+            {
+                "username": "Marta Garcia",
+                "opinion": "Una preciosidad."
+            },
+            {
+                "username": "Juan Perez",
+                "opinion": "Hermoso lugar para pasar el día."
+            }
+        ]
+    },
+    {
+        "id": "19",
+        "name": "Pollensa",
+        "description": "Pollença es un pueblo antiguo ubicado en el norte de la isla, con atractivas calles estrechas y una impresionante plaza principal rodeada de cafés, restaurantes y bares, todo a pocos kilómetros del Puerto de Pollença. Su puente romano, señalizado ‘Pont Roma’ sigue en uso.",
+        "image": "https://static.seetheworld.com/image_uploader/photos/d8/original/pollenca-pollensa-pollensa-pollenca-982.jpg",
+        "location": "Pollença, Mallorca, Islas Baleares, España",
+        "city": "Mallorca",
+        "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12247.623295283278!2d3.006869786752458!3d39.87634737090374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1297d6a0db5e5103%3A0x2aec5ed1cb734537!2s07460%20Pollensa%2C%20Islas%20Baleares!5e0!3m2!1ses!2ses!4v1679822230563!5m2!1ses!2ses",
+        "category": [
+            "paseo",
+            "aire libre",
+            "destacado"
+        ],
+        "user_reviews": [
+            {
+                "username": "Marta Garcia",
+                "opinion": "Precioso pueblo para pasear y disfrutar de la gastronomía local."
+            },
+            {
+                "username": "Juan Perez",
+                "opinion": "Un lugar muy bonito para visitar."
+            },
+            {
+                "username": "Ana Lopez",
+                "opinion": "Un pueblo muy bonito y tranquilo."
+            }
+        ]
+    },
+    {
+        "id": "20",
+        "name": "Cala Macarella",
+        "description": "Situadas en la costa sur, Cala Maracarella y Cala Macarelleta son, gracias a sus aguas cristalinas de color turquesa y su ubicación entre imponentes acantilados, nuestras playas favoritas que ver en Menorca.",
+        "image": "https://www.artiemhotels.com/uploads/74cc7d56-ea32-4e85-8dd7-3bfff1d6f1e9/e32e7681a52dd1e4df2bd746cfecb3c5/74cc7d56-ea32-4e85-8dd7-3bfff1d6f1e9.png",
+        "location": "Cala Macarella, 07769, Menorca, Islas Baleares, España",
+        "city": "Menorca",
+        "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3059.233733243826!2d3.9325761153813508!3d39.93616117942389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12be1d12dc9c7a9b%3A0xad8e2dfbe699eb55!2sCala%20Macarelleta!5e0!3m2!1ses!2ses!4v1679823685116!5m2!1ses!2ses",
+        "category": [
+            "naturaleza",
+            "playa",
+            "aire libre",
+            "destacado"
+        ],
+        "user_reviews": [
+            {
+                "username": "Marta Garcia",
+                "opinion": "Una preciosidad."
+            },
+            {
+                "username": "Juan Perez",
+                "opinion": "Hermoso lugar para pasar el día."
+            }
+        ]
+    },
+    {
+        "id": "21",
+        "name": "Fornells",
+        "description": "Fornells, un antiguo pueblo de pescadores situado en el norte de la isla, es uno de los pueblos que visitar en Menorca más bonitos. Después de dejar el coche en alguno de sus parkings públicos, puedes dar un paseo por su coqueto puerto y recorrer el Carrer de ses Escoles, con varias tiendas de souvenirs y restaurantes donde probar la famosa caldereta de langosta, el plato estrella de la isla, como Es Cranc, que es uno de nuestros restaurantes preferidos donde comer en Menorca.",
+        "image": "https://www.isoladiminorca.com/wp-content/uploads/2021/01/fornells.jpg",
+        "location": "Fornells, Menorca, Islas Baleares, España",
+        "city": "Menorca",
+        "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12215.67115178486!2d4.120210586838936!3d40.05493557053925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12be233fa72ae2fd%3A0xa02af717f576020!2s07748%20Fornells%2C%20Islas%20Baleares!5e0!3m2!1ses!2ses!4v1679824230866!5m2!1ses!2ses",
+        "category": [
+            "paseo",
+            "aire libre",
+            "destacado"
+        ],
+        "user_reviews": [
+            {
+                "username": "Marta Garcia",
+                "opinion": "Precioso pueblo para pasear y disfrutar de la gastronomía local."
+            },
+            {
+                "username": "Juan Perez",
+                "opinion": "Un lugar muy bonito para visitar."
+            },
+            {
+                "username": "Ana Lopez",
+                "opinion": "Un pueblo muy bonito y tranquilo."
+            }
+        ]
+    },
+    {
+        "id": "22",
+        "name": "Caminito del Rey",
+        "description": "El Caminito del Rey es un sendero situado en el Desfiladero de los Gaitanes, en la provincia de Málaga, España. Es conocido por su impresionante paisaje y su peligrosidad, que lo convierten en una experiencia única para los amantes de la aventura.",
+        "image": "https://i.promecal.es/IMG/2022/B8C0CD2F-B6C6-B0D4-A00F79992601CD2C.JPEG",
+        "location": "29550 Ardales, Málaga, España",
+        "city": "Málaga",
+        "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3189.266029311481!2d-4.792142484706416!3d36.931809679921614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72be9311fa8f01%3A0x599abbe8aafbd4b8!2sCaminito%20del%20Rey%20-%20Acceso%20Norte!5e0!3m2!1ses!2ses!4v1679765311562!5m2!1ses!2ses",
+        "category": [
+            "paseo",
+            "aire libre",
+            "destacado"
+        ],
+        "user_reviews": [
+            {
                 "username": "Pedro Gonzalez",
                 "opinion": "El Caminito del Rey es una experiencia increíble. El paisaje es impresionante y la sensación de caminar por el sendero es indescriptible. Lo recomiendo a todos los amantes de la aventura."
-              },
-              {
+            },
+            {
                 "username": "Sofia Molina",
                 "opinion": "Si buscas una aventura emocionante en Málaga, el Caminito del Rey es el lugar ideal. Aunque puede ser un poco peligroso, vale la pena hacerlo. Las vistas son espectaculares y la sensación de superación al completarlo es incomparable."
-              },
-              {
+            },
+            {
                 "username": "David Ruiz",
                 "opinion": "El Caminito del Rey es una de las mejores experiencias que he tenido en Málaga. El sendero es espectacular y las vistas son impresionantes. Aunque puede ser un poco intimidante al principio, con precaución y siguiendo las instrucciones, se puede hacer sin problemas."
-              }
-            ]
-          },
-          {
-            "id": "23",
-            "name": "Centro Pompidou Málaga",
-            "description": "El Centro Pompidou Málaga es un museo de arte moderno y contemporáneo ubicado en el Puerto de Málaga, España. Es una sucursal del famoso Centro Pompidou de París y cuenta con una colección permanente de obras de artistas como Picasso, Miró y Chagall, así como con exposiciones temporales de artistas contemporáneos.",
-            "image": "https://cd1.taquilla.com/data/images/t/b4/centre-pompidou-malaga.jpg",
-            "location": "Pasaje Doctor Carrillo Casaux, s/n, 29016 Málaga, España",
-            "city": "Málaga",
-            "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198.155675380041!2d-4.4148227847123795!3d36.718822279965394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f7e9795494e1%3A0xbc298d7b27105c33!2sCentre%20Pompidou%20M%C3%A1laga!5e0!3m2!1ses!2ses!4v1679765682020!5m2!1ses!2ses",
-            "user_reviews": [
-              {
+            }
+        ]
+    },
+    {
+        "id": "23",
+        "name": "Centro Pompidou Málaga",
+        "description": "El Centro Pompidou Málaga es un museo de arte moderno y contemporáneo ubicado en el Puerto de Málaga, España. Es una sucursal del famoso Centro Pompidou de París y cuenta con una colección permanente de obras de artistas como Picasso, Miró y Chagall, así como con exposiciones temporales de artistas contemporáneos.",
+        "image": "https://cd1.taquilla.com/data/images/t/b4/centre-pompidou-malaga.jpg",
+        "location": "Pasaje Doctor Carrillo Casaux, s/n, 29016 Málaga, España",
+        "city": "Málaga",
+        "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198.155675380041!2d-4.4148227847123795!3d36.718822279965394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f7e9795494e1%3A0xbc298d7b27105c33!2sCentre%20Pompidou%20M%C3%A1laga!5e0!3m2!1ses!2ses!4v1679765682020!5m2!1ses!2ses",
+        "user_reviews": [
+            {
                 "username": "Sara Martinez",
                 "opinion": "El Centro Pompidou Málaga es uno de los mejores museos de arte moderno que he visitado. La colección permanente es impresionante y las exposiciones temporales siempre son interesantes. ¡Definitivamente recomendado!"
-              },
-              {
+            },
+            {
                 "username": "Pedro González",
                 "opinion": "Si te gusta el arte moderno y contemporáneo, el Centro Pompidou Málaga es un lugar que no puedes perderte. Además, su ubicación en el Puerto de Málaga lo hace aún más atractivo."
-              },
-              {
+            },
+            {
                 "username": "Carmen Ruiz",
                 "opinion": "El Centro Pompidou Málaga es un museo impresionante que ofrece una experiencia única. Las obras expuestas son de alta calidad y el edificio en sí mismo es una obra de arte."
-              }
-            ]
-          },
-          {
-            "id": "24",
-            "name": "Catedral de Málaga",
-            "description": "La Catedral de Málaga es una catedral católica situada en el centro de la ciudad de Málaga, España. Es la sede de la Diócesis de Málaga y es uno de los principales monumentos de la ciudad. La catedral fue construida en el siglo XVI y es una de las más grandes de España.",
-            "image": "https://malagacatedral.com/wp-content/uploads/exterior-1.jpg",
-            "location": "Plaza de la Constitución, 29015 Málaga, España",
-            "city": "Málaga",
-            "category": [
-              "monumento",
-              "paseo",
-              "aire libre",
-              "cultura",
-              "destacado"
-            ],
-            "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198.0996556216705!2d-4.42149928471234!3d36.72016777996509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f79511cea98d%3A0xfcc3c279b06f19fa!2sCatedral%20de%20la%20Encarnaci%C3%B3n%20de%20M%C3%A1laga!5e0!3m2!1ses!2ses!4v1679765796695!5m2!1ses!2ses",
-            "user_reviews": [
-              {
+            }
+        ]
+    },
+    {
+        "id": "24",
+        "name": "Catedral de Málaga",
+        "description": "La Catedral de Málaga es una catedral católica situada en el centro de la ciudad de Málaga, España. Es la sede de la Diócesis de Málaga y es uno de los principales monumentos de la ciudad. La catedral fue construida en el siglo XVI y es una de las más grandes de España.",
+        "image": "https://malagacatedral.com/wp-content/uploads/exterior-1.jpg",
+        "location": "Plaza de la Constitución, 29015 Málaga, España",
+        "city": "Málaga",
+        "category": [
+            "monumento",
+            "paseo",
+            "aire libre",
+            "cultura",
+            "destacado"
+        ],
+        "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198.0996556216705!2d-4.42149928471234!3d36.72016777996509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f79511cea98d%3A0xfcc3c279b06f19fa!2sCatedral%20de%20la%20Encarnaci%C3%B3n%20de%20M%C3%A1laga!5e0!3m2!1ses!2ses!4v1679765796695!5m2!1ses!2ses",
+        "user_reviews": [
+            {
                 "username": "Sara Martinez",
                 "opinion": "La Catedral de Málaga es una de las mejores catedrales que he visitado. Es una obra de arte impresionante y la visita guiada es muy interesante. ¡Definitivamente recomendado!"
-              },
-              {
+            },
+            {
                 "username": "Pedro González",
                 "opinion": "La Catedral de Málaga es una de las mejores catedrales que he visitado. Es una obra de arte impresionante y la visita guiada es muy interesante. ¡Definitivamente recomendado!"
-              },
-              {
+            },
+            {
                 "username": "Carmen Ruiz",
                 "opinion": "La Catedral de Málaga es una de las mejores catedrales que he visitado. Es una obra de arte impresionante y la visita guiada es muy interesante. ¡Definitivamente recomendado!"
-              }
-            ]
-          },
-          {
-            "id": "25",
-            "name": "Alcazaba de Málaga",
-            "description": "La Alcazaba de Málaga es un castillo árabe situado en la ciudad de Málaga, España. Es uno de los principales monumentos de la ciudad y es una de las mejores muestras de la arquitectura árabe en España. La Alcazaba fue construida en el siglo IX y es una de las más antiguas de España.",
-            "image": "https://www.nattivus.com/blog/wp-content/uploads/2018/10/alcazaba-de-malaga.jpg",
-            "location": "Plaza de la Constitución, 29015 Málaga, España",
-            "city": "Málaga",
-            "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12792.234759866282!2d-4.424621366261133!3d36.7211516790113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f7eaa0bb22c5%3A0x84699d6bbfb8b267!2sAlcazaba!5e0!3m2!1ses!2ses!4v1679765886727!5m2!1ses!2ses",
-            "category": [
-              "monumento",
-              "paseo",
-              "aire libre"
-            ],
-            "user_reviews": [
-              {
+            }
+        ]
+    },
+    {
+        "id": "25",
+        "name": "Alcazaba de Málaga",
+        "description": "La Alcazaba de Málaga es un castillo árabe situado en la ciudad de Málaga, España. Es uno de los principales monumentos de la ciudad y es una de las mejores muestras de la arquitectura árabe en España. La Alcazaba fue construida en el siglo IX y es una de las más antiguas de España.",
+        "image": "https://www.nattivus.com/blog/wp-content/uploads/2018/10/alcazaba-de-malaga.jpg",
+        "location": "Plaza de la Constitución, 29015 Málaga, España",
+        "city": "Málaga",
+        "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12792.234759866282!2d-4.424621366261133!3d36.7211516790113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f7eaa0bb22c5%3A0x84699d6bbfb8b267!2sAlcazaba!5e0!3m2!1ses!2ses!4v1679765886727!5m2!1ses!2ses",
+        "category": [
+            "monumento",
+            "paseo",
+            "aire libre"
+        ],
+        "user_reviews": [
+            {
                 "username": "Sara Martinez",
                 "opinion": "Buena comida buen servicio buena presentación y rapidos"
-              },
-              {
+            },
+            {
                 "username": "Pedro González",
                 "opinion": "Preciosa visita que no te dejará indiferente. Visita obligada si vas a Málaga, la fortaleza-palacio de origen árabe, tiene un montón de rincones con encanto."
-              },
-              {
+            },
+            {
                 "username": "Carmen Ruiz",
                 "opinion": "Lo recomiendo si te gusta dar un paseo al aire libre y descubrir todos sus rincones y jardines con vistas increíbles a la ciudad y al puerto. "
-              }
-            ]
-          },
-          {
-            "id": "26",
-            "name": "Castillo de Gibralfaro",
-            "description": "El Castillo de Gibralfaro es un castillo situado en la ciudad de Málaga, España. Es uno de los principales monumentos de la ciudad y es una de las mejores muestras de la arquitectura árabe en España. El castillo fue construido en el siglo IX y es una de las más antiguas de España.",
-            "image": "https://exploramalaga.com/wp-content/uploads/2019/09/Gibralfaro.jpg",
-            "location": "Plaza de la Constitución, 29015 Málaga, España",
-            "city": "Málaga",
-            "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.959333268942!2d-4.410562000000014!3d36.723537900000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f7c2d298c359%3A0xc4350594f8ef2191!2sCastillo%20de%20Gibralfaro!5e0!3m2!1ses!2ses!4v1679766283178!5m2!1ses!2ses",
-            "category": [
-              "monumento",
-              "paseo",
-              "aire libre"
-            ],
-            "user_reviews": [
-              {
+            }
+        ]
+    },
+    {
+        "id": "26",
+        "name": "Castillo de Gibralfaro",
+        "description": "El Castillo de Gibralfaro es un castillo situado en la ciudad de Málaga, España. Es uno de los principales monumentos de la ciudad y es una de las mejores muestras de la arquitectura árabe en España. El castillo fue construido en el siglo IX y es una de las más antiguas de España.",
+        "image": "https://exploramalaga.com/wp-content/uploads/2019/09/Gibralfaro.jpg",
+        "location": "Plaza de la Constitución, 29015 Málaga, España",
+        "city": "Málaga",
+        "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.959333268942!2d-4.410562000000014!3d36.723537900000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f7c2d298c359%3A0xc4350594f8ef2191!2sCastillo%20de%20Gibralfaro!5e0!3m2!1ses!2ses!4v1679766283178!5m2!1ses!2ses",
+        "category": [
+            "monumento",
+            "paseo",
+            "aire libre"
+        ],
+        "user_reviews": [
+            {
                 "username": "Sara Martinez",
                 "opinion": "Construcción impresionante por su cimentación ya que se ubica en la parte alta de la montaña, cuenta con muros de piedra y abarca una gran área de terreno destacándose grandes áreas abiertas dentro de la fortaleza, un lugar que guarda historia de la ciudad. "
-              },
-              {
+            },
+            {
                 "username": "Pedro González",
                 "opinion": "Es un lugar de grandes dimensiones que está en lo alto de un monte. Me aconsejaron subir en el bus línea 35 y es lo que hicimos. Siempre es más cómodo bajar a pie. Era un bonito día de invierno."
-              }
-            ]
-          },
-          {
-            "id": "27",
-            "name": "La Giralda",
-            "description": "La majestuosa torre almohade que corona la Catedral concentra 800 años de nuestra historia. Durante muchos años dominaba el skyline de la ciudad, con sus 101 metros, récord arrebatado por la Torre Sevilla. El Giraldillo es su orgullosa veleta, cuya réplica puede admirarse en la Puerta del Principe. Estudiantes, jubilados, parados y sevillanos pagan 1,50 euros si quieren vivir la experiencia de subir a su campanario.",
-            "image": "https://www.diariodesevilla.es/especiales/20-lugares-imprescindibles-de-sevilla/imagenes/catedral-sevilla_1285682100_89371889_2121x1414.jpg",
-            "location": "Av. de la Constitución, s/n, 41004 Sevilla, España",
-            "city": "Sevilla",
-            "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170.154498771081!2d-5.994802384693491!3d37.386178379831996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126c1a1eb7d42b%3A0x9d4fd647e46b7247!2sLa%20Giralda!5e0!3m2!1ses!2ses!4v1679824763665!5m2!1ses!2ses",
-            "category": [
-                "naturaleza",
-                "aire libre",
-                "destacado"
-            ],
-            "user_reviews": [
-                {
-                    "username": "Marta Garcia",
-                    "opinion": "Espectacular estructura, muy bonita."
-                },
-                {
-                    "username": "Juan Perez",
-                    "opinion": "Algo imprensindible de ver en Sevilla."
-                }
-            ]
-        },
-        {
-            "id": "28",
-            "name": "Teatro Flamenco Sevilla | Espectáculo Flamenco en Sevillanells",
-            "description": "Siente la magia del flamenco en primera persona, en el corazón de Andalucía. Sevilla es cuna de este arte andaluz, reconocido a nivel universal. Por eso, tienes que vivir con pasión, la esencia del flamenco más puro en la capital de Andalucía.",
-            "image": "https://lh5.googleusercontent.com/p/AF1QipMXuIic7dO1as0K_atYAC8yuJcsAFU1VapWxneb=w648-h240-k-no",
-            "location": "C. Cuna, 15, 41004 Sevilla",
-            "city": "Sevilla",
-            "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12680.1151070069!2d-6.00739566441828!3d37.389151727301936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126d3202d4fab7%3A0x303d573893b7af30!2sTeatro%20Flamenco%20Sevilla%20%7C%20Espect%C3%A1culo%20Flamenco%20en%20Sevilla!5e0!3m2!1ses!2ses!4v1679824989178!5m2!1ses!2ses",
-            "category": [
-                "paseo",
-                "cultura",
-                "teatro",
-                "destacado"
-            ],
-            "user_reviews": [
-                {
-                    "username": "Marta Garcia",
-                    "opinion": "Un espectáculo muy bonito y muy bien organizado."
-                },
-                {
-                    "username": "Juan Perez",
-                    "opinion": "El flamenco es una de las cosas que más me gusta de Sevilla."
-                },
-                {
-                    "username": "Ana Lopez",
-                    "opinion": "Espectucular, no me lo esperaba."
-                }
-            ]
-        },
-        {
-            "id": "29",
-            "name": "Parque Nacional del Teide",
-            "description": "Este parque presenta, no solamente uno de los más impresionantes espectáculos geológicos del mundo, con su conjunto de coladas y conos volcánicos de caprichosas formas y armoniosos colores, sino que también atesora una extraordinaria biodiversidad formada por exclusivas especies de invertebrados y un amplio número de endemismos vegetales.",
-            "image": "https://images.squarespace-cdn.com/content/v1/5a86b05bcf81e0af04936cc7/1532097926690-M6NN972UUG734N6LGNJC/TEIDE3.jpg?format=1500w",
-            "location": "Pico del Teide, 38300, Santa Cruz de Tenerife, Islas Canarias, España",
-            "city": "Tenerife",
-            "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28110.860160594024!2d-16.66001761216535!3d28.27233683390549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc6a841219a46745%3A0x8da5b0b3d4897f14!2sPico%20del%20Teide!5e0!3m2!1ses!2ses!4v1679825462175!5m2!1ses!2ses",
-            "category": [
-                "naturaleza",
-                "aire libre",
-                "destacado"
-            ],
-            "user_reviews": [
-                {
-                    "username": "Marta Garcia",
-                    "opinion": "Una preciosidad."
-                },
-                {
-                    "username": "Juan Perez",
-                    "opinion": "Hermoso lugar para pasar el día."
-                }
-            ]
-        },
-        {
-            "id": "30",
-            "name": "Loro Parque",
-            "description": "Zoo ajardinado con gorilas, tigres y pingüinos, iceberg artificial y espectáculos de delfines.",
-            "image": "https://www.atlanticoexcursiones.com/zeus/pictures/GRP3/B.jpg",
-            "location": "Loro Parque, 38400 Puerto de la Cruz, Santa Cruz de Tenerife, Islas Canarias, España",
-            "city": "Tenerife",
-            "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3509.362390742999!2d-16.56690558508207!3d28.408320082506783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc6a7fc6f1bca7a1%3A0x2d783f66b7a8b668!2sLoro%20Parque!5e0!3m2!1ses!2ses!4v1679825876994!5m2!1ses!2ses",
-            "category": [
-                "naturaleza",
-                "aire libre",
-                "destacado"
-            ],
-            "user_reviews": [
-                {
-                    "username": "Miriam Suarez",
-                    "opinion": "Este lugar es un precioso paraíso para los animales. Todo está muy cuidado y limpio. Los animales están muy bien alimentados, de hecho tienes varias zonas para ver a los loros comer de cerca felizmente"
-                },
-                {
-                    "username": "Daniel PErez",
-                    "opinion": "Bonito lugar, bien cuidado, y perfecto para pasar un día con los peques. Los espectáculos están muy bien organizados y nos hemos divertido mucho."
-                }
-            ]
-        },
-        {
-            "id": "31",
-            "name": "Playa de las Vistas",
-            "description": "La playa de Las Vistas es una playa artificial localizada en el sur de Tenerife. Es una de las playas que conforman la zona turística de Los Cristianos, en el término municipal de Arona.",
-            "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/fb/6a/d0/img-20190617-153600-largejpg.jpg?w=1200&h=-1&s=1",
-            "location": "Playa de las Vistas, 38650, Santa Cruz de Tenerife, Islas Canarias, España",
-            "city": "Tenerife",
-            "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3521.128741502386!2d-16.726790785090515!3d28.051093432650795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc6a978051f57119%3A0x63827795aed58c1!2sPlaya%20de%20las%20Vistas!5e0!3m2!1ses!2ses!4v1679826149719!5m2!1ses!2ses",
-            "category": [
-                "naturaleza",
-                "playa",
-                "aire libre",
-                "destacado"
-            ],
-            "user_reviews": [
-                {
-                    "username": "Javier Ortega",
-                    "opinion": "Una playa bonita bastante concurrida, hay baños y para aparcar es muy complicado."
-                },
-                {
-                    "username": "Sara Hernandez",
-                    "opinion": "Esta playa es una de las más bonitas de Tenerife sur, es amplia de arena fina. "
-                }
-            ]
-        }
-    ]
-}
+            }
+        ]
+    },
+    {
+        "id": "27",
+        "name": "La Giralda",
+        "description": "La majestuosa torre almohade que corona la Catedral concentra 800 años de nuestra historia. Durante muchos años dominaba el skyline de la ciudad, con sus 101 metros, récord arrebatado por la Torre Sevilla. El Giraldillo es su orgullosa veleta, cuya réplica puede admirarse en la Puerta del Principe. Estudiantes, jubilados, parados y sevillanos pagan 1,50 euros si quieren vivir la experiencia de subir a su campanario.",
+        "image": "https://www.diariodesevilla.es/especiales/20-lugares-imprescindibles-de-sevilla/imagenes/catedral-sevilla_1285682100_89371889_2121x1414.jpg",
+        "location": "Av. de la Constitución, s/n, 41004 Sevilla, España",
+        "city": "Sevilla",
+        "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170.154498771081!2d-5.994802384693491!3d37.386178379831996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126c1a1eb7d42b%3A0x9d4fd647e46b7247!2sLa%20Giralda!5e0!3m2!1ses!2ses!4v1679824763665!5m2!1ses!2ses",
+        "category": [
+            "naturaleza",
+            "aire libre",
+            "destacado"
+        ],
+        "user_reviews": [
+            {
+                "username": "Marta Garcia",
+                "opinion": "Espectacular estructura, muy bonita."
+            },
+            {
+                "username": "Juan Perez",
+                "opinion": "Algo imprensindible de ver en Sevilla."
+            }
+        ]
+    },
+    {
+        "id": "28",
+        "name": "Teatro Flamenco Sevilla | Espectáculo Flamenco en Sevillanells",
+        "description": "Siente la magia del flamenco en primera persona, en el corazón de Andalucía. Sevilla es cuna de este arte andaluz, reconocido a nivel universal. Por eso, tienes que vivir con pasión, la esencia del flamenco más puro en la capital de Andalucía.",
+        "image": "https://lh5.googleusercontent.com/p/AF1QipMXuIic7dO1as0K_atYAC8yuJcsAFU1VapWxneb=w648-h240-k-no",
+        "location": "C. Cuna, 15, 41004 Sevilla",
+        "city": "Sevilla",
+        "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12680.1151070069!2d-6.00739566441828!3d37.389151727301936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126d3202d4fab7%3A0x303d573893b7af30!2sTeatro%20Flamenco%20Sevilla%20%7C%20Espect%C3%A1culo%20Flamenco%20en%20Sevilla!5e0!3m2!1ses!2ses!4v1679824989178!5m2!1ses!2ses",
+        "category": [
+            "paseo",
+            "cultura",
+            "teatro",
+            "destacado"
+        ],
+        "user_reviews": [
+            {
+                "username": "Marta Garcia",
+                "opinion": "Un espectáculo muy bonito y muy bien organizado."
+            },
+            {
+                "username": "Juan Perez",
+                "opinion": "El flamenco es una de las cosas que más me gusta de Sevilla."
+            },
+            {
+                "username": "Ana Lopez",
+                "opinion": "Espectucular, no me lo esperaba."
+            }
+        ]
+    },
+    {
+        "id": "29",
+        "name": "Parque Nacional del Teide",
+        "description": "Este parque presenta, no solamente uno de los más impresionantes espectáculos geológicos del mundo, con su conjunto de coladas y conos volcánicos de caprichosas formas y armoniosos colores, sino que también atesora una extraordinaria biodiversidad formada por exclusivas especies de invertebrados y un amplio número de endemismos vegetales.",
+        "image": "https://images.squarespace-cdn.com/content/v1/5a86b05bcf81e0af04936cc7/1532097926690-M6NN972UUG734N6LGNJC/TEIDE3.jpg?format=1500w",
+        "location": "Pico del Teide, 38300, Santa Cruz de Tenerife, Islas Canarias, España",
+        "city": "Tenerife",
+        "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28110.860160594024!2d-16.66001761216535!3d28.27233683390549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc6a841219a46745%3A0x8da5b0b3d4897f14!2sPico%20del%20Teide!5e0!3m2!1ses!2ses!4v1679825462175!5m2!1ses!2ses",
+        "category": [
+            "naturaleza",
+            "aire libre",
+            "destacado"
+        ],
+        "user_reviews": [
+            {
+                "username": "Marta Garcia",
+                "opinion": "Una preciosidad."
+            },
+            {
+                "username": "Juan Perez",
+                "opinion": "Hermoso lugar para pasar el día."
+            }
+        ]
+    },
+    {
+        "id": "30",
+        "name": "Loro Parque",
+        "description": "Zoo ajardinado con gorilas, tigres y pingüinos, iceberg artificial y espectáculos de delfines.",
+        "image": "https://www.atlanticoexcursiones.com/zeus/pictures/GRP3/B.jpg",
+        "location": "Loro Parque, 38400 Puerto de la Cruz, Santa Cruz de Tenerife, Islas Canarias, España",
+        "city": "Tenerife",
+        "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3509.362390742999!2d-16.56690558508207!3d28.408320082506783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc6a7fc6f1bca7a1%3A0x2d783f66b7a8b668!2sLoro%20Parque!5e0!3m2!1ses!2ses!4v1679825876994!5m2!1ses!2ses",
+        "category": [
+            "naturaleza",
+            "aire libre",
+            "destacado"
+        ],
+        "user_reviews": [
+            {
+                "username": "Miriam Suarez",
+                "opinion": "Este lugar es un precioso paraíso para los animales. Todo está muy cuidado y limpio. Los animales están muy bien alimentados, de hecho tienes varias zonas para ver a los loros comer de cerca felizmente"
+            },
+            {
+                "username": "Daniel PErez",
+                "opinion": "Bonito lugar, bien cuidado, y perfecto para pasar un día con los peques. Los espectáculos están muy bien organizados y nos hemos divertido mucho."
+            }
+        ]
+    },
+    {
+        "id": "31",
+        "name": "Playa de las Vistas",
+        "description": "La playa de Las Vistas es una playa artificial localizada en el sur de Tenerife. Es una de las playas que conforman la zona turística de Los Cristianos, en el término municipal de Arona.",
+        "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/fb/6a/d0/img-20190617-153600-largejpg.jpg?w=1200&h=-1&s=1",
+        "location": "Playa de las Vistas, 38650, Santa Cruz de Tenerife, Islas Canarias, España",
+        "city": "Tenerife",
+        "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3521.128741502386!2d-16.726790785090515!3d28.051093432650795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc6a978051f57119%3A0x63827795aed58c1!2sPlaya%20de%20las%20Vistas!5e0!3m2!1ses!2ses!4v1679826149719!5m2!1ses!2ses",
+        "category": [
+            "naturaleza",
+            "playa",
+            "aire libre",
+            "destacado"
+        ],
+        "user_reviews": [
+            {
+                "username": "Javier Ortega",
+                "opinion": "Una playa bonita bastante concurrida, hay baños y para aparcar es muy complicado."
+            },
+            {
+                "username": "Sara Hernandez",
+                "opinion": "Esta playa es una de las más bonitas de Tenerife sur, es amplia de arena fina. "
+            }
+        ]
+    }
+]

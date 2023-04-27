@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { SwiperModule } from 'swiper/angular';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import { FirestoreModule } from '@angular/fire/firestore';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { environment } from '../environments/environment';
 import { HttpClientModule } from '@angular/common/http';
@@ -49,6 +50,7 @@ import { HotToastModule } from '@ngneat/hot-toast';
     MatFormFieldModule,
     FormsModule,
     AppRoutingModule,
+    FirestoreModule,
     HttpClientModule,
     SwiperModule,
     AngularFirestoreModule,

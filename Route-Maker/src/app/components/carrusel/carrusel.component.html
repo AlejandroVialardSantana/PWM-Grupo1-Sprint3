@@ -1,22 +1,39 @@
 <section class="destinies_caroussel">
   <div class="carousel_container" id="carousel_container">
     <h3 class="carousel_title" id="carousel_title">{{title}}</h3>
-    <div class="swiper-container" *ngIf="destinies.length > 0" [id]="id">
-      <button class="slick_arrow slick_prev" id="button_prev"><i class="bi bi-chevron-left"></i></button>
-      <div class="swiper-wrapper" *ngFor="let destiny of destinies">
-        <div class="swiper-slide" id="slick">
-          <img src="{{destiny.image}}" alt="{{destiny.name}}" id="image">
-          <div class="destinies_caroussel_item_info">
-            <h3 id="name">{{destiny.name}}</h3>
-            <div id="stars" class="stars-container">
-              <span class="star" *ngFor="let star of Array(destiny.stars)">
-                <i class="bi bi-star filled"></i>
-              </span>
+    <ng-container *ngIf="showActivities; else destinationsLoop">
+      <div class="swiper-container" *ngIf="activities.length > 0" [id]="id">
+        <button class="slick_arrow slick_prev" id="button_prev"><i class="bi bi-chevron-left"></i></button>
+        <div class="swiper-wrapper" *ngIf="activities.length > 0">
+          <div class="swiper-slide" id="slick" *ngFor="let activity of activities">
+            <img src="{{activity.image}}" alt="{{activity.name}}" id="image">
+            <div class="destinies_caroussel_item_info">
+              <h3 id="name">{{activity.name}}</h3>
+              <i class="bi bi-geo-alt">{{activity.city}}</i>
             </div>
           </div>
         </div>
+        <button class="slick_arrow slick_next" id="button_next"><i class="bi bi-chevron-right"></i></button>
       </div>
-      <button class="slick_arrow slick_next" id="button_next"><i class="bi bi-chevron-right"></i></button>
-    </div>
+    </ng-container>
+    <ng-template #destinationsLoop>
+      <div class="swiper-container" *ngIf="destinies.length > 0" [id]="id">
+        <button class="slick_arrow slick_prev" id="button_prev"><i class="bi bi-chevron-left"></i></button>
+        <div class="swiper-wrapper" *ngIf="destinies.length > 0">
+          <div class="swiper-slide" id="slick" *ngFor="let destiny of destinies">
+            <img src="{{destiny.image}}" alt="{{destiny.name}}" id="image">
+            <div class="destinies_caroussel_item_info">
+              <h3 id="name">{{destiny.name}}</h3>
+              <div id="stars" class="stars-container">
+                <span class="star" *ngFor="let star of Array(destiny.stars)">
+                  <i class="bi bi-star filled"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="slick_arrow slick_next" id="button_next"><i class="bi bi-chevron-right"></i></button>
+      </div>
+    </ng-template>
   </div>
 </section>

@@ -7,8 +7,8 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
   carruselTitles = [
-    {title: "Destinos destacados"},
-    {title: "Destinos más populares"},
-    {title: "Destinos más baratos"}
+    {title: "Actividades destacadas"},
+    {title: "Actividades al aire libre"},
+    {title: "Destinos de playa"},
   ];
 }
