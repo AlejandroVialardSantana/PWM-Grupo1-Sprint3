@@ -7,6 +7,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { AccountManagmentComponent } from './pages/account-managment/account-managment.component';
 import { ActivityDescriptionComponent } from './pages/activity-description/activity-description.component';
+import { ActivitiesComponent } from './pages/activities/activities.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -15,7 +16,9 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'activityDescription', component: ActivityDescriptionComponent },
-  { path: 'AccountManagement', component: AccountManagmentComponent }];
+  { path: 'AccountManagement', component: AccountManagmentComponent },
+  { path: 'activities', component: ActivitiesComponent}
+  ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-searchbar',
@@ -7,4 +7,41 @@ import { Component } from '@angular/core';
 })
 export class SearchbarComponent {
 
+  @Input() barTitle:string = "¿Cuál es tu destino?";
+  @Input() barPlaceHolder:string = "Escribe tu destino...";
+
+  @Output() onSearch: EventEmitter<string> = new EventEmitter();
+
+  actualSearchText:string = "";
+
+  constructor() { }
+
+  onSubmit():void {
+    this.onSearch.emit(this.actualSearchText);
+    
+    console.log("Envian valor del cuadro de búsqueda: " + this.actualSearchText);
+
+    this.actualSearchText = "";
+  }
+
 }
+
+
+/* 
+Si lo queremos hacer con elementos nativos de HTML
+  
+import { Component, ViewChild, ElementRef } from '@angular/core';
+
+export class MyComponent {
+  @ViewChild('myInput') myInput: ElementRef;
+
+  onSubmit(value: string) {
+    // Hacer algo con el valor obtenido
+    console.log(value);
+
+    // Resetear el valor del input
+    this.myInput.nativeElement.value = '';
+    this.myInput.nativeElement.focus();
+  }
+}
+*/
