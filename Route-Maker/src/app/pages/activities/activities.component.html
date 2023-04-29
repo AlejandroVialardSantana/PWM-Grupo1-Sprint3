@@ -1,5 +1,9 @@
-<app-header></app-header>
-<app-searchbar [barTitle]="'¿QUE TE GUSTARÍA HACER?'" [barPlaceHolder]="'Escribe una actividad...'" (onSearch)="handleSearch($event)" ></app-searchbar>
-<app-filter></app-filter>
+<div id="component">
+    <app-header></app-header>
+    <app-searchbar [barTitle]="'¿QUE TE GUSTARÍA HACER?'" [barPlaceHolder]="'Escribe una actividad...'" (onSearch)="handleSearch($event)" ></app-searchbar>
 
-<p>activities works!</p>
+    <div class="container">
+        <app-filter></app-filter>
+        <p>aquí nope</p>
+    </div>
+</div>
