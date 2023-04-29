@@ -1,14 +1,18 @@
 .filter {
-    width: 200px;
+    width: 12.5rem;
     padding: 20px;
-    height: 100vh;
-    position: fixed;
+    height: 40rem;
+    position: absolute;
     left: 0;
     overflow: auto;
     border: 1px solid #000;
     border-radius: 10px;
   }
 
+  hr.dashed {
+    border-top: 3px dashed #bbb !important;
+  }
+  
 /* Estilo para el thumb del slider */
 input[type=range]::-webkit-slider-thumb {
     background: #87A49B !important;

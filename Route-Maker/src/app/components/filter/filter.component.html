@@ -1,10 +1,9 @@
 <div class="filter bg-light p-3">
     <h4>Filtrar por:</h4>
-  
-    <h5>Duración de la actividad:</h5>
+    <h5>Duración de la actividad: <strong>{{ duration }}h</strong></h5>
     <input type="range" class="form-range" min="1" max="8" [(ngModel)]="duration" name="duration">
-  
-    <h5>Tipo de actividad:</h5>
+    <hr class="dashed">
+    <h5>Tipo de actividad: </h5>
     <div *ngFor="let type of activityTypes">
       <div class="form-check">
         <input class="form-check-input" type="checkbox" [(ngModel)]="type.checked" id="{{type.value}}-tipoactividad"> <!-- añadimos tipoactividad porque puede haber problemas de vinculación si se repite id -->
@@ -13,10 +12,10 @@
         </label>
       </div>
     </div>
-  
-    <h5>Coste máximo:</h5>
+    <hr class="dashed">
+    <h5>Coste máximo: <strong>{{ maxCost }}€</strong></h5>
     <input type="range" class="form-range" min="10" max="300" [(ngModel)]="maxCost" name="maxCost">
-  
+    <hr class="dashed">
     <h5>Necesidades específicas:</h5>
     <div *ngFor="let need of specificNeeds">
       <div class="form-check">
