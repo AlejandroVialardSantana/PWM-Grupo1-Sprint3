@@ -1,4 +1,4 @@
 <app-header></app-header>
-<app-searchbar [barTitle]="'¿QUE TE GUSTARÍA HACER?'" [barPlaceHolder]="'Escribe una actividad...'"></app-searchbar>
+<app-searchbar [barTitle]="'¿QUE TE GUSTARÍA HACER?'" [barPlaceHolder]="'Escribe una actividad...'" (onSearch)="handleSearch($event)" ></app-searchbar>
 
 <p>activities works!</p>
