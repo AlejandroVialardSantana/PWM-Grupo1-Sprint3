@@ -13,7 +13,7 @@ import { Subscription } from 'rxjs';
 export class CarruselComponent implements OnInit, OnDestroy {
   @Input() title: string = '';
   @Input() id: string = '';
-  @Input() region: string = ''; 
+  @Input() region: string = '';
   @Input() category: string = '';
   @Input() filterByRegion: boolean = false;
   @Input() filterByCategory: boolean = false;
@@ -28,14 +28,19 @@ export class CarruselComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     if (this.showActivities) {
       this.subscription = this.firestoreService.getActivities().subscribe(actividades => {
-        if (this.filterByRegion) {
-          this.activities = actividades.filter(actividad => actividad.category && actividad.category.includes(this.category));
+        let filteredActivities = actividades.filter(actividad => actividad.category && actividad.category.includes(this.category));
+
+        if (filteredActivities.length > 6) {
+          // Si hay más de 6 actividades que cumplen con el filtro de categoría, elegimos 6 al azar
+          const shuffledActivities = filteredActivities.sort(() => 0.5 - Math.random());
+          this.activities = shuffledActivities.slice(0, 6);
         } else {
-          this.activities = actividades;
+          // Si hay 6 o menos actividades que cumplen con el filtro de categoría, simplemente las usamos todas
+          this.activities = filteredActivities;
         }
         setTimeout(() => {
           this.createSwiper(`#${this.id}`);
-        }, 0);  
+        }, 0);
       });
     }
     else {
@@ -45,11 +50,11 @@ export class CarruselComponent implements OnInit, OnDestroy {
         } else {
           this.destinies = destinos; // muestra todos los destinos
         }
-  
+
         // Esperar a que se renderice el HTML antes de inicializar el carrusel
         setTimeout(() => {
           this.createSwiper(`#${this.id}`);
-        }, 0);      
+        }, 0);
       });
     }
   }
