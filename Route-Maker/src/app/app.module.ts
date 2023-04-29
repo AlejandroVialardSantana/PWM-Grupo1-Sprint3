@@ -31,6 +31,11 @@ import { provideAuth,getAuth } from '@angular/fire/auth';
 import { HotToastModule } from '@ngneat/hot-toast';
 import { ActivityInfoComponent } from './components/activity-info/activity-info.component';
 import { ActivitiesComponent } from './pages/activities/activities.component';
+import { FilterComponent } from './components/filter/filter.component';
+
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatSliderModule } from '@angular/material/slider';
+
 
 @NgModule({
   declarations: [
@@ -48,7 +53,8 @@ import { ActivitiesComponent } from './pages/activities/activities.component';
     AccountManagmentComponent,
     ActivityDescriptionComponent,
     ActivityInfoComponent,
-    ActivitiesComponent
+    ActivitiesComponent,
+    FilterComponent
   ],
   imports: [
     BrowserModule,
@@ -65,7 +71,9 @@ import { ActivitiesComponent } from './pages/activities/activities.component';
     AngularFireDatabaseModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth()),
-    HotToastModule.forRoot()
+    HotToastModule.forRoot(),
+    MatCheckboxModule,
+    MatSliderModule,
   ],
   bootstrap: [AppComponent]
 })
