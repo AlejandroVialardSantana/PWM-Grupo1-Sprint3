@@ -7,5 +7,5 @@ export interface Actividad {
     city: string,
     location_map: string,
     category: string[],
-    user_reviews: string[],
+    user_reviews: any[],
 }

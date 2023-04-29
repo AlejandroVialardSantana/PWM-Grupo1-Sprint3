@@ -89,7 +89,7 @@
     font-size: 1.2rem;
 }
 
-.activity_description .activity_details .reviews {
+.activity_description .activity_details .activity_reviews .reviews {
     height: 20rem;
     width: 100%;
     overflow-y: scroll;
@@ -110,18 +110,18 @@
 }
 
 .activity_description .activity_details .review:first-child {
-    margin-top: 0;
+    margin-top: 0 !important;
 }
 
 .activity_description .activity_details .review:last-child {
-    margin-bottom: 0;
+    margin-bottom: 0 !important;
 }
 
 .activity_description .activity_details .reviews .review .reviewer {
     margin-top: auto;
     font-size: 1.25rem;
     font-weight: 700;
-    margin-bottom: 0;
+    margin-bottom: 0.5rem;
 }
 
 .activity_description .activity_details .reviews .review .review_text {
