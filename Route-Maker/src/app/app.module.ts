@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { SwiperModule } from 'swiper/angular';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
-import { FirestoreModule } from '@angular/fire/firestore';
+import { FirestoreModule, provideFirestore } from '@angular/fire/firestore';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { environment } from '../environments/environment';
 import { HttpClientModule } from '@angular/common/http';
@@ -22,12 +22,13 @@ import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { AccountManagmentComponent } from './pages/account-managment/account-managment.component';
 
+import { HotToastModule, HotToastService } from '@ngneat/hot-toast';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { provideAuth,getAuth } from '@angular/fire/auth';
-import { HotToastModule } from '@ngneat/hot-toast';
+import { getFirestore } from 'firebase/firestore';
 
 @NgModule({
   declarations: [
@@ -59,7 +60,8 @@ import { HotToastModule } from '@ngneat/hot-toast';
     AngularFireDatabaseModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth()),
-    HotToastModule.forRoot()
+    provideFirestore(() => getFirestore()),
+    HotToastModule.forRoot(),
   ],
   bootstrap: [AppComponent]
 })

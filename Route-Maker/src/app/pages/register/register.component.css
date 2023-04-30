@@ -1,14 +1,19 @@
-.container {
+.register-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 6rem auto;
+    max-width: 26rem;
 }
-
+#error-message{
+    font-size: small;
+    position: inherit;
+}
 .field{
     padding: 1rem ;
     width: 100%;
+    max-width: 23rem;
 }
 
 label{
@@ -16,9 +21,6 @@ label{
     font-weight: 700;
 }
 
-.aviso{
-    font-size: smaller;
-}
 .text{
     border: 0.1rem black solid;
     border-radius: 0.6rem;
