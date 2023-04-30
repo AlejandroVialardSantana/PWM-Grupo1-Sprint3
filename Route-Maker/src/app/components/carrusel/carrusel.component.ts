@@ -4,6 +4,7 @@ import Swiper from 'swiper';
 import { Destino } from '../../models/interfaces/destinos';
 import { Actividad } from '../../models/interfaces/actividades';
 import { Subscription } from 'rxjs';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-carrusel',
@@ -23,7 +24,7 @@ export class CarruselComponent implements OnInit, OnDestroy {
   Array = Array;
   private subscription: Subscription = new Subscription();
 
-  constructor(private firestoreService: FirestoreService) { }
+  constructor(private firestoreService: FirestoreService, private router: Router) { }
 
   ngOnInit(): void {
     if (this.showActivities) {
@@ -61,6 +62,10 @@ export class CarruselComponent implements OnInit, OnDestroy {
 
   ngOnDestroy(): void {
     this.subscription.unsubscribe();
+  }
+
+  navigateToActivity(activity: Actividad): void {
+    this.router.navigate(['/activityDescription'], { queryParams: { location: activity.city, name: activity.name } });
   }
 
   createSwiper(selector: string): void {

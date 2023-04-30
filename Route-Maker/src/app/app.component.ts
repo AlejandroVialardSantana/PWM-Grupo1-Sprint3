@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, NgZone } from '@angular/core';
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y, SwiperOptions, Swiper } from 'swiper';
 import { HttpClient } from '@angular/common/http';
 import { AngularFirestore } from '@angular/fire/compat/firestore';
+import { Router, Event, NavigationEnd } from '@angular/router';
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
@@ -10,14 +11,27 @@ SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
   destinos: any;
-
-  constructor(private http: HttpClient, private firestore: AngularFirestore) { }
+  loading = false;
+  constructor(private ngZone: NgZone, private router: Router, private http: HttpClient, private firestore: AngularFirestore) { }
 
   ngOnInit() {
     // this.exportJsonToFirestore('destinos');
     // this.exportJsonToFirestore('actividades');
+    this.router.events.subscribe((event: Event) => {
+      if (event instanceof NavigationEnd) {
+      } else {
+        this.loading = true; // Mostrar el loader
+        setTimeout(() => {
+          // Cargar datos aquí
+          this.ngZone.run(() => {
+            this.loading = false; // Ocultar el loader
+          });
+        }, 1000); // Retrasar la carga de los datos por 2 segundos (por ejemplo)
+        
+      }
+    });
   }
 
   exportJsonToFirestore(name: string) {

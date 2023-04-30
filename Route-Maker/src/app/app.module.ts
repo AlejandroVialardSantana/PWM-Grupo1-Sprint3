@@ -30,6 +30,7 @@ import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { provideAuth,getAuth } from '@angular/fire/auth';
 import { HotToastModule } from '@ngneat/hot-toast';
 import { ActivityInfoComponent } from './components/activity-info/activity-info.component';
+
 import { ActivitiesComponent } from './pages/activities/activities.component';
 import { FilterComponent } from './components/filter/filter.component';
 
@@ -38,6 +39,9 @@ import { MatSliderModule } from '@angular/material/slider';
 import { ActivityComponent } from './components/activity/activity.component';
 
 import { MatPaginatorModule } from '@angular/material/paginator';
+
+import { LoaderComponent } from './components/loader/loader.component';
+
 
 @NgModule({
   declarations: [
@@ -57,7 +61,8 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     ActivityInfoComponent,
     ActivitiesComponent,
     FilterComponent,
-    ActivityComponent
+    ActivityComponent,
+    LoaderComponent
   ],
   imports: [
     BrowserModule,
