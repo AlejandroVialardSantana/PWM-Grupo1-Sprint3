@@ -35,7 +35,9 @@ import { FilterComponent } from './components/filter/filter.component';
 
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatSliderModule } from '@angular/material/slider';
+import { ActivityComponent } from './components/activity/activity.component';
 
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 @NgModule({
   declarations: [
@@ -54,7 +56,8 @@ import { MatSliderModule } from '@angular/material/slider';
     ActivityDescriptionComponent,
     ActivityInfoComponent,
     ActivitiesComponent,
-    FilterComponent
+    FilterComponent,
+    ActivityComponent
   ],
   imports: [
     BrowserModule,
@@ -74,6 +77,7 @@ import { MatSliderModule } from '@angular/material/slider';
     HotToastModule.forRoot(),
     MatCheckboxModule,
     MatSliderModule,
+    MatPaginatorModule,
   ],
   bootstrap: [AppComponent]
 })

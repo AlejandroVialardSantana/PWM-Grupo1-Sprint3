@@ -1,8 +1,9 @@
 .container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: top;
     margin-top: 1rem;
+    gap: 2rem;
   }
 
   #component{
