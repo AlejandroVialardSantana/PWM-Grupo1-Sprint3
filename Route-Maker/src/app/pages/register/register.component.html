@@ -4,38 +4,70 @@
 
 <body>
     <app-header></app-header>
-    <div class="container">
+    <div class="register-container">
         <h2>Crear cuenta</h2>
-        <form id="registration-form">
+        <form id="registration-form" [formGroup]="signUpForm" (ngSubmit)="submit()">
             <div class="first_row" id="first_row">
+
                 <div class="field" id="name">
                     <label for="user_name">Nombre<br></label>
-                    <input required id="user_name" class="text" type="text" name="nombre" placeholder="Introduzca un nombre">
+                    <input id="user_name" class="text" type="text" name="nombre" placeholder="Introduzca un nombre" formControlName="name">
+                    <mat-error id="error-message" *ngIf="name?.errors?.['required'] && name?.['touched']">
+                        <i class="bi bi-exclamation-circle-fill"></i>
+                        Introduzca su nombre
+                    </mat-error>
                 </div>
+
                 <div class="field" id="surname">
                     <label for="user_surname">Apellido<br></label>
                     <input id="user_surname" class="text" type="text" name="apellido"
-                        placeholder="Introduzca un apellido">
+                        placeholder="Introduzca un apellido" formControlName="surname">
                 </div>
             </div>
+
             <div class="field" id="email">
                 <label for="user_email">E-mail<br></label>
-                <input required id="user_email" class="text" type="email" name="email" placeholder="Introduzca su email">
+                <input id="user_email" class="text" type="email" name="email" placeholder="Introduzca su email" formControlName="email">
+                <mat-error id="error-message" *ngIf="email?.errors?.['required'] && email?.['touched']">
+                    <i class="bi bi-exclamation-circle-fill"></i>
+                    Introduzca un correo
+                </mat-error>
+                <mat-error id="error-message" *ngIf="email?.errors?.['email'] && email?.['touched']">
+                    <i class="bi bi-exclamation-circle-fill"></i>
+                    Introduzca un correo válido
+                </mat-error>
             </div>
+
             <div class="field" id="password">
                 <label for="user_password">Contraseña<br></label>
-                <input required class="text" id="user_password" type="password" name="contraseña"
-                    placeholder="Introduzca una contraseña" minlength="8">
-                <p class="aviso">La contraseña debe contener como minimo 8 caracteres</p>
+                <input class="text" id="user_password" type="password" name="contraseña"
+                    placeholder="Introduzca una contraseña" formControlName="password">
+                <mat-error id="error-message" *ngIf="password?.errors?.['required'] && password?.['touched']">
+                    <i class="bi bi-exclamation-circle-fill"></i>
+                    Introduzca una contraseña
+                </mat-error>
+                <mat-error id="error-message" *ngIf="password?.errors?.['minlength'] && password?.['touched']">
+                    <i class="bi bi-exclamation-circle-fill"></i>
+                    Debe tener 8 caracteres como minimo
+                </mat-error> 
             </div>
+
             <div class="field" id="repeat_password">
                 <label for="user_password2">Repetir contraseña<br></label>
-                <input required id="user_password2" class="text" type="password" placeholder="Repita su contraseña"
-                    oninput="checkPasswords()">
-                <p id="password-error" class="error" style="display:none;">Las contraseñas no coinciden.</p>
+                <input id="user_password2" class="text" type="password" placeholder="Repita su contraseña" formControlName="confirmPassword">
+                <mat-error id="error-message" *ngIf="confirmPassword?.errors?.['required'] && confirmPassword?.['touched']">
+                    <i class="bi bi-exclamation-circle-fill"></i>
+                    Introduzca una contraseña
+                </mat-error> 
             </div>
+            <mat-error *ngIf="signUpForm.errors?.['passwordsDontMatch']"> 
+                <i class="bi bi-exclamation-circle-fill"></i>
+                Las contraseñas no coinciden
+            </mat-error>
+
             <div class="field" id="register">
-                <button id="button_submit" class="register" type="submit">Registrarse</button>
+                <input mat-raised-button class="button register" type="submit" value="Registrarse" id="button_submit">
+                <!--<button id="button_submit" class="register" type="submit">Registrarse</button>-->
             </div>
         </form>
     </div>
