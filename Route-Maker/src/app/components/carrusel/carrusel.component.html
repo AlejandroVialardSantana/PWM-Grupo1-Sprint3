@@ -5,15 +5,13 @@
       <div class="swiper-container" *ngIf="activities.length > 0" [id]="id">
         <button class="slick_arrow slick_prev" id="button_prev"><i class="bi bi-chevron-left"></i></button>
         <div class="swiper-wrapper" *ngFor="let activity of activities">
-          <a [routerLink]="['/activityDescription']" [queryParams]="{ location: activity.city, name: activity.name }">
-            <div class="swiper-slide" id="slick">
+            <div class="swiper-slide" id="slick" (click)="navigateToActivity(activity)">
               <img src="{{activity.image}}" alt="{{activity.name}}" id="image">
               <div class="destinies_caroussel_item_info">
                 <h3 id="name">{{activity.name}}</h3>
                 <i class="bi bi-geo-alt">{{activity.city}}</i>
               </div>
             </div>
-          </a>
         </div>
         <button class="slick_arrow slick_next" id="button_next"><i class="bi bi-chevron-right"></i></button>
       </div>
@@ -28,7 +26,7 @@
               <h3 id="name">{{destiny.name}}</h3>
               <div id="stars" class="stars-container">
                 <span class="star" *ngFor="let star of Array(destiny.stars)">
-                  <i class="bi bi-star filled"></i>
+                  <i class="bi bi-star-fill filled"></i>
                 </span>
               </div>
             </div>

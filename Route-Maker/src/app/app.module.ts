@@ -30,6 +30,7 @@ import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { provideAuth,getAuth } from '@angular/fire/auth';
 import { HotToastModule } from '@ngneat/hot-toast';
 import { ActivityInfoComponent } from './components/activity-info/activity-info.component';
+import { LoaderComponent } from './components/loader/loader.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { ActivityInfoComponent } from './components/activity-info/activity-info.
     RegisterComponent,
     AccountManagmentComponent,
     ActivityDescriptionComponent,
-    ActivityInfoComponent
+    ActivityInfoComponent,
+    LoaderComponent
   ],
   imports: [
     BrowserModule,
