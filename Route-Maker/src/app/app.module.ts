@@ -21,6 +21,7 @@ import { DestiniesComponent } from './pages/destinies/destinies.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { AccountManagmentComponent } from './pages/account-managment/account-managment.component';
+import { ActivityDescriptionComponent } from './pages/activity-description/activity-description.component';
 
 import { HotToastModule, HotToastService } from '@ngneat/hot-toast';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -29,6 +30,8 @@ import { FormsModule } from '@angular/forms';
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { provideAuth,getAuth } from '@angular/fire/auth';
 import { getFirestore } from 'firebase/firestore';
+import { ActivityInfoComponent } from './components/activity-info/activity-info.component';
+import { LoaderComponent } from './components/loader/loader.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +46,10 @@ import { getFirestore } from 'firebase/firestore';
     DestiniesComponent,
     LoginComponent,
     RegisterComponent,
-    AccountManagmentComponent
+    AccountManagmentComponent,
+    ActivityDescriptionComponent,
+    ActivityInfoComponent,
+    LoaderComponent
   ],
   imports: [
     BrowserModule,

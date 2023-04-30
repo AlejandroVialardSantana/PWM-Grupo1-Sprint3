@@ -6,6 +6,7 @@ import { DestiniesComponent } from './pages/destinies/destinies.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { AccountManagmentComponent } from './pages/account-managment/account-managment.component';
+import { ActivityDescriptionComponent } from './pages/activity-description/activity-description.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'destinies', component: DestiniesComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
+  { path: 'activityDescription', component: ActivityDescriptionComponent },
   { path: 'AccountManagement', component: AccountManagmentComponent }];
 
 @NgModule({
