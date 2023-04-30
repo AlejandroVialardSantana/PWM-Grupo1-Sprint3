@@ -3,9 +3,12 @@
     justify-content: center;
     align-items: top;
     margin-top: 1rem;
-    gap: 2rem;
+    gap: 2.5rem;
   }
 
   #component{
     height: 80rem;
   }
+
+  /*filter: blur(1px); si quieres poner un desenfoque*/
+ 
