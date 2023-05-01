@@ -10,18 +10,14 @@ export class SearchbarComponent {
   @Input() barTitle:string = "¿Cuál es tu destino?";
   @Input() barPlaceHolder:string = "Escribe tu destino...";
 
-  @Output() onSearch: EventEmitter<string> = new EventEmitter();
+  @Output() onSearch: EventEmitter<any> = new EventEmitter();
 
   actualSearchText:string = "";
 
   constructor() { }
 
   onSubmit():void {
-    this.onSearch.emit(this.actualSearchText);
-    
-    console.log("Envian valor del cuadro de búsqueda: " + this.actualSearchText);
-
-    this.actualSearchText = "";
+    this.onSearch.emit( { type: 'search', value: this.actualSearchText } );
   }
 
 }

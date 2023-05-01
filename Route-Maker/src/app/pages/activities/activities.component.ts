@@ -17,6 +17,7 @@ export class ActivitiesComponent implements OnInit{
   checkBoxFilters:string[] = [];
   durationFilter:number = 8;
   maxCostFilter:number = 50;
+  searchBarText:string = '';
 
   constructor(private firestoreService: FirestoreService) { }
 
@@ -26,10 +27,6 @@ export class ActivitiesComponent implements OnInit{
       this.filteredActivities = activitiesData;
     });
     
-  }
-
-  handleSearch(searchText: string): void {
-    alert(searchText);
   }
 
   //Para poder comparar las categorías sin problema, por ej "Cultura" y "cultura" son iguales
@@ -45,8 +42,13 @@ export class ActivitiesComponent implements OnInit{
     // Restablecemos filteredActivities a allActivities antes de aplicar los filtros
     this.filteredActivities = [...this.allActivities];
   
+    //Si el evento es un cambio en el texto de búsqueda
+    if(event.type == 'search'){
+      // Actualizamos el valor del filtro de texto de búsqueda
+      this.searchBarText = event.value;
+    }
     // Si el evento que recibimos es de un checkbox
-    if(event.type == 'activityType' || event.type == 'specificNeed'){
+    else if(event.type == 'activityType' || event.type == 'specificNeed'){
       // Si el checkbox está activo
       if(event.isActive){
         // Añadimos el filtro a la lista de filtros
@@ -74,6 +76,11 @@ export class ActivitiesComponent implements OnInit{
     
     // Ahora aplicamos todos los filtros
     this.filteredActivities = this.filteredActivities.filter((activity: Actividad) => {
+
+      if (!this.normalizeString(activity.name).includes(this.normalizeString(this.searchBarText))) {
+        return false;
+      }
+
       // Si el coste de la actividad es mayor que el coste máximo del filtro, la actividad no pasa el filtro
       if (activity.price > this.maxCostFilter) {
         return false;
