@@ -8,4 +8,9 @@ export interface Actividad {
     location_map: string,
     category: string[],
     user_reviews: any[],
+    duration: number;
+    price: number;
+    specificNeeds: string[];
+    stars: number;
+    stars_array: boolean[];
 }

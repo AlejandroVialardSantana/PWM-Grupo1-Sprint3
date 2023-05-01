@@ -31,7 +31,18 @@ import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { provideAuth,getAuth } from '@angular/fire/auth';
 import { getFirestore } from 'firebase/firestore';
 import { ActivityInfoComponent } from './components/activity-info/activity-info.component';
+
+import { ActivitiesComponent } from './pages/activities/activities.component';
+import { FilterComponent } from './components/filter/filter.component';
+
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatSliderModule } from '@angular/material/slider';
+import { ActivityComponent } from './components/activity/activity.component';
+
+import { MatPaginatorModule } from '@angular/material/paginator';
+
 import { LoaderComponent } from './components/loader/loader.component';
+
 
 @NgModule({
   declarations: [
@@ -49,6 +60,9 @@ import { LoaderComponent } from './components/loader/loader.component';
     AccountManagmentComponent,
     ActivityDescriptionComponent,
     ActivityInfoComponent,
+    ActivitiesComponent,
+    FilterComponent,
+    ActivityComponent,
     LoaderComponent
   ],
   imports: [
@@ -66,8 +80,11 @@ import { LoaderComponent } from './components/loader/loader.component';
     AngularFireDatabaseModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth()),
-    provideFirestore(() => getFirestore()),
     HotToastModule.forRoot(),
+    MatCheckboxModule,
+    MatSliderModule,
+    MatPaginatorModule,
+    provideFirestore(() => getFirestore()),
   ],
   bootstrap: [AppComponent]
 })
