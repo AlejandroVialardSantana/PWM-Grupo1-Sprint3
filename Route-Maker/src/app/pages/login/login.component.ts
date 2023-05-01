@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { HotToastService } from '@ngneat/hot-toast';
-import { HotToastModule } from '@ngneat/hot-toast';
 import { AuthenticationService } from 'src/app/services/authentication.service';
 
 @Component({
@@ -41,13 +40,16 @@ export class LoginComponent implements OnInit {
     this.authService
       .login(email, password)
       //Esto es para que muestre un mensaje en pantalla pero esta saliendo mal. 
-      /*.pipe(
+      .pipe(
         this.toast.observe({
           success: 'Inicio de sesión correcto',
           loading: 'Iniciando sesión...',
-          error: "Se produjo un error",
+          error: ({ message }) => {
+            const errorType = message.replace(/^Error:\s*/, '');
+            return `Error: ${errorType}`;
+          },
         })
-      )*/
+      )
       .subscribe(() => {
         this.router.navigate(['']);
       });
