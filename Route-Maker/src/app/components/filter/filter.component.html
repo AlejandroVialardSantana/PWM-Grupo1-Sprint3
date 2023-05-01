@@ -1,6 +1,6 @@
 <div class="filter bg-light p-3">
   <h4>Filtrar por:</h4>
-  <h5>Duración de la actividad: <strong>{{ duration }}h</strong></h5>
+  <h5>Duración máxima: <strong>{{ duration }}h</strong></h5>
   <input type="range" class="form-range" min="1" max="8" [(ngModel)]="duration" name="duration" (change)="onDurationChange()">  <hr class="dashed">
   <h5>Tipo de actividad: </h5>
   <div *ngFor="let type of activityTypes">

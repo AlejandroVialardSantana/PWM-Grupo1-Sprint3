@@ -9,16 +9,16 @@ import { Component, Output, EventEmitter } from '@angular/core';
 export class FilterComponent {
   @Output() filterChange = new EventEmitter<any>();
 
-  duration = 1;
+  duration = 8;
   maxCost = 50;
   activityTypes = [
-    {value: '1', viewValue: 'Al aire libre', checked: false},
-    {value: '2', viewValue: 'Deportiva', checked: false},
-    {value: '3', viewValue: 'Cultural', checked: false},
-    {value: '4', viewValue: 'Espectáculo', checked: false},
-    {value: '5', viewValue: 'Gastronómica', checked: false},
-    {value: '6', viewValue: 'Ocio', checked: false},
-    {value: '7', viewValue: 'Relajante', checked: false}
+    {value: '1', viewValue: 'Aire libre', checked: false},
+    {value: '2', viewValue: 'Arquitectura', checked: false},
+    {value: '3', viewValue: 'Cultura', checked: false},
+    {value: '4', viewValue: 'Naturaleza', checked: false},
+    {value: '5', viewValue: 'Playa', checked: false},
+    {value: '6', viewValue: 'Sendero', checked: false},
+    {value: '7', viewValue: 'Ciencias', checked: false}
   ];
   specificNeeds = [
     {value: '1', viewValue: 'Apto para niños', checked: false},
@@ -35,7 +35,7 @@ export class FilterComponent {
   onMaxCostChange() {
     this.filterChange.emit({ type: 'maxCost', value: this.maxCost });
   }
-  
+
   onActivityTypeChange(type: {value: string, viewValue: string, checked: boolean}) {
     this.filterChange.emit({ type: 'activityType', value: type.viewValue, isActive: type.checked ? 1 : 0 });
   }

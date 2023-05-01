@@ -4,6 +4,6 @@
 
     <div class="container">
         <app-filter (filterChange)="onFilterChange($event)" id="filteredActivities"></app-filter>
-        <app-activity [activities]="allActivities"></app-activity>
+        <app-activity [activities]="filteredActivities"></app-activity>
     </div>
 </div>
