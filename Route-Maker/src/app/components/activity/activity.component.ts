@@ -1,45 +1,47 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, OnChanges, Input, SimpleChanges } from '@angular/core';
 import { PageEvent } from '@angular/material/paginator';
+import { FirestoreService } from '../../services/firestore/firestore.service';
 
-export interface Activity {
-  nombre: string;
-  descripcion: string;
-  imagen_url: string;
-  estrellas: number;
-  precio: string;
-  estrellasArray: boolean[];
-}
+import { Actividad } from 'src/app/models/interfaces/actividades';
 
 @Component({
   selector: 'app-activity',
   templateUrl: './activity.component.html',
   styleUrls: ['./activity.component.css']
 })
-export class ActivityComponent implements OnInit {
+export class ActivityComponent implements OnInit, OnChanges {
   
-  @Input() activities: Activity[] = [];
-  paginatedActivities: Activity[] = [];
+  @Input() activities: Actividad[] = [];
+  paginatedActivities: Actividad[] = [];
 
   // Paginator Inputs
   pageSize = 5;
   pageSizeOptions: number[] = [5];
 
-  constructor() { }
 
   ngOnInit(): void {
-    this.activities.forEach(activity => {
-      activity.estrellasArray = new Array(5).fill(false);
-      for (let i = 0; i < activity.estrellas; i++) {
-        activity.estrellasArray[i] = true;
-      }
-    });
-
+    this.processActivities();
     this.paginateActivities();
   }
 
-  paginateActivities(event?: PageEvent) {
+  ngOnChanges(changes: SimpleChanges): void {
+    if (changes['activities'] && changes['activities'].currentValue !== changes['activities'].previousValue) {
+      this.processActivities();
+      this.paginateActivities();
+    }
+  }
+
+  processActivities(): void {
+    this.activities.forEach(activity => {
+      activity.stars_array = new Array(5).fill(false);
+      for (let i = 0; i < activity.stars; i++) {
+        activity.stars_array[i] = true;
+      }
+    });
+  }
+
+  paginateActivities(event?: PageEvent): void {
     const startIndex = event ? event.pageIndex * event.pageSize : 0;
     this.paginatedActivities = this.activities.slice(startIndex, startIndex + this.pageSize);
-    return event;
   }
 }

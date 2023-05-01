@@ -1,72 +1,33 @@
-import { Component } from '@angular/core';
-import { Activity } from 'src/app/components/activity/activity.component';
+import { Component, OnInit } from '@angular/core';
+import { Actividad } from 'src/app/models/interfaces/actividades';
+import { FirestoreService } from '../../services/firestore/firestore.service';
+
+
 
 @Component({
   selector: 'app-activities',
   templateUrl: './activities.component.html',
   styleUrls: ['./activities.component.css']
 })
-export class ActivitiesComponent {
+export class ActivitiesComponent implements OnInit{
+
+  allActivities: Actividad[] = [];
+  filteredActivities: Actividad[] = [];
+
+  constructor(private firestoreService: FirestoreService) { }
+
+  ngOnInit(): void {
+    this.firestoreService.getActivities().subscribe((activitiesData: Actividad[]) => {
+      this.allActivities = activitiesData;
+      this.filteredActivities = activitiesData;
+    });
+    
+  }
 
   handleSearch(searchText: string): void {
     alert(searchText);
   }
 
-  actividades: Activity[] = [{
-    nombre: "Visita a la Sagrada Familia, Barcelona",
-    descripcion: "Descubre la majestuosidad de la Basílica de la Sagrada Familia en esta visita inolvidable.",
-    imagen_url: "https://media.timeout.com/images/105737732/image.jpg",
-    estrellas: 4,
-    precio: "35€",
-    estrellasArray: [true, true, true, true, false]
-  }, 
-  {
-    nombre: "Visita a la Sagrada Familia, Barcelona",
-    descripcion: "Descubre la majestuosidad de la Basílica de la Sagrada Familia en esta visita inolvidable.",
-    imagen_url: "https://media.timeout.com/images/105737732/image.jpg",
-    estrellas: 4,
-    precio: "35€",
-    estrellasArray: [true, true, true, true, false]
-  }, 
-  {
-    nombre: "Visita a la Sagrada Familia, Barcelona",
-    descripcion: "Descubre la majestuosidad de la Basílica de la Sagrada Familia en esta visita inolvidable.",
-    imagen_url: "https://media.timeout.com/images/105737732/image.jpg",
-    estrellas: 4,
-    precio: "35€",
-    estrellasArray: [true, true, true, true, false]
-  }, 
-  {
-    nombre: "Visita a la Sagrada Familia, Barcelona",
-    descripcion: "Descubre la majestuosidad de la Basílica de la Sagrada Familia en esta visita inolvidable.",
-    imagen_url: "https://media.timeout.com/images/105737732/image.jpg",
-    estrellas: 4,
-    precio: "35€",
-    estrellasArray: [true, true, true, true, false]
-  },
-  {
-    nombre: "Visita a la Sagrada Familia, Barcelona",
-    descripcion: "Descubre la majestuosidad de la Basílica de la Sagrada Familia en esta visita inolvidable.",
-    imagen_url: "https://media.timeout.com/images/105737732/image.jpg",
-    estrellas: 4,
-    precio: "35€",
-    estrellasArray: [true, true, true, true, false]
-  },
-  {
-    nombre: "Visita a la Sagrada Familia, Barcelona XDDD",
-    descripcion: "Descubre la majestuosidad de la Basílica de la Sagrada Familia en esta visita inolvidable.",
-    imagen_url: "https://media.timeout.com/images/105737732/image.jpg",
-    estrellas: 4,
-    precio: "35€",
-    estrellasArray: [true, true, true, true, false]
-  },
-  {
-    nombre: "Visita a la Sagrada Familia, Barcelona",
-    descripcion: "Descubre la majestuosidad de la Basílica de la Sagrada Familia en esta visita inolvidable.",
-    imagen_url: "https://media.timeout.com/images/105737732/image.jpg",
-    estrellas: 4,
-    precio: "35€",
-    estrellasArray: [true, true, true, true, false]
-  }];
+  
 
 }
