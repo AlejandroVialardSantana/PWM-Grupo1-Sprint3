@@ -3,7 +3,7 @@
     <app-searchbar [barTitle]="'¿QUE TE GUSTARÍA HACER?'" [barPlaceHolder]="'Escribe una actividad...'" (onSearch)="handleSearch($event)" ></app-searchbar>
 
     <div class="container">
-        <app-filter id="filteredActivities"></app-filter>
+        <app-filter (filterChange)="onFilterChange($event)" id="filteredActivities"></app-filter>
         <app-activity [activities]="allActivities"></app-activity>
     </div>
 </div>

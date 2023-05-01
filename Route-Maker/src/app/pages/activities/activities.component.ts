@@ -28,6 +28,25 @@ export class ActivitiesComponent implements OnInit{
     alert(searchText);
   }
 
+  // Método para manejar el evento de cambio de filtro
+  onFilterChange(event: any) {
+    switch (event.type) {
+      case 'duration':
+        console.log(`Se trata de duration y su duración es ${event.value} horas`);
+        break;
+      case 'maxCost':
+        console.log(`Se trata de maxCost y su costo máximo es ${event.value}€`);
+        break;
+      case 'activityType':
+        console.log(`Se trata de un activityType, es: ${event.value}, y está ${event.isActive ? 'activo' : 'inactivo'}`);
+        break;
+      case 'specificNeed':
+        console.log(`Se trata de un specificNeed, es: ${event.value}, y está ${event.isActive ? 'activo' : 'inactivo'}`);
+        break;
+      default:
+        console.log('Tipo de filtro desconocido');
+        break;
+    }
+  }  
   
-
 }

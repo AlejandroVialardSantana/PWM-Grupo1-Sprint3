@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-filter',
@@ -7,8 +7,10 @@ import { Component } from '@angular/core';
 })
 
 export class FilterComponent {
+  @Output() filterChange = new EventEmitter<any>();
+
   duration = 1;
-  maxCost = 10;
+  maxCost = 50;
   activityTypes = [
     {value: '1', viewValue: 'Al aire libre', checked: false},
     {value: '2', viewValue: 'Deportiva', checked: false},
@@ -23,5 +25,24 @@ export class FilterComponent {
     {value: '2', viewValue: 'Apto para mascotas', checked: false},
     {value: '3', viewValue: 'Apto para minusválidos', checked: false}
   ];
+
+  
+  // Funciones para emitir eventos cuando cambia un valor
+  onDurationChange() {
+    this.filterChange.emit({ type: 'duration', value: this.duration });
+  }
+
+  onMaxCostChange() {
+    this.filterChange.emit({ type: 'maxCost', value: this.maxCost });
+  }
+  
+  onActivityTypeChange(type: {value: string, viewValue: string, checked: boolean}) {
+    this.filterChange.emit({ type: 'activityType', value: type.viewValue, isActive: type.checked ? 1 : 0 });
+  }
+  
+  onSpecificNeedChange(need: {value: string, viewValue: string, checked: boolean}) {
+    this.filterChange.emit({ type: 'specificNeed', value: need.viewValue, isActive: need.checked ? 1 : 0 });
+  }
+
 }
 
