@@ -49,7 +49,14 @@ export class CarruselComponent implements OnInit, OnDestroy {
         if (this.filterByRegion) {
           this.destinies = destinos.filter(destino => destino.region === this.region); // filtra los destinos según la región
         } else {
-          this.destinies = destinos; // muestra todos los destinos
+          if (destinos.length > 6) {
+            // Si hay más de 6 destinos, elegimos 6 al azar
+            const shuffledDestinies = destinos.sort(() => 0.5 - Math.random());
+            this.destinies = shuffledDestinies.slice(0, 6);
+          } else {
+            // Si hay 6 o menos destinos, simplemente los usamos todos
+            this.destinies = destinos;
+          }
         }
 
         // Esperar a que se renderice el HTML antes de inicializar el carrusel

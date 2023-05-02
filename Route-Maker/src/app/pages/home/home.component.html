@@ -3,6 +3,7 @@
 <app-searchbar></app-searchbar>
 
 <div class="body_container">
+  <app-carrusel [title]="'Destinos destacados'" [filterByRegion]="false" [showActivities]="false" [id]="'swiper-container-' + 0"></app-carrusel>
   <app-carrusel *ngFor="let carrusel of carruselTitles; let i = index" [title]="carrusel.title"
     [id]="'swiper-container-' + i" [category]="carrusel.category" [filterByRegion]="true" [filterByCategory]="true" [showActivities]="true"></app-carrusel>
 </div>

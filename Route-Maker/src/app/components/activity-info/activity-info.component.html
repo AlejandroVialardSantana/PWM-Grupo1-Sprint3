@@ -22,6 +22,12 @@
                 <i class="bi bi-star-fill"></i>
                 <i class="bi bi-star-fill"></i>
             </div>
+            <div class="review_form">
+                <form action="">
+                    <textarea name="review" placeholder="Escribe tu opinión"></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
             <div class="reviews">
                 <div class="review" *ngFor="let review of actividad.user_reviews">
                     <div class="reviewer"><p>{{review.username}}</p></div>

@@ -42,6 +42,8 @@ import { ActivityComponent } from './components/activity/activity.component';
 import { MatPaginatorModule } from '@angular/material/paginator';
 
 import { LoaderComponent } from './components/loader/loader.component';
+import { MyActivitiesComponent } from './pages/my-activities/my-activities.component';
+import { MyActivityListComponent } from './components/my-activity-list/my-activity-list.component';
 
 
 @NgModule({
@@ -63,7 +65,9 @@ import { LoaderComponent } from './components/loader/loader.component';
     ActivitiesComponent,
     FilterComponent,
     ActivityComponent,
-    LoaderComponent
+    LoaderComponent,
+    MyActivitiesComponent,
+    MyActivityListComponent
   ],
   imports: [
     BrowserModule,

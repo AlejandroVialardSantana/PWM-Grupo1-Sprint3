@@ -44,7 +44,7 @@
             <ng-container *ngIf="authService.currentUser$ | async as user; else noRegistrado">
               <div class="dropdown_content">
                 <a href="AccountManagement">Perfil</a>
-                <a href="#">Mis Actividades</a>
+                <a href="myActivities">Mis Actividades</a>
                 <a href="" (click)="logout()">Cerrar sesión</a>
               </div>
             </ng-container>
