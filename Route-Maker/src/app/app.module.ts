@@ -23,7 +23,7 @@ import { RegisterComponent } from './pages/register/register.component';
 import { AccountManagmentComponent } from './pages/account-managment/account-managment.component';
 import { ActivityDescriptionComponent } from './pages/activity-description/activity-description.component';
 
-import { HotToastModule, HotToastService } from '@ngneat/hot-toast';
+import { HotToastModule } from '@ngneat/hot-toast';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
@@ -32,6 +32,8 @@ import { provideAuth,getAuth } from '@angular/fire/auth';
 import { getFirestore } from 'firebase/firestore';
 import { ActivityInfoComponent } from './components/activity-info/activity-info.component';
 import { LoaderComponent } from './components/loader/loader.component';
+import { MatIconModule } from '@angular/material/icon';
+import { getStorage, provideStorage } from '@angular/fire/storage';
 
 @NgModule({
   declarations: [
@@ -60,6 +62,7 @@ import { LoaderComponent } from './components/loader/loader.component';
     FirestoreModule,
     HttpClientModule,
     SwiperModule,
+    MatIconModule,
     AngularFirestoreModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireModule,
@@ -67,6 +70,7 @@ import { LoaderComponent } from './components/loader/loader.component';
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth()),
     provideFirestore(() => getFirestore()),
+    provideStorage(() => getStorage()),
     HotToastModule.forRoot(),
   ],
   bootstrap: [AppComponent]

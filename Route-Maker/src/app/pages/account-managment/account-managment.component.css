@@ -1,9 +1,48 @@
 .sections {
     display: flex;
     flex-direction: column;
-    margin:0;
+    margin: 0;
     margin-top: 3rem;
 }
+
+.user_data {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.user_info {
+    flex: 1;
+}
+
+.profile-image{
+    width: 180px;
+    margin-right: 16px;
+    height: 200px;
+    display: inline-block;
+    position: relative;
+}
+.profile-image>img {
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.profile-image > button {
+    position: absolute;
+    border-radius: 100%;
+    border: 0;
+    bottom:1em;
+    right:1em;
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #A0B1AC;
+}
+
 
 .section-title {
     display: flex;
@@ -48,13 +87,14 @@ i {
     font-size: 25px;
     padding: 0 15px;
 }
-.button_open_overlay{
+
+.button_open_overlay {
     display: grid;
     grid-template-columns: 3fr 1fr;
 }
 
 
-.btn{
+.btn {
     max-width: 15rem;
 }
 
@@ -77,9 +117,19 @@ i {
     .section-field span {
         font-size: 16px;
     }
-    .button_open_overlay{
+
+    .button_open_overlay {
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+    .user_data {
+        flex-direction: column;
+    }
+    .user_info {
+        width: 100%;
+    }
+    .profile-image{
+        margin: 1rem auto ;
     }
 }
 
@@ -121,19 +171,34 @@ i {
         font-size: 12px;
     }
 
-    .button_open_overlay button{
+    .button_open_overlay button {
         font-size: 13px;
     }
-       
+    .profile-image{
+        width: 100px;
+        height: 150px;
+    }
+    .profile-image>img {
+        width: 120px;
+        height: 120px;
+    }
+    .profile-image > button {
+        height: 2rem;
+        width: 2rem;
+        bottom:1.5em;
+        right:-1em;
+    }
+
 }
 
-@media (max-width: 390px){
-    .button_open_overlay{
+@media (max-width: 390px) {
+    .button_open_overlay {
         display: grid;
         grid-template-columns: 0 1fr;
         justify-content: center;
         align-items: center;
     }
+
     .field-name {
         font-size: 12px;
         padding: 0 10px;
