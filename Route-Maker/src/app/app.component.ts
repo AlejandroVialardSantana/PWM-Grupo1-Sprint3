@@ -18,7 +18,7 @@ export class AppComponent implements OnInit{
 
   ngOnInit() {
     // this.exportJsonToFirestore('destinos');
-    // this.exportJsonToFirestore('actividades');
+    this.exportJsonToFirestore('actividades');
     this.router.events.subscribe((event: Event) => {
       if (event instanceof NavigationEnd) {
       } else {
