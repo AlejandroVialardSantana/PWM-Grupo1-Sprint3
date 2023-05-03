@@ -2,6 +2,7 @@ import { Component, HostListener, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AuthenticationService } from 'src/app/services/authentication.service';
 import { UsersService } from 'src/app/services/users.service';
+
 const First_Mediaquery_Breakpoint = 910;
 
 @Component({
