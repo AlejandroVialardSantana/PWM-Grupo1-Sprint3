@@ -46,6 +46,8 @@ import { MyActivitiesComponent } from './pages/my-activities/my-activities.compo
 import { MyActivityListComponent } from './components/my-activity-list/my-activity-list.component';
 import { MatIconModule } from '@angular/material/icon';
 import { getStorage, provideStorage } from '@angular/fire/storage';
+import { DeleteAccountComponent } from './components/delete-account/delete-account.component';
+import { ChangePasswordComponent } from './components/change-password/change-password.component';
 
 
 @NgModule({
@@ -69,7 +71,9 @@ import { getStorage, provideStorage } from '@angular/fire/storage';
     ActivityComponent,
     LoaderComponent,
     MyActivitiesComponent,
-    MyActivityListComponent
+    MyActivityListComponent,
+    DeleteAccountComponent,
+    ChangePasswordComponent
   ],
   imports: [
     BrowserModule,

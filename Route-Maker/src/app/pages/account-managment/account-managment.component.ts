@@ -6,6 +6,7 @@ import { ImageUploadService } from 'src/app/services/image-upload.service';
 import { HotToastService } from '@ngneat/hot-toast';
 import { switchMap, tap } from 'rxjs';
 import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
+import { OpenOverlayService } from 'src/app/services/open-overlay.service';
 
 @UntilDestroy()
 @Component({
@@ -28,7 +29,8 @@ export class AccountManagmentComponent implements OnInit{
   constructor(
     private imageUpload: ImageUploadService,
     private usersService: UsersService,
-    private toast: HotToastService
+    private toast: HotToastService,
+    public openOverlayService: OpenOverlayService
     ) { }
 
   ngOnInit(): void {

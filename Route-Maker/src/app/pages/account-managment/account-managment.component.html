@@ -62,17 +62,19 @@
             <hr class="hr-small">
             <div class="button_open_overlay">
                 <label id="cambiar_cantrasena" class="field-name" for="apellidoUsuario">Cambiar contraseña</label>
-                <button onclick="cambiarContraseña()" type="button" class="btn btn-success">Cambiar contraseña</button>
+                <button type="button" class="btn btn-success" (click)="openOverlayService.showChangePassword= true">Cambiar contraseña</button>
             </div>
             <hr class="hr-small">
             <div class="button_open_overlay">
                 <label id="eliminar_cuenta" class="field-name" for="emailUsuario">Eliminar cuenta</label>
-                <button onclick="eliminarCuenta()" type="button" class="btn btn-danger">Eliminar cuenta</button>
+                <button type="button" class="btn btn-danger" (click)="openOverlayService.showDeleteAccount = true">Eliminar cuenta</button>
             </div>
             <hr class="hr-small">
             <div class="popup"></div>
 
         </div>
     </section>
+    <app-change-password *ngIf="openOverlayService.showChangePassword"></app-change-password>
+    <app-delete-account *ngIf="openOverlayService.showDeleteAccount"></app-delete-account>
     <app-footer-component></app-footer-component>
 </body>
