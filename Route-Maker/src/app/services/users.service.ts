@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { Firestore, doc, setDoc, docData } from '@angular/fire/firestore';
-import { ProfileUSer } from '../models/user-profile';
+import { Firestore, doc, setDoc, docData, updateDoc } from '@angular/fire/firestore';
+import { ProfileUser } from '../models/user-profile';
 import { from, Observable, switchMap, of } from 'rxjs';
 import { AuthenticationService } from './authentication.service';
 
@@ -9,7 +9,7 @@ import { AuthenticationService } from './authentication.service';
 })
 export class UsersService {
 
-  get currentUserProfile$(): Observable<ProfileUSer | null>{
+  get currentUserProfile$(): Observable<ProfileUser | null>{
     return this.authService.currentUser$.pipe(
       switchMap(user => {
         if(!user?.uid){
@@ -17,15 +17,20 @@ export class UsersService {
         }
 
         const ref = doc(this.firestore, 'users', user?.uid);
-        return docData(ref) as Observable<ProfileUSer>;
+        return docData(ref) as Observable<ProfileUser>;
       })
     )
   }
 
   constructor(private firestore: Firestore, private authService: AuthenticationService) { }
 
-  addUser(user: ProfileUSer ): Observable<any>{
+  addUser(user: ProfileUser ): Observable<any>{
     const ref = doc(this.firestore, 'users', user?.uid);
     return from(setDoc(ref, user));
+  }
+  
+  updateUser(user: ProfileUser): Observable<void> {
+    const ref = doc(this.firestore, 'users', user.uid);
+    return from(updateDoc(ref, { ...user }));
   }
 }

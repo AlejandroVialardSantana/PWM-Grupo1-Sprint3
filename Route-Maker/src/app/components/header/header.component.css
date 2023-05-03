@@ -47,8 +47,12 @@ Creamos el circulo que contendrá el icono de la opción de lenguaje y de usuari
     background-color: #86CFB5;
 }
 
-.circle_icon i {
-    font-size: 1.3rem;
+.circle_icon > img{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .circle_icon:hover {

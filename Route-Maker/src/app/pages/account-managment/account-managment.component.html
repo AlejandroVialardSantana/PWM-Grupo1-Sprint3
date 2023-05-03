@@ -4,29 +4,40 @@
 
 <body>
     <app-header></app-header>
-    <section class="body_container">
+    <section class="body_container" *ngIf="user$ | async as user">
         <div class="sections">
             <div class="section-title">
                 <i class="bi bi-person-circle"></i>
                 <h2 id="h2-title">Datos personales</h2>
             </div>
             <hr class="hr-big">
-            <hr class="hr-small">
-            <div class="section-field">
-                <label class="field-name" for="nombreUsuario">Nombre:</label>
-                <span id="nombreUsuario" *ngIf="user$ | async as user">{{user.displayName}}</span>
+            <div class="user_data">
+                <div class="profile-image">
+                    <img [src]="user.photoURL ?? '/assets/images/image-placeholder.png'" />
+                    <button mat-mini-fab (click)="inputField.click()">
+                        <mat-icon>edit</mat-icon>
+                    </button>
+                </div>
+                <input #inputField hidden type="file" (change)="uploadFile($event, user)" />
+                <div class="user_info">
+                    <hr class="hr-small">
+                    <div class="section-field">
+                        <label class="field-name" for="nombreUsuario">Nombre:</label>
+                        <span id="nombreUsuario" *ngIf="user$ | async as user">{{user.displayName}}</span>
+                    </div>
+                    <hr class="hr-small">
+                    <div class="section-field">
+                        <label class="field-name" for="apellidoUsuario">Apellidos:</label>
+                        <span id="apellidoUsuario" *ngIf="user$ | async as user"> {{user.displaySurname}} </span>
+                    </div>
+                    <hr class="hr-small">
+                    <div class="section-field">
+                        <label class="field-name" id="email" for="emailUsuario">E-mail:</label>
+                        <span id="emailUsuario" *ngIf="user$ | async as user">{{user.email}}</span>
+                    </div>
+                    <hr class="hr-small">
+                </div>
             </div>
-            <hr class="hr-small">
-            <div class="section-field">
-                <label class="field-name" for="apellidoUsuario">Apellidos:</label>
-                <span id="apellidoUsuario" *ngIf="user$ | async as user"> {{user.displaySurname}} </span>
-            </div>
-            <hr class="hr-small">
-            <div class="section-field">
-                <label class="field-name" id="email" for="emailUsuario">E-mail:</label>
-                <span id="emailUsuario" *ngIf="user$ | async as user">{{user.email}}</span>
-            </div>
-            <hr class="hr-small">
 
             <div class="section-title">
                 <i class="bi bi-star"></i>

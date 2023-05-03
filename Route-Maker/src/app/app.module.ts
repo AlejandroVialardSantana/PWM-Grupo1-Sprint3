@@ -23,7 +23,7 @@ import { RegisterComponent } from './pages/register/register.component';
 import { AccountManagmentComponent } from './pages/account-managment/account-managment.component';
 import { ActivityDescriptionComponent } from './pages/activity-description/activity-description.component';
 
-import { HotToastModule, HotToastService } from '@ngneat/hot-toast';
+import { HotToastModule } from '@ngneat/hot-toast';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
@@ -44,6 +44,8 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { LoaderComponent } from './components/loader/loader.component';
 import { MyActivitiesComponent } from './pages/my-activities/my-activities.component';
 import { MyActivityListComponent } from './components/my-activity-list/my-activity-list.component';
+import { MatIconModule } from '@angular/material/icon';
+import { getStorage, provideStorage } from '@angular/fire/storage';
 
 
 @NgModule({
@@ -78,17 +80,20 @@ import { MyActivityListComponent } from './components/my-activity-list/my-activi
     FirestoreModule,
     HttpClientModule,
     SwiperModule,
+    MatIconModule,
     AngularFirestoreModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireModule,
     AngularFireDatabaseModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth()),
+    provideStorage(() => getStorage()),
     HotToastModule.forRoot(),
     MatCheckboxModule,
     MatSliderModule,
     MatPaginatorModule,
     provideFirestore(() => getFirestore()),
+    provideStorage(() => getStorage()),
   ],
   bootstrap: [AppComponent]
 })
