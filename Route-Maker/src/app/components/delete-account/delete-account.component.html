@@ -1,0 +1,24 @@
+
+<body>
+
+    <div class="overlay overlay-container" id="overlay">
+        <div class="head">
+            <i class="bi bi-person-fill-x"></i>
+            <h6><strong>Eliminar cuenta</strong></h6>
+        </div>
+        <div class="parrafo">
+            <p>Al eliminar la cuenta se borraran todos tus datos personales incluyendo tus rutas
+                y todos tus elementos guardados</p>
+            <p> <strong>¿Estás seguro que quieres eliminar tu cuenta? </strong></p>
+        </div>
+        <form>
+            <div class="field-button">
+                <input class="button-danger" type="submit" value="Eliminar">
+            </div>
+            <div class="field-button">
+                <button class="button" type="submit" (click)="openOverlayService.showDeleteAccount = false">Cancelar</button>
+            </div>
+        </form>
+    </div>
+
+</body>
