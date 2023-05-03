@@ -8,6 +8,7 @@ import { RegisterComponent } from './pages/register/register.component';
 import { AccountManagmentComponent } from './pages/account-managment/account-managment.component';
 import { ActivityDescriptionComponent } from './pages/activity-description/activity-description.component';
 import { ActivitiesComponent } from './pages/activities/activities.component';
+import { MyActivitiesComponent } from './pages/my-activities/my-activities.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -17,7 +18,8 @@ const routes: Routes = [
   { path: 'register', component: RegisterComponent },
   { path: 'activityDescription', component: ActivityDescriptionComponent },
   { path: 'AccountManagement', component: AccountManagmentComponent },
-  { path: 'activities', component: ActivitiesComponent}
+  { path: 'activities', component: ActivitiesComponent},
+  { path: 'myActivities', component: MyActivitiesComponent}
   ];
 
 @NgModule({

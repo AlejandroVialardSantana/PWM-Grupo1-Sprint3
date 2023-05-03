@@ -8,8 +8,8 @@ import { Component } from '@angular/core';
 export class HomeComponent {
   category: string = "";
   carruselTitles = [
-    {title: "Actividades destacadas", category: "destacado"},
+    {title: "Lugares más visitados", category: "destacado"},
     {title: "Actividades al aire libre", category: "aire libre"},
-    {title: "Destinos de playa", category: "playa"},
+    {title: "Playas destacadas", category: "playa"},
   ];
 }

@@ -42,6 +42,8 @@ import { ActivityComponent } from './components/activity/activity.component';
 import { MatPaginatorModule } from '@angular/material/paginator';
 
 import { LoaderComponent } from './components/loader/loader.component';
+import { MyActivitiesComponent } from './pages/my-activities/my-activities.component';
+import { MyActivityListComponent } from './components/my-activity-list/my-activity-list.component';
 import { MatIconModule } from '@angular/material/icon';
 import { getStorage, provideStorage } from '@angular/fire/storage';
 
@@ -65,7 +67,9 @@ import { getStorage, provideStorage } from '@angular/fire/storage';
     ActivitiesComponent,
     FilterComponent,
     ActivityComponent,
-    LoaderComponent
+    LoaderComponent,
+    MyActivitiesComponent,
+    MyActivityListComponent
   ],
   imports: [
     BrowserModule,
