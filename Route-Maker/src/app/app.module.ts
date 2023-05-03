@@ -83,6 +83,7 @@ import { getStorage, provideStorage } from '@angular/fire/storage';
     AngularFireDatabaseModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth()),
+    provideStorage(() => getStorage()),
     HotToastModule.forRoot(),
     MatCheckboxModule,
     MatSliderModule,
