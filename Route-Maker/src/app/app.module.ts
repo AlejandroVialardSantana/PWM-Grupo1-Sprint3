@@ -89,6 +89,7 @@ import { getStorage, provideStorage } from '@angular/fire/storage';
     MatSliderModule,
     MatPaginatorModule,
     provideFirestore(() => getFirestore()),
+    provideStorage(() => getStorage()),
   ],
   bootstrap: [AppComponent]
 })
