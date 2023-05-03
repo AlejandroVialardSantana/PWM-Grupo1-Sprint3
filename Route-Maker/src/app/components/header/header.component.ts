@@ -1,7 +1,7 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AuthenticationService } from 'src/app/services/authentication.service';
-
+import { UsersService } from 'src/app/services/users.service';
 const First_Mediaquery_Breakpoint = 910;
 
 @Component({
@@ -10,13 +10,15 @@ const First_Mediaquery_Breakpoint = 910;
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+ 
+  user$ = this.usersService.currentUserProfile$;
 
   menuVisible = false;
   navLeft: any; //Lo iniciamos en default
   navRight: any;
 
   //Para controlar cuando un usuario se ha registrado y cambiar menu de usuario del header
-  constructor(public authService: AuthenticationService, private router: Router){
+  constructor(public authService: AuthenticationService, private router: Router, private usersService: UsersService){
 
   }
 
