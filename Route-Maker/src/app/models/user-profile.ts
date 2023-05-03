@@ -1,3 +1,5 @@
+import { Actividad } from "./interfaces/actividades";
+
 export interface ProfileUser {
     uid: string;
     email?: string;
@@ -6,4 +8,5 @@ export interface ProfileUser {
     name?: string;
     surname?: string;
     photoURL?: string;
+    activities?: Actividad[];
 }

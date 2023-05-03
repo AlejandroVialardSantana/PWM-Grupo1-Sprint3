@@ -1,6 +1,10 @@
 import { Component, Input} from '@angular/core';
 import { Actividad } from '../../models/interfaces/actividades';
 import { DomSanitizer, SafeUrl  } from '@angular/platform-browser';
+import { FirestoreService } from 'src/app/services/firestore/firestore.service';
+import { UsersService } from 'src/app/services/users.service';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { HotToastService } from '@ngneat/hot-toast';
 
 @Component({
   selector: 'app-activity-info',
@@ -9,12 +13,47 @@ import { DomSanitizer, SafeUrl  } from '@angular/platform-browser';
 })
 export class ActivityInfoComponent {
   @Input() actividad: Actividad = {} as Actividad;
+  userReview: string = '';
+  username: string = '';
+  user$ = this.usersService.currentUserProfile$;
+  userReviewForm: FormGroup = {} as FormGroup;
+  isLoggedIn: boolean = false;
+  isFocused = false;
 
-  constructor(private sanitizer: DomSanitizer) { }
+  constructor(private sanitizer: DomSanitizer, private toast: HotToastService, private usersService: UsersService, private fb: FormBuilder, private firestore: FirestoreService) { }
 
   ngOnInit(): void {
-    
+    this.user$.subscribe(user => {
+      if(user){
+        this.username = user.displayName + ' ' + user.displaySurname;
+        this.isLoggedIn = true;
+      }
+      else {
+        this.isLoggedIn = false;
+      }
+    });
+
+    this.userReviewForm = this.fb.group({
+      opinion: ['', Validators.required],
+    });
   }  
+
+  onSubmitReview(){
+    const review = {
+      username: this.username,
+      opinion: this.userReviewForm.controls['opinion'].value
+    };
+    this.actividad.user_reviews.push(review); 
+    this.firestore.updateActivity(this.actividad);
+    this.toast.success('¡Gracias por tu opinión!');
+    this.userReviewForm.reset();
+  }
+
+  showLoginMessage(){
+    if(!this.isLoggedIn) {
+      this.toast.info('Inicia sesión para dejar tu opinión');
+    }
+  }
 
   public sanitizeUrl(url: string): SafeUrl {
     return this.sanitizer.bypassSecurityTrustResourceUrl(url);

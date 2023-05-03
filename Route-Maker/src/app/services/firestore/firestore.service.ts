@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Firestore, collectionData, collection } from '@angular/fire/firestore';
+import { Firestore, collectionData, collection, doc, setDoc } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
 import { Destino } from '../../models/interfaces/destinos';
 import { Actividad } from 'src/app/models/interfaces/actividades';
@@ -19,5 +19,10 @@ export class FirestoreService {
   getActivities(): Observable<Actividad[]> {
     const activitiesRef = collection(this.firestore, 'actividades');
     return collectionData(activitiesRef, { idField: 'id' }) as Observable<any[]>;
+  }
+
+  updateActivity(activity: Actividad) {
+    const activityDocRef = doc(this.firestore, `actividades/${activity.id}`);
+    return setDoc(activityDocRef, activity);
   }
 }
