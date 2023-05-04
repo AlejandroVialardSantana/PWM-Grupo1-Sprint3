@@ -3,7 +3,10 @@
         <img id="activity_img" src="{{actividad.image}}" alt="{{actividad.name}}" />
     </div>
     <div class="description">
-        <h2 id="activity_name">{{actividad.name}}</h2>
+        <div class="fila1">
+            <h2 id="activity_name">{{actividad.name}}</h2>
+            <button class="save_activity" (click)="saveActivity()">Guardar actividad</button>
+        </div>
         <p id="activity_info_description">{{actividad.description}}</p>
     </div>
     <div class="line"></div>

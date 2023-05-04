@@ -18,17 +18,16 @@ export class AppComponent implements OnInit{
 
   ngOnInit() {
     // this.exportJsonToFirestore('destinos');
-    this.exportJsonToFirestore('actividades');
+    //this.exportJsonToFirestore('actividades');
     this.router.events.subscribe((event: Event) => {
       if (event instanceof NavigationEnd) {
       } else {
-        this.loading = true; // Mostrar el loader
+        this.loading = true;
         setTimeout(() => {
-          // Cargar datos aquí
           this.ngZone.run(() => {
-            this.loading = false; // Ocultar el loader
+            this.loading = false; 
           });
-        }, 1000); // Retrasar la carga de los datos por 2 segundos (por ejemplo)
+        }, 1000); 
         
       }
     });
