@@ -1,4 +1,5 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-searchbar',
@@ -10,13 +11,14 @@ export class SearchbarComponent {
   @Input() barTitle:string = "¿Cuál es tu destino?";
   @Input() barPlaceHolder:string = "Escribe tu destino...";
   @Input() suggestions: string[] = [];
+  @Input() numOfSuggestion: number = 3;
 
   @Output() onSearch: EventEmitter<any> = new EventEmitter();
 
   actualSearchText:string = "";
   filteredSuggestions: string[] = [];
 
-  constructor() { }
+  constructor(private elementRef: ElementRef) { }
 
   onSubmit():void {
     this.onSearch.emit( { type: 'search', value: this.actualSearchText } );
@@ -35,6 +37,20 @@ export class SearchbarComponent {
     words.push(suggestion);
     this.actualSearchText = words.join(" ");
     this.filteredSuggestions = [];
+  }
+/*
+  searchBarLostFocus(): void{
+    setTimeout(() => {
+      this.filteredSuggestions = [];
+    }, 150);
+  }
+  */
+
+  onClickOutside(event: MouseEvent): void {
+    const suggestionList = this.elementRef.nativeElement.querySelector('.suggestion-list');
+    if (!this.elementRef.nativeElement.contains(event.target) || (suggestionList && !suggestionList.contains(event.target as HTMLElement))) {
+      this.filteredSuggestions = [];
+    }
   }
 
 }
