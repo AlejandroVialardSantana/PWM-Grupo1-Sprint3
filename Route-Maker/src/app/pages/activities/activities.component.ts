@@ -19,6 +19,8 @@ export class ActivitiesComponent implements OnInit{
   maxCostFilter:number = 50;
   searchBarText:string = '';
 
+  suggestionsList: string[] = ['playa', 'canteras', 'montaña', 'ciudad'];
+
   constructor(private firestoreService: FirestoreService) { }
 
   ngOnInit(): void {

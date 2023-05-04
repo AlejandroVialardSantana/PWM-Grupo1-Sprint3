@@ -1,3 +1,26 @@
+.suggestion-list {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 4.125rem);
+    width: 100%;
+    max-width: 35rem;
+    background-color: #fff;
+    border-radius: 0 0 2.5rem 2.5rem;
+    padding: 0.625rem 1.25rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+.suggestion {
+    cursor: pointer;
+    padding: 0.25rem 0;
+    font-size: 16px;
+}
+  
+.suggestion:hover {
+    color: #86CFB5;
+    transition: all 0.3s ease;
+}
+  
 .home_container {
     position: relative;
     background-color: #87A49B;
