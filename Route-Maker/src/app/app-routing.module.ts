@@ -19,6 +19,7 @@ const routes: Routes = [
   { path: 'activityDescription', component: ActivityDescriptionComponent },
   { path: 'AccountManagement', component: AccountManagmentComponent },
   { path: 'activities', component: ActivitiesComponent},
+  { path: 'activities/:desitiyName', component: ActivitiesComponent },
   { path: 'myActivities', component: MyActivitiesComponent}
   ];
 
