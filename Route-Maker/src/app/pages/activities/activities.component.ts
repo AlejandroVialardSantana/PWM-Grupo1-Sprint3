@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Actividad } from 'src/app/models/interfaces/actividades';
 import { FirestoreService } from '../../services/firestore/firestore.service';
-
-
+import { SearchbarComponent } from 'src/app/components/searchbar/searchbar.component';
 
 @Component({
   selector: 'app-activities',
@@ -10,7 +9,6 @@ import { FirestoreService } from '../../services/firestore/firestore.service';
   styleUrls: ['./activities.component.css']
 })
 export class ActivitiesComponent implements OnInit{
-
   allActivities: Actividad[] = [];
   filteredActivities: Actividad[] = [];
 
@@ -19,7 +17,7 @@ export class ActivitiesComponent implements OnInit{
   maxCostFilter:number = 50;
   searchBarText:string = '';
 
-  suggestionsList: string[] = ['playa', 'canteras', 'montaña', 'ciudad'];
+  suggestionsList: string[] = [];
 
   constructor(private firestoreService: FirestoreService) { }
 
@@ -27,8 +25,34 @@ export class ActivitiesComponent implements OnInit{
     this.firestoreService.getActivities().subscribe((activitiesData: Actividad[]) => {
       this.allActivities = activitiesData;
       this.filteredActivities = activitiesData;
+
+      //Establecemos los valores que se utilizaran para sugerir texto
+      this.setImportantWordsForSuggestion(activitiesData);
     });
+  }
+
+  // Elimina palabras no deseadas y normaliza la cadena de texto, las devuelve cada una en un array
+  removeUnwantedWordsInArray(input: string): string[] {
+    const unwantedWords = ['de', 'las', 'en', 'la', 'el', 'los', 'del'];
+    const words = input.toLowerCase().split(' ');
+    const filteredWords = words.filter(word => !unwantedWords.includes(word));
+    return filteredWords;
+  }
+
+  // Elimina palabras no deseadas y normaliza la cadena de texto, , las devuelve todas juntas en un string
+  removeUnwantedWords(input: string): string {
+    const filteredWords = this.removeUnwantedWordsInArray(input);
+    return filteredWords.join(' ');
+  }
+
+  setImportantWordsForSuggestion(allTheActivities:Actividad[]): void{
     
+    allTheActivities.forEach((oneActivity) => {
+      var importartWords: string[] = this.removeUnwantedWordsInArray(oneActivity.name);
+      this.suggestionsList = this.suggestionsList.concat(importartWords);
+    });
+
+
   }
 
   //Para poder comparar las categorías sin problema, por ej "Cultura" y "cultura" son iguales
@@ -79,7 +103,8 @@ export class ActivitiesComponent implements OnInit{
     // Ahora aplicamos todos los filtros
     this.filteredActivities = this.filteredActivities.filter((activity: Actividad) => {
 
-      if (!this.normalizeString(activity.name).includes(this.normalizeString(this.searchBarText))) {
+      //Comparamos todo normalizado (sin mayusculas, espacios, acentos... y también eliminando palabras como "de", "las"...)
+      if (!this.normalizeString(this.removeUnwantedWords(activity.name)).includes(this.normalizeString(this.removeUnwantedWords(this.searchBarText)))) {
         return false;
       }
 

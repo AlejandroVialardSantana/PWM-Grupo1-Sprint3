@@ -29,6 +29,7 @@ export class SearchbarComponent {
     if (typeof lastWord === "string"){
       this.filteredSuggestions = this.suggestions.filter(suggestion => suggestion.startsWith(lastWord));
     }
+    this.onSubmit();
   }
 
   onSuggestionClick(suggestion: string): void {
@@ -37,6 +38,7 @@ export class SearchbarComponent {
     words.push(suggestion);
     this.actualSearchText = words.join(" ");
     this.filteredSuggestions = [];
+    this.onSubmit();
   }
 /*
   searchBarLostFocus(): void{
