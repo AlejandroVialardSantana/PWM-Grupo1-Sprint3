@@ -1,3 +1,20 @@
+.fila1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.fila1 .save_activity {
+    width: 50%;
+    text-align: center;
+    background-color: #a4aba9;
+    font-weight: 600;
+    border: none;
+    padding: auto;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    margin-left: auto;
+}
+
 .img_activity_description {
     margin: 2rem auto;
 }

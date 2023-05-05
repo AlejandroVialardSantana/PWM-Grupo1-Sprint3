@@ -5,6 +5,7 @@ import { FirestoreService } from 'src/app/services/firestore/firestore.service';
 import { UsersService } from 'src/app/services/users.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { HotToastService } from '@ngneat/hot-toast';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-activity-info',
@@ -18,7 +19,12 @@ export class ActivityInfoComponent {
   user$ = this.usersService.currentUserProfile$;
   userReviewForm: FormGroup = {} as FormGroup;
   isLoggedIn: boolean = false;
-  isFocused = false;
+  subscription: Subscription = new Subscription();
+  activitySaved: boolean = false;
+
+  // Paginator Inputs
+  pageSize = 5;
+  pageSizeOptions: number[] = [5];
 
   constructor(private sanitizer: DomSanitizer, private toast: HotToastService, private usersService: UsersService, private fb: FormBuilder, private firestore: FirestoreService) { }
 
@@ -54,8 +60,28 @@ export class ActivityInfoComponent {
       this.toast.info('Inicia sesión para dejar tu opinión');
     }
   }
+  
+  saveActivity() {
+    this.subscription = this.user$.subscribe(user => {
+      if (user) {
+        if (!user.activities) {
+          user.activities = [];
+        }
+        if (user.activities.some(activity => activity.id === this.actividad.id)) {
+          this.toast.info('Ya has guardado esta actividad');
+        } else {
+          user.activities.push(this.actividad);
+          this.usersService.updateUser(user);
+          this.toast.success('Actividad guardada');
+        }
+        this.subscription.unsubscribe(); // cancela la suscripción después de guardar la actividad
+      } else {
+        this.toast.info('Inicia sesión para guardar la actividad');
+      }
+    });
+  }
 
-  public sanitizeUrl(url: string): SafeUrl {
+  sanitizeUrl(url: string): SafeUrl {
     return this.sanitizer.bypassSecurityTrustResourceUrl(url);
   }
 }
