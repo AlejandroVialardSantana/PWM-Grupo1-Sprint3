@@ -1,5 +1,6 @@
 @import "~swiper/swiper-bundle.min.css";
 @import "~bootstrap/dist/css/bootstrap.css";
+@import '@angular/material/prebuilt-themes/indigo-pink.css'; /* Necesario para el paginator */
 
 body{
     margin: 0;
