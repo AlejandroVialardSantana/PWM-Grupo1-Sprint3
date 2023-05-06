@@ -19,9 +19,12 @@ export class ActivityInfoComponent {
   user$ = this.usersService.currentUserProfile$;
   userReviewForm: FormGroup = {} as FormGroup;
   isLoggedIn: boolean = false;
-  isFocused = false;
   subscription: Subscription = new Subscription();
   activitySaved: boolean = false;
+
+  // Paginator Inputs
+  pageSize = 5;
+  pageSizeOptions: number[] = [5];
 
   constructor(private sanitizer: DomSanitizer, private toast: HotToastService, private usersService: UsersService, private fb: FormBuilder, private firestore: FirestoreService) { }
 
@@ -77,9 +80,8 @@ export class ActivityInfoComponent {
       }
     });
   }
-  
 
-  public sanitizeUrl(url: string): SafeUrl {
+  sanitizeUrl(url: string): SafeUrl {
     return this.sanitizer.bypassSecurityTrustResourceUrl(url);
   }
 }
