@@ -1,38 +1,46 @@
 <section class="my_activities">
     <h2 class="my_activities_title">Tus actividades</h2>
-<div class="my_location">
-    <div class="location_title">
-        <p><i class="bi  bi-geo-alt-fill"></i>Tu ubicación:</p>
-    </div>
-    <div class="location_toggle">
-        <p>Tafira Baja, Las Palmas de Gran Canaria</p>
-    </div>
-    <div class="toggle_icon">
-        <i class="bi bi-chevron-down"></i>
-    </div>
-</div>
-<div class="activities_items" *ngFor="let activity of activities; let i = index">
-    <div class="activities_item">
-        <div class="activities_item_info">
-            <h3>{{activity.name}}</h3>
-            <p>10.00 - 16.00 <a data-bs-toggle="collapse"
-                    data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"><i
-                        class="bi bi-geo-alt-fill"></i></a></p>
-            <a class="location_link" data-bs-toggle="collapse" data-bs-target="#collapseExample"
-                aria-expanded="false" aria-controls="collapseExample"><i class="bi bi-geo-alt"></i>{{activity.location}}</a>
+    <div class="my_location">
+        <div class="location_title">
+            <p><i class="bi bi-geo-alt-fill"></i>Tu ubicación:</p>
         </div>
-        <div class="my_activity_img">
-            <img src="{{activity.image}}"
-                alt="{{activity.name}}">
+        <div class="location_toggle">
+            <p>Tafira Baja, Las Palmas de Gran Canaria</p>
+
+        </div>
+        <div class="toggle_icon">
+            <i class="bi bi-chevron-down"></i>
         </div>
     </div>
-    <div class="location_collapse collapse" id="collapseExample">
-        <iframe
-            src="{{activity.location_map}}"></iframe>
+    <div class="activities_items" *ngFor="let activity of paginatedActivities; let i = index">
+        <div class="activities_item_container">
+            <div class="activities_item">
+                <div class="activities_item_info">
+                    <h3>{{activity.name}}</h3>
+                    <p>10.00 - 16.00</p>
+                    <a class="location_link" (click)="showMap[i] = !showMap[i]"><i class="location_map_link bi bi-geo-alt"></i>{{activity.location}}</a>
+                </div>
+                <div class="my_activity_img">
+                    <img src="{{activity.image}}" alt="{{activity.name}}">
+                </div>
+            </div>
+            <div class="close" (click)="removeActivity(i)">
+                <i class="close-btn bi bi-x-lg"></i>
+            </div>
+        </div>
+        <div class="location_collapse" *ngIf="showMap[i]">
+            <iframe [src]="sanitizeUrl(activity.location_map)"></iframe>
+        </div>
+    </div>    
+
+    <mat-paginator [length]="activities.length"
+                 [pageSize]="pageSize"
+                 [pageSizeOptions]="pageSizeOptions"
+                 (page)="paginateActivities($event)">
+    </mat-paginator>
+
+    <div class="buttons">
+        <button class="button"><a href="activities">Cambiar actividades</a></button>
+        <button class="button"><a href="">Ver actividades en mapa</a></button>
     </div>
-</div>
-<div class="buttons">
-    <button class="button">Cambiar actividades</button>
-    <button class="button">Ver actividades en mapa</button>
-</div>
 </section>
