@@ -1,13 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { OpenOverlayService } from 'src/app/services/open-overlay.service';
-import {
-  AbstractControl,
-  FormControl,
-  FormGroup,
-  ValidationErrors,
-  Validators,
-  ValidatorFn,
-} from '@angular/forms';
+import { AbstractControl, FormControl, FormGroup, ValidationErrors, Validators, ValidatorFn } from '@angular/forms';
 import { AuthenticationService } from 'src/app/services/authentication.service';
 import { UsersService } from 'src/app/services/users.service';
 import { ProfileUser } from 'src/app/models/user-profile';
@@ -15,25 +8,6 @@ import { Injectable } from '@angular/core';
 import firebase from 'firebase/compat/app';
 import { HotToastService } from '@ngneat/hot-toast';
 
-/*export function FBpasswordsMatch(usersService: UsersService): ValidatorFn {
-  return (control: AbstractControl): ValidationErrors | null => {
-    var fbPassword: string | undefined;
-    usersService.currentUserProfile$.subscribe((user: ProfileUser | null) => {
-      if (user) {
-        fbPassword = user.password;
-      }
-    });
-    const password = control.get('Password')?.value;
-    console.log("Contraseña en fb: " + fbPassword);
-    console.log("Contraseña en form: " + password);
-
-    if (password && fbPassword && password !== fbPassword) {
-      return { passwordsDontMatch: true };
-    } else {
-      return null;
-    }
-  };
-}*/
 export function FBpasswordsMatch(user: ProfileUser): ValidatorFn {
   return (control: AbstractControl): ValidationErrors | null => {
     const fbPassword = user.password;
@@ -109,13 +83,7 @@ export class ChangePasswordComponent implements OnInit {
     }
 
     try {
-      if (
-        !userfb ||
-        !userfb.providerData ||
-        !userfb.email ||
-        !currentPassword
-      ) {
-        // El usuario no tiene una contraseña establecida
+      if ( !userfb || !userfb.providerData || !userfb.email || !currentPassword  ) {
         return;
       }
       // Reautenticar al usuario
