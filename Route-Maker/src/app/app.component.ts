@@ -27,7 +27,7 @@ export class AppComponent implements OnInit{
           this.ngZone.run(() => {
             this.loading = false; 
           });
-        }, 1500); 
+        }, 1000); 
         
       }
     });

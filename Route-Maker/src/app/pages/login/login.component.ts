@@ -39,7 +39,6 @@ export class LoginComponent implements OnInit {
 
     this.authService
       .login(email, password)
-      //Esto es para que muestre un mensaje en pantalla pero esta saliendo mal. 
       .pipe(
         this.toast.observe({
           success: 'Inicio de sesión correcto',

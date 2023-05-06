@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Actividad } from 'src/app/models/interfaces/actividades';
 import { FirestoreService } from '../../services/firestore/firestore.service';
-import { ActivatedRoute } from '@angular/router';
-import { Subscription } from 'rxjs';
+
+
 
 @Component({
   selector: 'app-activities',
@@ -10,7 +10,6 @@ import { Subscription } from 'rxjs';
   styleUrls: ['./activities.component.css']
 })
 export class ActivitiesComponent implements OnInit{
-  private paramSubscription: Subscription = new Subscription();
 
   allActivities: Actividad[] = [];
   filteredActivities: Actividad[] = [];
@@ -20,59 +19,14 @@ export class ActivitiesComponent implements OnInit{
   maxCostFilter:number = 50;
   searchBarText:string = '';
 
-  suggestionsList: string[] = [];
-
-  filterByParam: string = "";
-
-  constructor(private firestoreService: FirestoreService, private route: ActivatedRoute) { }
+  constructor(private firestoreService: FirestoreService) { }
 
   ngOnInit(): void {
     this.firestoreService.getActivities().subscribe((activitiesData: Actividad[]) => {
       this.allActivities = activitiesData;
       this.filteredActivities = activitiesData;
-
-      //Establecemos los valores que se utilizaran para sugerir texto
-      this.setImportantWordsForSuggestion(activitiesData);
-      this.onFilterChange({type: 'none', value: ''});
     });
-
-    this.paramSubscription = this.route.paramMap.subscribe(params => {
-      const activityName = params.get('destinityName');
-
-      if (typeof activityName === 'string') {
-        this.onFilterChange({type: 'param', value: activityName});
-      }
-
-    });
-
-  }
-
-  ngOnDestroy(): void{
-    this.paramSubscription.unsubscribe();
-  }
-
-  // Elimina palabras no deseadas y normaliza la cadena de texto, las devuelve cada una en un array
-  removeUnwantedWordsInArray(input: string): string[] {
-    const unwantedWords = ['de', 'las', 'en', 'la', 'el', 'los', 'del'];
-    const words = input.toLowerCase().split(' ');
-    const filteredWords = words.filter(word => !unwantedWords.includes(word));
-    return filteredWords;
-  }
-
-  // Elimina palabras no deseadas y normaliza la cadena de texto, , las devuelve todas juntas en un string
-  removeUnwantedWords(input: string): string {
-    const filteredWords = this.removeUnwantedWordsInArray(input);
-    return filteredWords.join(' ');
-  }
-
-  setImportantWordsForSuggestion(allTheActivities:Actividad[]): void{
     
-    allTheActivities.forEach((oneActivity) => {
-      var importartWords: string[] = this.removeUnwantedWordsInArray(oneActivity.name);
-      this.suggestionsList = this.suggestionsList.concat(importartWords);
-    });
-
-
   }
 
   //Para poder comparar las categorías sin problema, por ej "Cultura" y "cultura" son iguales
@@ -85,7 +39,6 @@ export class ActivitiesComponent implements OnInit{
   }
 
   onFilterChange(event: any) {
-
     // Restablecemos filteredActivities a allActivities antes de aplicar los filtros
     this.filteredActivities = [...this.allActivities];
   
@@ -107,14 +60,8 @@ export class ActivitiesComponent implements OnInit{
         this.checkBoxFilters.splice(this.checkBoxFilters.indexOf(this.normalizeString(event.value)),1);
       }
     }
-    // Si el evento es un filtro por parámetro
-    else if(event.type == 'param'){
-      // Actualizamos el valor del filtro por parámetro
-      this.filterByParam = event.value;
-    }
-
     // Si el evento que recibimos es de un slider
-    else if(event.type != 'none'){
+    else{
       // Si el evento es de duración
       if(event.type == 'duration'){
         // Actualizamos el valor del filtro de duración
@@ -130,17 +77,8 @@ export class ActivitiesComponent implements OnInit{
     // Ahora aplicamos todos los filtros
     this.filteredActivities = this.filteredActivities.filter((activity: Actividad) => {
 
-      //Comparamos todo normalizado (sin mayusculas, espacios, acentos... y también eliminando palabras como "de", "las"...)
-      if (!this.normalizeString(this.removeUnwantedWords(activity.name)).includes(this.normalizeString(this.removeUnwantedWords(this.searchBarText)))) {
+      if (!this.normalizeString(activity.name).includes(this.normalizeString(this.searchBarText))) {
         return false;
-      }
-
-
-      // Si la actividad no pertenece al lugar especificado por parámetro, no pasa el filtro
-      if (this.filterByParam.length > 0) {
-        if (!this.normalizeString(activity.location).includes(this.normalizeString(this.filterByParam))) {
-          return false;
-        }
       }
 
       // Si el coste de la actividad es mayor que el coste máximo del filtro, la actividad no pasa el filtro

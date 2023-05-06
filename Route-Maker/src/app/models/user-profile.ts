@@ -9,4 +9,5 @@ export interface ProfileUser {
     surname?: string;
     photoURL?: string;
     activities?: Actividad[];
+    password?: string;
 }

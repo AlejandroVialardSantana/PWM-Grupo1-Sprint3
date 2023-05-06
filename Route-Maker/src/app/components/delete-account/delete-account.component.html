@@ -11,9 +11,9 @@
                 y todos tus elementos guardados</p>
             <p> <strong>¿Estás seguro que quieres eliminar tu cuenta? </strong></p>
         </div>
-        <form>
+        <form *ngIf="user$ | async as user">
             <div class="field-button">
-                <input class="button-danger" type="submit" value="Eliminar">
+                <input class="button-danger" type="submit" value="Eliminar" (click)="deleteAccount(user)">
             </div>
             <div class="field-button">
                 <button class="button" type="submit" (click)="openOverlayService.showDeleteAccount = false">Cancelar</button>
