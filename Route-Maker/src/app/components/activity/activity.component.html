@@ -1,5 +1,5 @@
 <div class="activity_container" *ngIf="activities && activities.length > 0">
-  <div *ngFor="let activity of paginatedActivities" class="activity_container_box">
+  <div *ngFor="let activity of paginatedActivities" class="activity_container_box" (click)="navigateToActivityDescription(activity)">
     <div class="activity_container_image">
       <img [src]="activity.image" [alt]="activity.name">
     </div>

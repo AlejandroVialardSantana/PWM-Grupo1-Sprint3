@@ -3,6 +3,10 @@ import { PageEvent } from '@angular/material/paginator';
 import { FirestoreService } from '../../services/firestore/firestore.service';
 
 import { Actividad } from 'src/app/models/interfaces/actividades';
+import { Router } from '@angular/router';
+
+
+
 
 @Component({
   selector: 'app-activity',
@@ -18,6 +22,7 @@ export class ActivityComponent implements OnInit, OnChanges {
   pageSize = 5;
   pageSizeOptions: number[] = [5];
 
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
     this.processActivities();
@@ -44,4 +49,9 @@ export class ActivityComponent implements OnInit, OnChanges {
     const startIndex = event ? event.pageIndex * event.pageSize : 0;
     this.paginatedActivities = this.activities.slice(startIndex, startIndex + this.pageSize);
   }
+
+  navigateToActivityDescription(activity: Actividad): void {
+    this.router.navigate(['/activityDescription'], { queryParams: { location: activity.city, name: activity.name } });
+  }
+  
 }
