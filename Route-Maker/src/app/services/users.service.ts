@@ -10,7 +10,8 @@ import { ProfileUser } from '../models/user-profile';
 import { from, Observable, switchMap, of } from 'rxjs';
 import { AuthenticationService } from './authentication.service';
 import { deleteDoc } from 'firebase/firestore';
-import { AngularFirestore } from '@angular/fire/compat/firestore';
+import { HotToastService } from '@ngneat/hot-toast';
+import { AbstractControl } from '@angular/forms';
 
 
 @Injectable({
@@ -33,17 +34,8 @@ export class UsersService {
   constructor(
     private firestore: Firestore,
     private authService: AuthenticationService,
-    private db: AngularFirestore
+    private toast: HotToastService
   ) {}
-
-  getAllUsers() {
-    return new Promise<any>((resolve) => {
-      this.db
-        .collection('users')
-        .valueChanges({ idField: 'id' })
-        .subscribe((users) => resolve(users));
-    });
-  }
 
   addUser(user: ProfileUser): Observable<any> {
     const ref = doc(this.firestore, 'users', user?.uid);
@@ -60,8 +52,8 @@ export class UsersService {
     return from(deleteDoc(ref));
   }
 
-  changePassword(user: ProfileUser): Observable<void> {
-    const ref = doc(this.firestore, 'users', user.uid);
-    return from(updateDoc(ref, { user: user.password }));
+  changePassword(user: ProfileUser): Observable<any> {
+    var ref = doc(this.firestore, `users/${user.uid}`);
+    return from(updateDoc(ref, { password: user.password }));
   }
 }
