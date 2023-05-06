@@ -54,6 +54,6 @@ export class UsersService {
 
   changePassword(user: ProfileUser): Observable<any> {
     var ref = doc(this.firestore, `users/${user.uid}`);
-    return from(updateDoc(ref, { password: user.password }));
+    return from(updateDoc(ref, { ...user }));
   }
 }
