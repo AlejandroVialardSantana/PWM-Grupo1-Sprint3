@@ -80,15 +80,6 @@
     padding: 1rem;
 }
 
-.activities_items .activities_item_container {
-    display: grid;
-    grid-template-columns: 1fr 2%;
-}
-
-.activities_items .activities_item_container .close .close-btn:hover {
-    cursor: pointer;
-}
-
 .activities_items .activities_item .activities_item_info h3 {
     margin-bottom: 0.5rem;
     font-size: 1.2rem;
@@ -97,6 +88,16 @@
 .activities_items .activities_item .activities_item_info p {
     margin-bottom: 0.5rem;
     font-size: 0.8rem;
+}
+
+.activities_items .activities_item .activities_item_info p a {
+    float: right;
+    display: none;
+    color: #000;
+}
+
+.activities_items .activities_item .activities_item_info p a:hover {
+    cursor: pointer;
 }
 
 .activities_items .activities_item .activities_item_info .location_link {
@@ -109,7 +110,6 @@
 .activities_items .activities_item .activities_item_info .location_link:hover {
     color: #558A78;
     text-decoration: underline;
-    cursor: pointer;
 }
 
 .activities_items .activities_item .activities_item_info .location_link i {
@@ -151,16 +151,8 @@
     font-weight: bold;
 }
 
-.buttons .button a {
-    color: #fff;
-    text-decoration: none;
-}
-
 .buttons .button:hover {
     background-color: #fff;
-}
-
-.buttons .button:hover a {
     color: #558A78;
 }
 

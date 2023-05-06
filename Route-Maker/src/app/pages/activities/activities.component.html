@@ -1,6 +1,6 @@
 <div id="component">
     <app-header></app-header>
-    <app-searchbar [suggestions]="suggestionsList" [barTitle]="'¿QUE TE GUSTARÍA HACER?'" [barPlaceHolder]="'Escribe una actividad...'" (onSearch)="onFilterChange($event)" ></app-searchbar>
+    <app-searchbar [barTitle]="'¿QUE TE GUSTARÍA HACER?'" [barPlaceHolder]="'Escribe una actividad...'" (onSearch)="onFilterChange($event)" ></app-searchbar>
 
     <div class="container">
         <app-filter (filterChange)="onFilterChange($event)" id="filteredActivities"></app-filter>
