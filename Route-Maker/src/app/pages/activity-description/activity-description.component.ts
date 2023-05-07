@@ -16,14 +16,10 @@ export class ActivityDescriptionComponent implements OnInit, OnDestroy {
   constructor(private route: ActivatedRoute, private firestoreService: FirestoreService) { }
 
   ngOnInit(): void {
-    const name = this.route.snapshot.queryParamMap.get('name');
-    const city = this.route.snapshot.queryParamMap.get('location');
+    const id = this.route.snapshot.queryParamMap.get('id');
     
-    this.subscription = this.firestoreService.getActivities().subscribe(actividades => {
-      const actividadEncontrada = actividades.find(actividad => actividad.name === name && actividad.city === city);
-      if (actividadEncontrada) {
-        this.actividad = actividadEncontrada;
-      }
+    this.subscription = this.firestoreService.getActivityByID(id).subscribe(activity => {
+      this.actividad = activity;
     });
   }
 
