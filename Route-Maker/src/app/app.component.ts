@@ -34,7 +34,7 @@ export class AppComponent implements OnInit{
   }
 
   exportJsonToFirestore(name: string) {
-    this.http.get(`../assets/${name}.json`).subscribe((data: any) => {
+    this.http.get(`../data/${name}.json`).subscribe((data: any) => {
       const json = data;
       const collectionRef = this.firestore.collection(name);
       Object.keys(json).forEach((key) => {
