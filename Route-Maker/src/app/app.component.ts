@@ -17,8 +17,10 @@ export class AppComponent implements OnInit{
   constructor(private ngZone: NgZone, private router: Router, private http: HttpClient, private firestore: AngularFirestore) { }
 
   ngOnInit() {
+    // SOLO DESCOMENTAR SI SE QUIEREN EXPORTAR LOS DATOS DE LOS JSON A FIRESTORE (CUIDADO, SE SOBREESCRIBEN LOS DATOS)
     // this.exportJsonToFirestore('destinos');
-    //this.exportJsonToFirestore('actividades');
+    //this.exportJsonToFirestore('actividades'); 
+    //this.exportJsonToFirestore('users');  
     this.router.events.subscribe((event: Event) => {
       if (event instanceof NavigationEnd) {
       } else {
@@ -31,8 +33,10 @@ export class AppComponent implements OnInit{
         
       }
     });
-    // this.getFirestoreData('destinos');
-    // this.getFirestoreData('actividades');
+
+    // SOLO DESCOMENTAR SI SE QUIEREN EXPORTAR LOS DATOS DE FIRESTORE A JSON
+    // this.getFirestoreData('destinos'); 
+    // this.getFirestoreData('actividades'); 
     // this.getFirestoreData('users');
   }
 
