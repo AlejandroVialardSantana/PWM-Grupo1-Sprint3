@@ -72,7 +72,7 @@ export class CarruselComponent implements OnInit, OnDestroy {
   }
 
   navigateToActivity(activity: Actividad): void {
-    this.router.navigate(['/activityDescription'], { queryParams: { location: activity.city, name: activity.name } });
+    this.router.navigate(['/activityDescription'], { queryParams: { location: activity.city, name: activity.name, id: activity.id } });
   }
 
   navigateToActivities(destinityName: String){

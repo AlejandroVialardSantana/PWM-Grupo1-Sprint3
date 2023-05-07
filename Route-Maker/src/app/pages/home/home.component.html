@@ -7,7 +7,7 @@
 
   <h2 class="destinies_recommendations_title">¡Inspírate para tu próximo viaje!</h2>
   <app-carrusel *ngFor="let carrusel of carruselTitles; let i = index" [title]="carrusel.title"
-    [id]="'swiper-container-' + i" [category]="carrusel.category" [filterByRegion]="true" [filterByCategory]="true" [showActivities]="true"></app-carrusel>
+    [id]="'swiper-container-' + i" [category]="carrusel.category" [filterByCategory]="true" [showActivities]="true"></app-carrusel>
 </div>
 
 <app-footer-component></app-footer-component>
