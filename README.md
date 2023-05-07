@@ -8,7 +8,7 @@ Los principales objetivos de este sprint son:
 
 * Implementar un sistema de autenticación y autorización de usuarios.
 
-* Implementar un sistema de almacenamiento de datos en la nube (Firebase).S
+* Implementar un sistema de almacenamiento de datos en la nube (Firebase).
 
 ## Tecnologías utilizadas 👨‍💻
 
