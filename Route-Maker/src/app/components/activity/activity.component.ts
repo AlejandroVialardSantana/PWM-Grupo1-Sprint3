@@ -1,6 +1,5 @@
 import { Component, OnInit, OnChanges, Input, SimpleChanges } from '@angular/core';
 import { PageEvent } from '@angular/material/paginator';
-import { FirestoreService } from '../../services/firestore/firestore.service';
 
 import { Actividad } from 'src/app/models/interfaces/actividades';
 import { Router } from '@angular/router';

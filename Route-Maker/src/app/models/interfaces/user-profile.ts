@@ -1,4 +1,4 @@
-import { Actividad } from "./interfaces/actividades";
+import { Actividad } from "./actividades";
 
 export interface ProfileUser {
     uid: string;

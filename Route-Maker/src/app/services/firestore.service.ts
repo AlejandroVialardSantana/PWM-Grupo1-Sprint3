@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Firestore, collectionData, collection, doc, setDoc } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
-import { Destino } from '../../models/interfaces/destinos';
+import { Destino } from '../models/interfaces/destinos';
 import { Actividad } from 'src/app/models/interfaces/actividades';
 
 @Injectable({

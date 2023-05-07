@@ -1,7 +1,7 @@
 import { Component, Input} from '@angular/core';
 import { Actividad } from '../../models/interfaces/actividades';
 import { DomSanitizer, SafeUrl  } from '@angular/platform-browser';
-import { FirestoreService } from 'src/app/services/firestore/firestore.service';
+import { FirestoreService } from 'src/app/services/firestore.service';
 import { UsersService } from 'src/app/services/users.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { HotToastService } from '@ngneat/hot-toast';

@@ -3,7 +3,7 @@ import { OpenOverlayService } from 'src/app/services/open-overlay.service';
 import { AbstractControl, FormControl, FormGroup, ValidationErrors, Validators, ValidatorFn } from '@angular/forms';
 import { AuthenticationService } from 'src/app/services/authentication.service';
 import { UsersService } from 'src/app/services/users.service';
-import { ProfileUser } from 'src/app/models/user-profile';
+import { ProfileUser } from 'src/app/models/interfaces/user-profile';
 import { Injectable } from '@angular/core';
 import firebase from 'firebase/compat/app';
 import { HotToastService } from '@ngneat/hot-toast';
