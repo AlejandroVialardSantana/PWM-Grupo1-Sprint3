@@ -3,7 +3,7 @@ import {Auth, authState, signInWithEmailAndPassword,} from '@angular/fire/auth';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
 import { createUserWithEmailAndPassword, browserSessionPersistence, setPersistence, } from 'firebase/auth';
 import { from, Observable } from 'rxjs';
-import { ProfileUser } from 'src/app/models/user-profile';
+import { ProfileUser } from 'src/app/models/interfaces/user-profile';
 import { getAuth, updatePassword } from 'firebase/auth';
 
 @Injectable({

@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, OnDestroy } from '@angular/core';
-import { FirestoreService } from 'src/app/services/firestore/firestore.service';
+import { FirestoreService } from 'src/app/services/firestore.service';
 import Swiper from 'swiper';
 import { Destino } from '../../models/interfaces/destinos';
 import { Actividad } from '../../models/interfaces/actividades';

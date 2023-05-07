@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
-import { ProfileUser } from 'src/app/models/user-profile';
+import { ProfileUser } from 'src/app/models/interfaces/user-profile';
 import { UsersService } from 'src/app/services/users.service';
 import { ImageUploadService } from 'src/app/services/image-upload.service';
 import { HotToastService } from '@ngneat/hot-toast';

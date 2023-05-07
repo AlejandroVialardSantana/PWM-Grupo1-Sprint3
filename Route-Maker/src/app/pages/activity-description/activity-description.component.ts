@@ -1,6 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { FirestoreService } from '../../services/firestore/firestore.service';
+import { FirestoreService } from '../../services/firestore.service';
 import { Actividad } from '../../models/interfaces/actividades';
 import { Subscription } from 'rxjs';
 

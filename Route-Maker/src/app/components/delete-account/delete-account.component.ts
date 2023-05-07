@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { getAuth } from 'firebase/auth';
-import { ProfileUser } from 'src/app/models/user-profile';
+import { ProfileUser } from 'src/app/models/interfaces/user-profile';
 import { AuthenticationService } from 'src/app/services/authentication.service';
 import { OpenOverlayService } from 'src/app/services/open-overlay.service';
 import { UsersService } from 'src/app/services/users.service';

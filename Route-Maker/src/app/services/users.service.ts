@@ -6,7 +6,7 @@ import {
   docData,
   updateDoc,
 } from '@angular/fire/firestore';
-import { ProfileUser } from '../models/user-profile';
+import { ProfileUser } from '../models/interfaces/user-profile';
 import { from, Observable, switchMap, of } from 'rxjs';
 import { AuthenticationService } from './authentication.service';
 import { deleteDoc } from 'firebase/firestore';
