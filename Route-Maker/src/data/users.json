@@ -1,0 +1,263 @@
+[
+    {
+        "password": "12345678",
+        "email": "marcos@hotmail.com",
+        "activities": [
+            {
+                "image": "https://cdn.getyourguide.com/img/tour/55bfb034705fe.jpeg/99.jpg",
+                "city": "Barcelona",
+                "category": [
+                    "cultura",
+                    "arquitectura",
+                    "aire libre"
+                ],
+                "user_reviews": [
+                    {
+                        "opinion": "Muy buena visita, la guía muy amable y simpática",
+                        "username": "Paco Perez"
+                    },
+                    {
+                        "username": "Maria Lopez",
+                        "opinion": "Genial"
+                    },
+                    {
+                        "opinion": "Recomendable 100%",
+                        "username": "Juan Garcia"
+                    }
+                ],
+                "description": "Más que un parque, es un símbolo de Barcelona. El Park Güell, una de las obras más emblemáticas de Antoni Gaudí, es único en el mundo porque fue concebido como un recinto monumental donde el entorno natural es inseparable de los elementos arquitectónicos.",
+                "id": "1",
+                "name": "Parque Güell",
+                "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.1392955841243!2d2.152694499999999!3d41.414494800000014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2ae52d441ab%3A0x899a0ba01aaace58!2sPark%20G%C3%BCell!5e0!3m2!1ses!2ses!4v1679767840129!5m2!1ses!2ses",
+                "location": "Carrer de Mallorca, 401, 08013 Barcelona"
+            },
+            {
+                "location_map": "//www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14072.909278428073!2d-15.44807551818952!3d28.13956727183625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc409517c01f9539%3A0x3c117022b0a58f31!2sPlaya%20de%20Las%20Canteras%20(Las%20Palmas%20de%20Gran%20Canaria)!5e0!3m2!1ses!2ses!4v1679763909783!5m2!1ses!2ses",
+                "category": [
+                    "naturaleza",
+                    "playa",
+                    "aire libre",
+                    "destacado"
+                ],
+                "location": "Las Palmas de Gran Canaria, Islas Canarias, España",
+                "user_reviews": [
+                    {
+                        "opinion": "Espectacular playa, el paseo estupendo y cerca del centro comercial. Muy recomendable",
+                        "username": "Marta Garcia"
+                    },
+                    {
+                        "opinion": "Espectacular playa, el paseo estupendo y cerca del centro comercial. Muy recomendable",
+                        "username": "Juan Martinez"
+                    },
+                    {
+                        "opinion": "Espectacular playa, el paseo estupendo y cerca del centro comercial. Muy recomendable",
+                        "username": "Luisa Fernandez"
+                    }
+                ],
+                "image": "https://www.tegustaviajar.com/wp-content/uploads/2019/02/playa-de-las-canteras.jpg",
+                "city": "Gran Canaria",
+                "name": "Playa de Las Canteras",
+                "id": "9",
+                "description": "La playa de Las Canteras es la playa favorita de los vecinos de la ciudad. Considerada una de las mejores playas urbanas de Europa. Las Canteras fue seleccionada en 2019 entre las diez mejores playas de España por la comunidad de viajeros de Tripadvisor. Con buenas condiciones climáticas prácticamente durante todo el año, la playa de Las Canteras cuenta con un paseo marítimo lleno de lugares de ocio que llenan de vida la ciudad. Sus aguas reúnen las condiciones perfectas para realizar cualquier deporte náutico, especialmente el surf, donde sus olas de gran calidad son reconocidas por surfistas de todo el mundo."
+            }
+        ],
+        "displayName": "Marcos",
+        "displaySurname": "Prueba",
+        "uid": "C8iDkdbOYjOMqn9gKir6UoBKvet2"
+    },
+    {
+        "activities": [
+            {
+                "category": [
+                    "cultura",
+                    "arquitectura",
+                    "aire libre"
+                ],
+                "name": "Parque Güell",
+                "user_reviews": [
+                    {
+                        "username": "Paco Perez",
+                        "opinion": "Muy buena visita, la guía muy amable y simpática"
+                    },
+                    {
+                        "username": "Maria Lopez",
+                        "opinion": "Genial"
+                    },
+                    {
+                        "opinion": "Recomendable 100%",
+                        "username": "Juan Garcia"
+                    }
+                ],
+                "id": "1",
+                "location": "Carrer de Mallorca, 401, 08013 Barcelona",
+                "city": "Barcelona",
+                "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.1392955841243!2d2.152694499999999!3d41.414494800000014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2ae52d441ab%3A0x899a0ba01aaace58!2sPark%20G%C3%BCell!5e0!3m2!1ses!2ses!4v1679767840129!5m2!1ses!2ses",
+                "image": "https://cdn.getyourguide.com/img/tour/55bfb034705fe.jpeg/99.jpg",
+                "description": "Más que un parque, es un símbolo de Barcelona. El Park Güell, una de las obras más emblemáticas de Antoni Gaudí, es único en el mundo porque fue concebido como un recinto monumental donde el entorno natural es inseparable de los elementos arquitectónicos."
+            }
+        ],
+        "password": "123456789",
+        "displayName": "javier",
+        "uid": "HGZyXxRBNgSKSQDoB4XUUhXzxcE2",
+        "displaySurname": "perez",
+        "photoURL": "https://firebasestorage.googleapis.com/v0/b/routemaker-4d0d6.appspot.com/o/images%2Fprofile%2FHGZyXxRBNgSKSQDoB4XUUhXzxcE2?alt=media&token=597c845c-0844-4ee1-9618-aa4561e3998c",
+        "email": "javier@hotmail.com"
+    },
+    {
+        "displaySurname": "Vialard",
+        "photoURL": "https://firebasestorage.googleapis.com/v0/b/routemaker-4d0d6.appspot.com/o/images%2Fprofile%2FIClndjpxmVWo7CKzWXlsDeh0rfl2?alt=media&token=c6135fec-c637-4327-bf24-d15e83967c56",
+        "uid": "IClndjpxmVWo7CKzWXlsDeh0rfl2",
+        "email": "prueba@example.com",
+        "displayName": "Alejandro",
+        "activities": [
+            {
+                "name": "Cala Macarella",
+                "category": [
+                    "naturaleza",
+                    "playa",
+                    "aire libre",
+                    "destacado"
+                ],
+                "id": "19",
+                "location": "Cala Macarella, 07769, Menorca, Islas Baleares, España",
+                "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3059.233733243826!2d3.9325761153813508!3d39.93616117942389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12be1d12dc9c7a9b%3A0xad8e2dfbe699eb55!2sCala%20Macarelleta!5e0!3m2!1ses!2ses!4v1679823685116!5m2!1ses!2ses",
+                "city": "Menorca",
+                "description": "Situadas en la costa sur, Cala Maracarella y Cala Macarelleta son, gracias a sus aguas cristalinas de color turquesa y su ubicación entre imponentes acantilados, nuestras playas favoritas que ver en Menorca.",
+                "image": "https://www.artiemhotels.com/uploads/74cc7d56-ea32-4e85-8dd7-3bfff1d6f1e9/e32e7681a52dd1e4df2bd746cfecb3c5/74cc7d56-ea32-4e85-8dd7-3bfff1d6f1e9.png",
+                "user_reviews": [
+                    {
+                        "username": "Marta Garcia",
+                        "opinion": "Una preciosidad."
+                    },
+                    {
+                        "username": "Juan Perez",
+                        "opinion": "Hermoso lugar para pasar el día."
+                    }
+                ]
+            },
+            {
+                "user_reviews": [
+                    {
+                        "opinion": "El Caminito del Rey es una experiencia increíble. El paisaje es impresionante y la sensación de caminar por el sendero es indescriptible. Lo recomiendo a todos los amantes de la aventura.",
+                        "username": "Pedro Gonzalez"
+                    },
+                    {
+                        "opinion": "Si buscas una aventura emocionante en Málaga, el Caminito del Rey es el lugar ideal. Aunque puede ser un poco peligroso, vale la pena hacerlo. Las vistas son espectaculares y la sensación de superación al completarlo es incomparable.",
+                        "username": "Sofia Molina"
+                    },
+                    {
+                        "username": "David Ruiz",
+                        "opinion": "El Caminito del Rey es una de las mejores experiencias que he tenido en Málaga. El sendero es espectacular y las vistas son impresionantes. Aunque puede ser un poco intimidante al principio, con precaución y siguiendo las instrucciones, se puede hacer sin problemas."
+                    }
+                ],
+                "id": "21",
+                "description": "El Caminito del Rey es un sendero situado en el Desfiladero de los Gaitanes, en la provincia de Málaga, España. Es conocido por su impresionante paisaje y su peligrosidad, que lo convierten en una experiencia única para los amantes de la aventura.",
+                "category": [
+                    "paseo",
+                    "aire libre",
+                    "destacado"
+                ],
+                "city": "Málaga",
+                "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3189.266029311481!2d-4.792142484706416!3d36.931809679921614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72be9311fa8f01%3A0x599abbe8aafbd4b8!2sCaminito%20del%20Rey%20-%20Acceso%20Norte!5e0!3m2!1ses!2ses!4v1679765311562!5m2!1ses!2ses",
+                "location": "29550 Ardales, Málaga, España",
+                "name": "Caminito del Rey",
+                "image": "https://i.promecal.es/IMG/2022/B8C0CD2F-B6C6-B0D4-A00F79992601CD2C.JPEG"
+            },
+            {
+                "city": "Madrid",
+                "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.0044399792423!2d-3.6883337!3d40.45303869999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228e23705d39f%3A0xa8fff6d26e2b1988!2sEstadio%20Santiago%20Bernab%C3%A9u!5e0!3m2!1ses!2ses!4v1679767249007!5m2!1ses!2ses",
+                "image": "https://tierradelsur.net/wp-content/uploads/2022/01/mad-santiagobernabeu-01.jpg",
+                "user_reviews": [
+                    {
+                        "opinion": "El Estadio Santiago Bernabéu es uno de los mejores estadios del mundo. Tiene una capacidad increíble de 81.044 espectadores. Definitivamente lo recomiendo.",
+                        "username": "Juan Pablo"
+                    },
+                    {
+                        "opinion": "Impresionante.",
+                        "username": "Ana Garcia"
+                    }
+                ],
+                "description": "El Estadio Santiago Bernabéu es un recinto deportivo propiedad del Real Madrid Club de Fútbol, situado en pleno paseo de la Castellana, en el distrito de Chamartín de Madrid, España. Se inauguró el 14 de diciembre de 1947 y su aforo actualmente es de 81044 espectadores. ​El estadio está catalogado por la UEFA con la máxima distinción, «estadio de élite».",
+                "id": "6",
+                "name": "Estadio Santiago Bernabéu",
+                "category": [
+                    "deporte",
+                    "aire libre",
+                    "destacado"
+                ],
+                "location": "Avenida de Concha Espina, 1, 28036 Madrid, España"
+            },
+            {
+                "id": "18",
+                "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12247.623295283278!2d3.006869786752458!3d39.87634737090374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1297d6a0db5e5103%3A0x2aec5ed1cb734537!2s07460%20Pollensa%2C%20Islas%20Baleares!5e0!3m2!1ses!2ses!4v1679822230563!5m2!1ses!2ses",
+                "category": [
+                    "paseo",
+                    "aire libre",
+                    "destacado"
+                ],
+                "name": "Pollensa",
+                "image": "https://static.seetheworld.com/image_uploader/photos/d8/original/pollenca-pollensa-pollensa-pollenca-982.jpg",
+                "city": "Mallorca",
+                "location": "Pollença, Mallorca, Islas Baleares, España",
+                "user_reviews": [
+                    {
+                        "opinion": "Precioso pueblo para pasear y disfrutar de la gastronomía local.",
+                        "username": "Marta Garcia"
+                    },
+                    {
+                        "opinion": "Un lugar muy bonito para visitar.",
+                        "username": "Juan Perez"
+                    },
+                    {
+                        "opinion": "Un pueblo muy bonito y tranquilo.",
+                        "username": "Ana Lopez"
+                    }
+                ],
+                "description": "Pollença es un pueblo antiguo ubicado en el norte de la isla, con atractivas calles estrechas y una impresionante plaza principal rodeada de cafés, restaurantes y bares, todo a pocos kilómetros del Puerto de Pollença. Su puente romano, señalizado ‘Pont Roma’ sigue en uso."
+            },
+            {
+                "category": [
+                    "monumento",
+                    "paseo",
+                    "aire libre",
+                    "cultura",
+                    "destacado"
+                ],
+                "name": "Catedral de Málaga",
+                "location": "Plaza de la Constitución, 29015 Málaga, España",
+                "user_reviews": [
+                    {
+                        "username": "Sara Martinez",
+                        "opinion": "La Catedral de Málaga es una de las mejores catedrales que he visitado. Es una obra de arte impresionante y la visita guiada es muy interesante. ¡Definitivamente recomendado!"
+                    },
+                    {
+                        "username": "Pedro González",
+                        "opinion": "La Catedral de Málaga es una de las mejores catedrales que he visitado. Es una obra de arte impresionante y la visita guiada es muy interesante. ¡Definitivamente recomendado!"
+                    },
+                    {
+                        "username": "Carmen Ruiz",
+                        "opinion": "La Catedral de Málaga es una de las mejores catedrales que he visitado. Es una obra de arte impresionante y la visita guiada es muy interesante. ¡Definitivamente recomendado!"
+                    }
+                ],
+                "image": "https://malagacatedral.com/wp-content/uploads/exterior-1.jpg",
+                "city": "Málaga",
+                "id": "23",
+                "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198.0996556216705!2d-4.42149928471234!3d36.72016777996509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f79511cea98d%3A0xfcc3c279b06f19fa!2sCatedral%20de%20la%20Encarnaci%C3%B3n%20de%20M%C3%A1laga!5e0!3m2!1ses!2ses!4v1679765796695!5m2!1ses!2ses",
+                "description": "La Catedral de Málaga es una catedral católica situada en el centro de la ciudad de Málaga, España. Es la sede de la Diócesis de Málaga y es uno de los principales monumentos de la ciudad. La catedral fue construida en el siglo XVI y es una de las más grandes de España."
+            }
+        ]
+    },
+    {
+        "uid": "LTtD0gyfaBbAGzf1DtSWxrzUw082",
+        "displayName": "ana",
+        "displaySurname": "perez",
+        "email": "ana@hotmail.com"
+    },
+    {
+        "displaySurname": "perez",
+        "password": "12345678",
+        "uid": "zuZ07P0eMGSEJoGqI1QYIoRjmyU2",
+        "email": "maria@example.com",
+        "displayName": "maria"
+    }
+]
