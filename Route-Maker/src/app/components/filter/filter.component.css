@@ -1,11 +1,19 @@
 .filter {
     width: 13.5rem;
     padding: 2.25rem;
-    height: 41.2rem;
+    height: 38.7rem;
     left: 0;
     overflow: auto;
     border: 1px solid #000;
     border-radius: 0.625rem;
+  }
+
+  h4{
+    font-size: 1.3rem;
+  }
+
+  h5{
+    font-size: 0.9rem;
   }
 
   hr.dashed {
